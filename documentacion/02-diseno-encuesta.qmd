@@ -1,0 +1,26 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Diseño de la encuesta {#sec-estadis}
+
+## Población objetivo y población de la encuesta {#sec-target}
+
+## Unidades de análisis y dominios {#sec-units}
+
+## Estrategia de muestreo y selección de la muestra {#sec-strategy}
+
+## Cuotas y tamaño de la muestra {#sec-quotas}
+
+## Alcance del control de cuotas
+
+## Restricción de factibilidad conocida (educación básica)
+
+## Diseño longitudinal {#sec-longitudinal}
+
+## Ponderación y calibración {#sec-weighting}
+
+## Precisión, incertidumbre y errores ajenos al muestreo {#sec-errors}

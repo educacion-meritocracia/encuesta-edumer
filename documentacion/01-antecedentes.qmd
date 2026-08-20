@@ -1,0 +1,8 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Antecedentes {#sec-background}

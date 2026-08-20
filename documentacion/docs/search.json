@@ -1,0 +1,182 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Manual Metodológico de Encuesta EDUMER",
+    "section": "",
+    "text": "Presentación",
+    "crumbs": [
+      "Presentación"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html",
+    "href": "02-diseno-encuesta.html",
+    "title": "2  Diseño de la encuesta",
+    "section": "",
+    "text": "2.1 Población objetivo y población de la encuesta",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-units",
+    "href": "02-diseno-encuesta.html#sec-units",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.2 Unidades de análisis y dominios",
+    "text": "2.2 Unidades de análisis y dominios",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-strategy",
+    "href": "02-diseno-encuesta.html#sec-strategy",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.3 Estrategia de muestreo y selección de la muestra",
+    "text": "2.3 Estrategia de muestreo y selección de la muestra",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-quotas",
+    "href": "02-diseno-encuesta.html#sec-quotas",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.4 Cuotas y tamaño de la muestra",
+    "text": "2.4 Cuotas y tamaño de la muestra",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#alcance-del-control-de-cuotas",
+    "href": "02-diseno-encuesta.html#alcance-del-control-de-cuotas",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.5 Alcance del control de cuotas",
+    "text": "2.5 Alcance del control de cuotas",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#restricción-de-factibilidad-conocida-educación-básica",
+    "href": "02-diseno-encuesta.html#restricción-de-factibilidad-conocida-educación-básica",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.6 Restricción de factibilidad conocida (educación básica)",
+    "text": "2.6 Restricción de factibilidad conocida (educación básica)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-longitudinal",
+    "href": "02-diseno-encuesta.html#sec-longitudinal",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.7 Diseño longitudinal",
+    "text": "2.7 Diseño longitudinal",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-weighting",
+    "href": "02-diseno-encuesta.html#sec-weighting",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.8 Ponderación y calibración",
+    "text": "2.8 Ponderación y calibración",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "02-diseno-encuesta.html#sec-errors",
+    "href": "02-diseno-encuesta.html#sec-errors",
+    "title": "2  Diseño de la encuesta",
+    "section": "2.9 Precisión, incertidumbre y errores ajenos al muestreo",
+    "text": "2.9 Precisión, incertidumbre y errores ajenos al muestreo",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "04-diseno-items.html",
+    "href": "04-diseno-items.html",
+    "title": "4  Diseño del cuestionario B: Ítems",
+    "section": "",
+    "text": "4.1 Estructura y contenido del cuestionario",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diseño del cuestionario B: Ítems</span>"
+    ]
+  },
+  {
+    "objectID": "04-diseno-items.html#escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta",
+    "href": "04-diseno-items.html#escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta",
+    "title": "4  Diseño del cuestionario B: Ítems",
+    "section": "4.2 Escalas de medición y fuentes de los ítems de la encuesta",
+    "text": "4.2 Escalas de medición y fuentes de los ítems de la encuesta",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diseño del cuestionario B: Ítems</span>"
+    ]
+  },
+  {
+    "objectID": "05-implementacion-encuesta.html",
+    "href": "05-implementacion-encuesta.html",
+    "title": "5  Implementación de la encuesta",
+    "section": "",
+    "text": "## Programación de la encuesta e integración técnica\n## Trabajo de campo\n## Control de calidad\n## Indicadores de desempeño del trabajo de campo",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "06-base-datos.html",
+    "href": "06-base-datos.html",
+    "title": "6  Base de datos",
+    "section": "",
+    "text": "6.1 Archivos de datos y estructura de archivos",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Base de datos</span>"
+    ]
+  },
+  {
+    "objectID": "06-base-datos.html#sec-bases",
+    "href": "06-base-datos.html#sec-bases",
+    "title": "6  Base de datos",
+    "section": "6.2 Acceso a los datos y condiciones de uso",
+    "text": "6.2 Acceso a los datos y condiciones de uso",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Base de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-etica.html",
+    "href": "07-etica.html",
+    "title": "7  Ética",
+    "section": "",
+    "text": "7.1 Aprobación del comité ético",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ética</span>"
+    ]
+  },
+  {
+    "objectID": "07-etica.html#consentimiento-informado-y-re-consentimiento",
+    "href": "07-etica.html#consentimiento-informado-y-re-consentimiento",
+    "title": "7  Ética",
+    "section": "7.2 Consentimiento informado y re-consentimiento",
+    "text": "7.2 Consentimiento informado y re-consentimiento\n## Retención y protección de datos",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ética</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html",
+    "href": "08-libro-codigos.html",
+    "title": "8  Libro de códigos",
+    "section": "",
+    "text": "8.1 Instrucciones",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  }
+]

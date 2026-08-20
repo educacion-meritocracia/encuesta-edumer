@@ -1,0 +1,14 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Ética  {#etica}
+
+## Aprobación del comité ético
+
+## Consentimiento informado y re-consentimiento
+
+## Retención y protección de datos

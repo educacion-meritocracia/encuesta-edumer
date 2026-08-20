@@ -1,0 +1,10 @@
+---
+format:
+  html:
+    toc: false
+    css: justify.css
+---
+
+![](images/edumer.png){.float-end width="160px"}
+
+# Presentación {.unnumbered}
