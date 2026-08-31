@@ -1,0 +1,91 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Bases de datos {#databases}
+
+## Archivos de datos en el repositorio
+
+### Insumos (datos crudos o previos al procesamiento)
+
+**Fuente cruda principal (Ola 1, multi-actor):** `/input/data/original/310524_BDD_edumer.sav` Importado por:
+
+- Script de estudiantes Ola 1 (`processing/w1-01-proc-data-students.R:27`)
+- Script de docentes Ola 1 (`processing/w1-02-proc-data-teachers.R:26`)
+- Script de apoderados Ola 1 (`processing/w1-03-proc-data-parents.R:26`)
+
+**Fuente cruda principal (Ola 2 estudiantes, versión final corregida):** `/input/data/original/221124 Edumer Ola2 ID_VF.sav` Importado por `processing/w2-01-proc-data-students.R:28`.
+
+**Versión previa/de depuración de ID (Ola 2):** `/input/data/original/251024 Edumer Ola2 ID.sav` Utilizada únicamente en el script de diagnóstico y corrección de IDs duplicados `processing/duplicados.R:28`.
+
+**Archivos de metadatos del cuestionario (codebook):**
+
+- `/input/Cuestionario_edumer.xlsx - survey.csv`
+- `/input/cohesion - survey.csv`
+- El codebook utiliza las URLs crudas correspondientes de GitHub (`08-codebook.qmd:48, 50`).
+
+**Otras versiones crudas presentes en `/input/data/original/`:** `161223_BDD_estudiantes_VF.sav`, `170124_BDD_estudiantes.sav`, `211223_BDD_estudiantes_VF.sav`, `300424_BDD_estudiantes.sav` (presentes en el repositorio, sin referencias directas en los scripts de procesamiento actuales).
+
+**Archivos intermedios presentes pero no referenciados por los scripts actuales:** `/input/data/proc/es_ola1.RData`, `/input/data/proc/ola1.RData`.
+
+### Bases de datos finales (Listas para utilizar)
+
+Desde `/output/data/`:
+
+- **Ola 1, estudiantes (final):** `db_proc_students.{RData,dta,sav}` — generado en `processing/w1-01-proc-data-students.R:798-800`.
+- **Ola 1, docentes (final):** `db_proc_teachers.{RData,dta,sav}` — generado en `processing/w1-02-proc-data-teachers.R:462-464`.
+- **Ola 1, apoderados (final):** `db_proc_parents.{RData,dta,sav}` — generado en `processing/w1-03-proc-data-parents.R:485-487`.
+- **Ola 1, base combinada (final):** `db_proc_full.{RData,dta,sav}` — generado en `processing/w1-04-proc-data-full.R:48-50`.
+- **Ola 2, estudiantes (final):** `db_proc_students_w02.{RData,dta,sav}` — generado en `processing/w2-01-proc-data-students.R:482-484`.
+- **Bases panel derivadas (Ola 1 + Ola 2, estudiantes):**
+  - `edumer_students_wide.{RData,dta,sav}`
+  - `edumer_students_long.{RData,dta,sav}`
+
+## Clasificación de las bases de datos
+
+**Por ola**
+
+- Ola 1: `db_proc_students`, `db_proc_teachers`, `db_proc_parents`, `db_proc_full`
+- Ola 2: `db_proc_students_w02`
+- Ambas olas (panel): `edumer_students_wide`, `edumer_students_long`
+
+**Por tipo de actor**
+
+- Estudiantes: `db_proc_students` (Ola 1), `db_proc_students_w02` (Ola 2), `edumer_students_wide`/`long` (panel)
+- Adultos: `db_proc_teachers` (docentes), `db_proc_parents` (apoderados)
+- Combinada: `db_proc_full` (estudiantes + docentes + apoderados, Ola 1)
+
+**Por etapa de procesamiento**
+
+- Insumo/crudo: archivos `.sav` en `/input/data/original/`, CSV del cuestionario en `/input/`
+- Producto final: `db_proc_*` y `db_proc_students_w02` (más la base combinada `db_proc_full`)
+- Derivado/panel: `edumer_students_wide`, `edumer_students_long`
+- Intermedio/diagnóstico: objetos en memoria del script `duplicados.R` (p. ej., `db2_f`) para la limpieza de IDs (`processing/duplicados.R:39-47, 160-163, 176-179`), sin exportación a archivo.
+
+## Flujo de transformación (de datos crudos a bases finales)
+
+1.  Importación de los datos crudos de la Ola 1 desde `310524_BDD_edumer.sav` en cada script específico por actor (`w1-01`, `w1-02`, `w1-03`).
+2.  Selección de columnas por actor:
+    - Estudiantes (Ola 1): columnas 1 a 105, eliminando columnas temporales de identificación (`w1-01:47-49`).
+    - Docentes (Ola 1): columnas 106 a 179 (`w1-02:45`).
+    - Apoderados (Ola 1): columnas 180 a 246, eliminando variables que comienzan con "T" (`w1-03:46-48`).
+3.  Limpieza y armonización en cada script (renombramiento de variables, limpieza de etiquetas, recodificación, tipos de variables).
+4.  Exportación de las bases finales por actor a formatos `.RData`, `.dta` y `.sav` (`w1-01:798-800`, `w1-02:462-464`, `w1-03:485-487`).
+5.  Combinación de la Ola 1 completa mediante unión de columnas, previa verificación de consistencia en el número de filas (`w1-04:34-42`), y exportación (`w1-04:48-50`).
+6.  Importación de los datos de estudiantes de la Ola 2 desde la versión corregida `221124 ... ID_VF.sav` (`w2-01:28`), limpieza, recodificación y exportación (`w2-01:482-484`).
+7.  Construcción de la base panel (solo estudiantes):
+    - Carga de las bases procesadas de Ola 1 y Ola 2 (script del panel, líneas 28-33).
+    - Armonización y adición de sufijos a los nombres de variables (líneas 44-76).
+    - Unión del ID de la Ola 1 con el ID de referencia de la Ola 2 (líneas 91-100).
+    - Generación de las bases panel en formato ancho y largo (líneas 171-177, 209-215).
+
+## Convenciones de nombres
+
+- **Fuentes crudas:** prefijo de fecha + descriptor (p. ej., `310524_BDD_edumer.sav`, `221124 Edumer Ola2 ID_VF.sav`).
+- **Sufijo "VF":** indica versión corregida/final en la etapa cruda (p. ej., la Ola 2 usa `...ID_VF.sav` en el script de producción, mientras que el archivo sin este sufijo se usa únicamente en el script de depuración de duplicados).
+- **Bases procesadas:** `db_proc_<población>` (estudiantes, docentes, apoderados, completa), con sufijo de ola cuando corresponde (`_w02`).
+- **Bases panel:** nombres semánticos `edumer_students_wide` / `edumer_students_long`.
+- **Publicación en múltiples formatos:** cada base final se exporta a `RData`, `dta` y `sav` para su interoperabilidad (`w1-01:798-800`, `w1-02:462-464`, `w1-03:485-487`, `w1-04:48-50`, `w2-01:482-484`, panel: `209-215`).

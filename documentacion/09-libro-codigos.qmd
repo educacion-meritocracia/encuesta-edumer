@@ -1,0 +1,365 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Libro de códigos {#codebook}
+
+## Introducción
+
+Para el uso adecuado de la base de datos Encuesta Panel Justicia Educacional y Ciudadanía, recomendamos que los investigadores trabajen con el libro de códigos que se presenta a continuación. Esta sección busca facilitar el uso de la base de datos, entregando la información correspondiente a los nombres de las variables, sus etiquetas, así como también las etiquetas de las categorías de respuesta de cada variable. En primer lugar, se detallan las instrucciones de cómo utilizar el libro de códigos interactivo. En segundo lugar, se presenta el libro de códigos propiamente tal para cada cuestionario por separado (estudiantes, docentes y padres y apoderados).
+
+## Instrucciones
+
+Los Libros de Códigos que se presentan en la siguiente sección corresponden a una herramienta interactiva que busca presentar de manera eficiente información respecto a las variables que componen la base de datos. Presentamos los ítems por cuestionario para facilitar su comprensión.
+
+Cada libro muestra el código de cada variable, la etiqueta asociada a la variable con la redacción del ítem, y las categorías de respuesta y códigos asociados. Estas corresponden a tres columnas del libro de códigos denominadas ***name, label*** y ***value_label***, respectivamente.
+
+Se puede hacer uso del buscador que se encuentra al principio del libro para encontrar información de manera más rápida. También se pueden usar los buscadores por cada columna, los cuales irán filtrando los datos que contengan el término de búsqueda.
+
+Incluimos etiquetas de variables en el Libro de Códigos y en las bases de datos. El equipo de EDUMER las diseñó con la intención de describir brevemente el fenómeno o dimensión a medir. La redacción de la pregunta sigue a las etiquetas, incluyendo códigos y categorías de respuesta. En la construcción de la base de datos, ingresamos los códigos de respuesta como valores numéricos y las categorías de respuesta como etiquetas.
+
+En la columna ***value_labels*** se muestran las categorías de respuesta de cada variable. No obstante, si la variable es numérica o de respuesta abierta (texto), la casilla se mostrará en blanco, ya que no hay ninguna categoría que mostrar. También puede ocurrir el caso que la variable sea numérica, pero tenga disponibles las categorías "88. No Sabe" y "99. No Responde". En estos casos sólo se visualizarán ambas categorías en el libro de código.
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = F,
+                      warning = F,
+                      error = F, 
+                      message = F) 
+```
+
+```{r packages}
+if (!require("pacman")) install.packages("pacman")
+
+pacman::p_load(tidyverse,
+               here, 
+               codebook,DT, haven, sjlabelled)
+
+options(scipen=999)
+rm(list = ls())
+```
+
+```{r data, include=FALSE}
+# La carpeta de documentacion se renderiza desde su propia raiz, por lo que
+# la base de datos vive un nivel arriba en el proyecto principal.
+data_path <- file.path("..", "output", "data", "data-060125.RData")
+if (!file.exists(data_path)) {
+  stop("No se encontró el archivo de datos: ", data_path)
+}
+load(file = data_path)
+
+url <- "https://raw.githubusercontent.com/educacion-meritocracia/survey-edumer-fgz/refs/heads/main/input/Cuestionario_edumer.xlsx%20-%20survey.csv"
+
+url2 <- "https://raw.githubusercontent.com/educacion-meritocracia/survey-edumer-fgz/refs/heads/main/input/cohesion%20-%20survey.csv"
+
+
+cuestionario_data <- read_csv(url)
+cuestionario_data2<- read.csv(url2)
+
+
+```
+
+```{r code 1, echo=FALSE}
+
+#Agregar labels de cuestionario a data 
+
+cuestionario_data <- cuestionario_data %>% select(name, label)
+
+df<- data.frame(matrix(ncol=nrow(cuestionario_data),nrow= 0))
+colnames(df) <- cuestionario_data$name
+df <- df %>%
+  dplyr::select(starts_with("carac_"), starts_with("merit_"), starts_with("des"))
+                
+# Paso 2: Filtrar 'labels' para incluir solo columnas que existen en 'df'
+filtered_labels <- cuestionario_data %>%
+  filter(name %in% colnames(df))
+# Asignar las etiquetas como atributos solo para columnas existentes
+for (i in seq_along(filtered_labels$name)) {
+  attr(df[[filtered_labels$name[i]]], "label") <- as.character(filtered_labels$label[i]) # Asegurar que sean strings
+}
+
+#Categorías de respuesta para las variables del módulo meritocracia
+for (var in names(df)[grepl("^merit_", names(df))]) {
+  df[[var]] <- set_labels(
+    df[[var]], 
+    labels = c(`1` = "Muy en desacuerdo",
+                           `2` = "En desacuerdo",
+                           `3` = "De acuerdo",
+                           `4` = "Muy de acuerdo",
+                           `5` = "No sé",
+                           `6` = "Preferiría no responder"
+  ))
+  }
+
+#proceso para módulo de cohesión
+
+cuestionario_data2 <- cuestionario_data2 %>% select(name, label)
+
+df1<- data.frame(matrix(ncol=nrow(cuestionario_data2),nrow= 0))
+colnames(df1) <- cuestionario_data2$name
+df1 <- df1 %>%
+  dplyr::select(starts_with("cohesion_"), starts_with("values_"))
+                
+# Paso 2: Filtrar 'labels' para incluir solo columnas que existen en 'df1'
+filtered_labels_cohesion <- cuestionario_data2 %>%
+  filter(name %in% colnames(df1))
+# Asignar las etiquetas como atributos solo para columnas existentes
+for (i in seq_along(filtered_labels_cohesion$name)) {
+  attr(df1[[filtered_labels_cohesion$name[i]]], "label") <-as.character(filtered_labels_cohesion$label[i]) # Asegurar que sean strings
+}
+
+#Categorías de respuesta para las variables del módulo cohesión
+
+for (var in names(df1)[grepl("^cohesion_", names(df1))]) {
+  df1[[var]] <- set_labels(
+    df1[[var]], 
+    labels = c(`1` = "Para nada",
+                           `2` = "Más bien no",
+                           `3` = "En parte",
+                           `4` = "Más bien sí",
+                           `5` = "Totalmente",
+                           `6` = "No sé",
+                           `7` = "Preferiría no responder"
+  ))
+  }
+
+#Categorías de respuesta para módulo de caracterización
+
+#carac_a04
+df$carac_a04 <- set_labels(
+    df$carac_a04, labels = c(`1` = "Mapuche",
+                           `2` = "Aimara",
+                           `3` = "Rapa Nui",
+                           `4` = "Quechua",
+                           `5` = "No, a ninguno de los anteriores",
+                           `6`= "No sé",
+                           `7`= "Preferiría no responder"
+                                                  ))
+#carac_a05
+df$carac_a05 <- set_labels(
+    df$carac_a05, labels = c(`1` = "Católico",
+                           `2` = "Evangélico",
+                           `3` = "Protestante",
+                           `4` = "Judío",
+                           `5` = "Creyente no adherente",
+                           `6`= "Agnóstico",
+                           `7`= "Ninguna",
+                           `8`= "No sé",
+                           `9`= "Preferiría no responder"))
+
+#carac_a06
+df$carac_a06 <- set_labels(
+    df$carac_a06, labels = c(`1` = "Entre 0 y 10 libros",
+                           `2` = "Entre 11 y 25 libros",
+                           `3` = "Entre 26 y 100 libros",
+                           `4` = "Entre 101 y 200",
+                           `5` = "Entre 201 y 500",
+                           `6`= "Más de 500 libros",
+                           `7`= "No sé",
+                           `8`= "Preferiría no responder"))
+
+
+#carac_a07
+df$carac_a07 <- set_labels(
+    df$carac_a07, labels = c(`1` = "Colegio municipal",
+                           `2` = "Colegio particular subvencionado",
+                           `3` = "Colegio particular",
+                           `4`= "No sé",
+                           `5`= "Preferiría no responder"))
+
+
+#carac_a08
+df$carac_a08 <- set_labels(
+    df$carac_a08, labels = c(`1` = "Derecha",
+                           `2` = "Centro derecha",
+                           `3` = "Centro",
+                           `4` = "Centro izquierda",
+                           `5` = "Izquierda",
+                           `6`= "Independiente",
+                           `7`= "Ninguna",
+                           `8`= "No sé",
+                           `9`= "Preferiría no responder"))
+
+
+#carac_a09
+df$carac_a09 <- set_labels(
+    df$carac_a09, labels = c(`1` = "Aprueba",
+                           `2` = "Desaprueba",
+                           `8`= "No sé",
+                           `9`= "Preferiría no responder"))
+
+
+#carac_a10
+df$carac_a10 <- set_labels(
+    df$carac_a10, labels = c(`1` = "Católico",
+                           `2` = "Evangélico",
+                           `3` = "Protestante",
+                           `4` = "Judío",
+                           `5` = "Creyente no adherente",
+                           `6`= "Agnóstico",
+                           `7`= "Ninguna",
+                           `8`= "No sé",
+                           `9`= "Preferiría no responder"))
+
+#carac_a11 es respuesta abierta, así que no tiene value_labels
+
+#carac_a12
+df$carac_a12 <- set_labels(
+    df$carac_a12, labels = c(`1` = "Chile",
+                           `2` = "Venezuela",
+                           `3` = "Bolivia",
+                           `4` = "Perú",
+                           `5` = "Colombia",
+                           `6`= "Haití",
+                           `7`= "Ecuador",
+                           `8`= "Argentina",
+                           `9`= "República Dominicana",
+                           `10`= "España",
+                           `11`= "Brasil",
+                           `12`= "Cuba",
+                           `13` = "Paraguay",
+                           `14` = "Otro"))
+
+
+#Categorías de respuesta para las variables carac_a13, carac_a14, carac_a15,carac_a16
+
+vars_etiquetar <- c("carac_a13","carac_a14","carac_a15","carac_a16")
+
+for (var in vars_etiquetar) {
+  df[[var]] <- set_labels(df[[var]], labels = c(
+    `1` = "Sí",
+    `2` = "No",
+    `3` = "No sé",
+    `4` = "Preferiría no responder"
+  ))
+}
+
+
+#categorías de respuesta módulo valores sociales
+
+for (var in names(df1)[grepl("^values_", names(df1))]) {
+  df1[[var]] <- set_labels(
+    df1[[var]], 
+    labels = c(`1` = "No se parece nada a mi",
+                           `2` = "No se parece a mí",
+                           `3` = "Se parece un poco a mí",
+                           `4` = "Se parece algo a mí",
+                           `5` = "Se parece a mí",
+                           `6` = "Se parece mucho a mí",
+                           `7` = "No sé",
+                           `8` = "Preferiría no responder"
+  ))
+  }
+
+
+
+#categorías variables de módulo actitudes hacia la desigualdad
+
+vars_etiquetar_des <- c("des_01","des_02","des_03","des_07","des_08","des_09","des_10",
+                        "des_11", "des_12")
+
+for (var in vars_etiquetar_des) {
+  df[[var]] <- set_labels(df[[var]], labels = c(
+    `1` = "Muy en desacuerdo",
+    `2` = "En desacuerdo",
+    `3` = "De acuerdo",
+    `4` = "Muy de acuerdo",
+    `5` = "No sé",
+    `6` = "Preferiría no responder"
+  ))
+}
+
+#des_04
+
+df$des_04 <- set_labels(df$des_04, labels = c(`1`= "Gobierno",
+                                              `2`= "Empresas"))
+
+#des_05
+df$des_05 <- set_labels(df$des_05, labels = c(`1` = "Empresas privadas",
+                                             `2` = "Gobierno",
+                                             `3` = "Sindicatos",
+                                             `4` = "Las personas con altos ingresos por
+                                             sí mismas",
+                                             `5` = "Las personas con bajos ingresos por
+                                             sí mismas",
+                                             `6` = "Las diferencias de ingresos no
+                                             necesitan ser reducidas",
+                                             `7` = "No sé",
+                                             `8` = "Preferiría no responder"))
+
+#des_06
+
+df$des_06 <- set_labels (df$des_06, labels = c(`1`= "Nada a la cuenta individual,todo al fondo solidario", `2`="Todo a la cuenta individual, 
+nada al fondo solidario"))
+
+
+
+```
+
+## Módulo A: Caracterización inicial
+
+En el primer módulo, las preguntas van en la línea de caracterizar a los participantes de la encuesta. Este primer módulo da paso ordenar a los participantes según cuotas.
+
+```{r code2, echo=FALSE}
+
+var_caracterizacion <- df %>% select(carac_a04,carac_a05, carac_a06,carac_a07,carac_a08,carac_a09,carac_a10,carac_a11,carac_a12,carac_a13,carac_a14)
+
+codebook :: label_browser_static(var_caracterizacion)
+
+```
+
+## Módulo B: Meritocracia
+
+En el módulo de meritocracia se realizan preguntas sobre la importancia del mérito en Chile y las oportunidades que da para acceder a mayores recompensas. La instrucción inicial es: "*A continuación, le presentamos una serie de afirmaciones con respecto a las oportunidades y recompensas que tienen las personas en Chile. Por favor, señale su grado de acuerdo o desacuerdo con cada una de ellas*."
+
+```{r code3, echo=FALSE}
+
+var_meritocracia <- df %>% select(merit_01, merit_02, merit_03,merit_04,
+                                  merit_05,merit_06,merit_07,merit_08,merit_09,merit_10)
+
+codebook:::label_browser_static(var_meritocracia)
+```
+
+## Módulo C: Actitudes hacia la desigualdad
+
+En el siguiente módulo, las preguntas están orientadas en torno a las actitudes hacia la desigualdad. La instruccion inicial es: "*Ahora le presentamos una serie de afirmaciones con respecto a los ingresos económicos de las personas ¿Cuán de acuerdo o en desacuerdo está con las siguientes afirmaciones*?"
+
+```{r code4, echo= FALSE}
+
+var_actitudesdesigualdad <- df %>% select(des_01,des_02,des_03,des_04,des_05,des_06,des_07,des_08,des_09,des_09,des_10,
+                                          des_11,des_12)
+
+codebook :: label_browser_static(var_actitudesdesigualdad)
+
+```
+
+## Módulo E: Valores sociales
+
+En el módulo e, se presentan tipos de personas, y su grado de similitud con el participante de la encuesta. La instrucción es: *A continuación se presenta una breve descripción de algunos tipos de personas. Por favor, lea cada una de las descripciones y responda en qué medida ese tipo de persona se parece o no se parece a Ud. ¿En qué medida piensa usted que se parece a una persona que...?*
+
+```{r code5, echo= FALSE}
+
+var_valoressociales <- df1 %>% select(values_01,values_02,values_03,values_04,values_05,
+                                      values_06,values_07,values_08,values_09,values_10,
+                                      values_11,values_12,values_13,values_14,values_15,
+                                      values_17,values_18,values_19,values_20,values_21)
+
+codebook:: label_browser_static(var_valoressociales)
+
+```
+
+## Módulo F: Cohesión social
+
+El siguiente módulo realiza una serie de preguntas sobre convivencia con el resto de personas dentro de la sociedad. La instrucción inicial es: *Se pueden tener diferentes puntos de vista sobre cómo deben convivir las personas en una sociedad. ¿Qué tanto está de acuerdo usted con las siguientes afirmaciones? Para mí convivir bien en una sociedad significa que...*
+
+```{r code6, echo=FALSE}
+
+
+var_cohesion <- df1 %>% select(cohesion_01, cohesion_02,cohesion_03, cohesion_04,cohesion_05,cohesion_06,cohesion_07,cohesion_08,cohesion_09,cohesion_10,cohesion_11,cohesion_12)
+
+codebook:::label_browser_static(var_cohesion)
+
+```

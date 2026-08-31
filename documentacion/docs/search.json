@@ -1,10 +1,110 @@
 [
   {
+    "objectID": "08-libro-codigos.html",
+    "href": "08-libro-codigos.html",
+    "title": "8  Libro de códigos",
+    "section": "",
+    "text": "8.1 Introducción\nPara el uso adecuado de la base de datos Encuesta Panel Justicia Educacional y Ciudadanía, recomendamos que los investigadores trabajen con el libro de códigos que se presenta a continuación. Esta sección busca facilitar el uso de la base de datos, entregando la información correspondiente a los nombres de las variables, sus etiquetas, así como también las etiquetas de las categorías de respuesta de cada variable. En primer lugar, se detallan las instrucciones de cómo utilizar el libro de códigos interactivo. En segundo lugar, se presenta el libro de códigos propiamente tal para cada cuestionario por separado (estudiantes, docentes y padres y apoderados).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#instrucciones",
+    "href": "08-libro-codigos.html#instrucciones",
+    "title": "8  Libro de códigos",
+    "section": "\n8.2 Instrucciones",
+    "text": "8.2 Instrucciones\nLos Libros de Códigos que se presentan en la siguiente sección corresponden a una herramienta interactiva que busca presentar de manera eficiente información respecto a las variables que componen la base de datos. Presentamos los ítems por cuestionario para facilitar su comprensión.\nCada libro muestra el código de cada variable, la etiqueta asociada a la variable con la redacción del ítem, y las categorías de respuesta y códigos asociados. Estas corresponden a tres columnas del libro de códigos denominadas name, label y value_label, respectivamente.\nSe puede hacer uso del buscador que se encuentra al principio del libro para encontrar información de manera más rápida. También se pueden usar los buscadores por cada columna, los cuales irán filtrando los datos que contengan el término de búsqueda.\nIncluimos etiquetas de variables en el Libro de Códigos y en las bases de datos. El equipo de EDUMER las diseñó con la intención de describir brevemente el fenómeno o dimensión a medir. La redacción de la pregunta sigue a las etiquetas, incluyendo códigos y categorías de respuesta. En la construcción de la base de datos, ingresamos los códigos de respuesta como valores numéricos y las categorías de respuesta como etiquetas.\nEn la columna value_labels se muestran las categorías de respuesta de cada variable. No obstante, si la variable es numérica o de respuesta abierta (texto), la casilla se mostrará en blanco, ya que no hay ninguna categoría que mostrar. También puede ocurrir el caso que la variable sea numérica, pero tenga disponibles las categorías “88. No Sabe” y “99. No Responde”. En estos casos sólo se visualizarán ambas categorías en el libro de código.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#módulo-a-caracterización-inicial",
+    "href": "08-libro-codigos.html#módulo-a-caracterización-inicial",
+    "title": "8  Libro de códigos",
+    "section": "\n8.3 Módulo A: Caracterización inicial",
+    "text": "8.3 Módulo A: Caracterización inicial\nEn el primer módulo, las preguntas van en la línea de caracterizar a los participantes de la encuesta. Este primer módulo da paso ordenar a los participantes según cuotas.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#módulo-b-meritocracia",
+    "href": "08-libro-codigos.html#módulo-b-meritocracia",
+    "title": "8  Libro de códigos",
+    "section": "\n8.4 Módulo B: Meritocracia",
+    "text": "8.4 Módulo B: Meritocracia\nEn el módulo de meritocracia se realizan preguntas sobre la importancia del mérito en Chile y las oportunidades que da para acceder a mayores recompensas. La instrucción inicial es: “A continuación, le presentamos una serie de afirmaciones con respecto a las oportunidades y recompensas que tienen las personas en Chile. Por favor, señale su grado de acuerdo o desacuerdo con cada una de ellas.”",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#módulo-c-actitudes-hacia-la-desigualdad",
+    "href": "08-libro-codigos.html#módulo-c-actitudes-hacia-la-desigualdad",
+    "title": "8  Libro de códigos",
+    "section": "\n8.5 Módulo C: Actitudes hacia la desigualdad",
+    "text": "8.5 Módulo C: Actitudes hacia la desigualdad\nEn el siguiente módulo, las preguntas están orientadas en torno a las actitudes hacia la desigualdad. La instruccion inicial es: “Ahora le presentamos una serie de afirmaciones con respecto a los ingresos económicos de las personas ¿Cuán de acuerdo o en desacuerdo está con las siguientes afirmaciones?”",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#módulo-e-valores-sociales",
+    "href": "08-libro-codigos.html#módulo-e-valores-sociales",
+    "title": "8  Libro de códigos",
+    "section": "\n8.6 Módulo E: Valores sociales",
+    "text": "8.6 Módulo E: Valores sociales\nEn el módulo e, se presentan tipos de personas, y su grado de similitud con el participante de la encuesta. La instrucción es: A continuación se presenta una breve descripción de algunos tipos de personas. Por favor, lea cada una de las descripciones y responda en qué medida ese tipo de persona se parece o no se parece a Ud. ¿En qué medida piensa usted que se parece a una persona que…?",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "08-libro-codigos.html#módulo-f-cohesión-social",
+    "href": "08-libro-codigos.html#módulo-f-cohesión-social",
+    "title": "8  Libro de códigos",
+    "section": "\n8.7 Módulo F: Cohesión social",
+    "text": "8.7 Módulo F: Cohesión social\nEl siguiente módulo realiza una serie de preguntas sobre convivencia con el resto de personas dentro de la sociedad. La instrucción inicial es: Se pueden tener diferentes puntos de vista sobre cómo deben convivir las personas en una sociedad. ¿Qué tanto está de acuerdo usted con las siguientes afirmaciones? Para mí convivir bien en una sociedad significa que…",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "01-antecedentes.html",
+    "href": "01-antecedentes.html",
+    "title": "1  Antecedentes",
+    "section": "",
+    "text": "Una de las características de Chile como caso de estudio a nivel internacional son las desigualdades en el logro académico. Estas desigualdades en la etapa escolar han sido asociadas a la privatización/comodificación del sistema educacional chileno, que desde las reformas neoliberales implementadas durante y desde la dictadura han profundizado políticas basadas en subsidio a privados, incentivos al logro, competencia, selección y segregación (Corvalán et al., 2017; Valenzuela et al., 2013). Un número importante de estudios a la fecha han abordado este problema desde perspectivas económicas, políticas y sociológicas, generando evidencia relevante sobre las consecuencias académicas y sociales del sistema actual. Asimismo, movilizaciones sociales masivas en el país (2006, 2011) han tenido como foco las desigualdades educacionales (Donoso & Von Bülow, 2017), lo que ha llevado a los gobiernos a una serie de reformas que avanzan la gratuidad en la educación superior y también la disminución del rol de los actores privados en el sistema educacional.\nDesde una perspectiva sociológica, una serie de investigaciones en Chile han hecho énfasis en la generación de un mercado educativo y sus características (Corvalán et al., 2017). Si bien este mercado se caracteriza económicamente en un marco de provisión de bienes y servicios asociados a capacidades de pago, sus impactos van ciertamente más allá de esferas económicas y políticas. La instalación de mercados conlleva “proyectos morales, saturados de normatividad” (Fourcade & Healy, 2007), sirviendo como base para la legitimación de prácticas y creencias vinculadas al concepto de meritocracia, como por ejemplo, el valor del esfuerzo individual, los incentivos, la competencia (Araujo & Martuccelli, 2015; Corvalán & García-Huidobro, 2015; Frei et al., 2017). Si bien la literatura de movimientos sociales ha dado énfasis al rechazo de políticas del mercado educativo, esta visión está lejos de ser consensual y se constituye como un ámbito de disputa política y cultural.\nEducación y Meritocracia (EDUMER) es un proyecto de investigación financiado por la Agencia Nacional de Investigación y Desarrollo (ANID) a través de su programa FONDECYT, cuyo objetivo es analizar las posibles relaciones existentes entre la valoración de aspectos meritocráticos individuales y el énfasis en normas colectivas y de cohesión social que caracterizan la formación ciudadana en la etapa escolar (Cox & Castillo, 2015; Resh & Sabbagh, 2014, 2017). La pregunta que aquí surge es ¿en qué medida las percepciones y creencias en la meritocracia escolar se asocian a actitudes, creencias y prácticas respecto de la ciudadanía? Adoptando una metodología mixta y longitudinal, esta investigación posee como estrategia central el desarrollo del estudio panel “Justicia educacional y ciudadanía”, que seguirá durante tres años a cohortes de 6°, 8° y 2° medio de 30 escuelas del país. El primer año del proyecto se realizará una fase cualitativa de entrevistas y grupos de discusión abarcando profesores, familias y estudiantes, junto con análisis de datos secundarios. Basados en esta información, se desarrollará un cuestionario que se aplicará en los años 2, 3 y 4 del proyecto a las mismas cohortes estudiadas. El año 3 se realizará en paralelo una nueva fase cualitativa, re-entrevistando a los participantes del primer año, permitiendo también un análisis longitudinal cualitativo. Además de la generación de artículos académicos, los resultados se difundirán en dos seminarios con énfasis en aplicaciones en políticas públicas, enfocados principalmente en la implementación de la nueva ley de formación ciudadana y los desafíos de la democracia actual.\n\n\n\n\nAraujo, K., & Martuccelli, D. (2015). La Escuela y La Cuestión Del Mérito: Reflexiones Desde La Experiencia Chilena. Educação e Pesquisa, 41(spe), 1503-1520. https://doi.org/10.1590/S1517-9702201508141653\n\n\nCorvalán, J., Carrasco, A., & García-Huidobro;J. E. (2017). Mercado Escolar: Libertad, Diversidad y Desigualdad. Ediciones UC.\n\n\nCorvalán, J., & García-Huidobro, J. E. (2015). La Educación de Mercado En Chile y Su Propuesta de Superación.\n\n\nCox, C., & Castillo, J. C. (2015). Aprendizaje de la ciudadanía: Contextos, experiencias y resultados. Ediciones UC.\n\n\nDonoso, S., & Von Bülow, M. (Eds.). (2017). Social Movements in Chile. New York: Palgrave Macmillan US. https://doi.org/10.1057/978-1-137-60013-4\n\n\nFourcade, M., & Healy, K. (2007). Moral Views of Market Society. Annual Review of Sociology, 33(1), 285-311. https://doi.org/10.1146/annurev.soc.33.040406.131642\n\n\nFrei, R., Larranaga, O., Cocina, M., Herrera, R., Falck, D., & Silva, V. (2017). DESIGUALES. Orígenes, Cambios y Desafíos de La Brecha Social En Chile.\n\n\nResh, N., & Sabbagh, C. (2014). Sense of Justice in School and Civic Attitudes. Social Psychology of Education, 17(1), 51-72. https://doi.org/10.1007/s11218-013-9240-8\n\n\nResh, N., & Sabbagh, C. (2017). Sense of Justice in School and Civic Behavior. Social Psychology of Education, 20(2), 387-409. https://doi.org/10.1007/s11218-017-9375-0\n\n\nValenzuela, J. P., Bellei, C., & Ríos, D. D. L. (2013). Socioeconomic School Segregation in a Market-Oriented Educational System. The Case of Chile. Journal of Education Policy, 29(2), 217-241. https://doi.org/10.1080/02680939.2013.806995",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Antecedentes</span>"
+    ]
+  },
+  {
+    "objectID": "09-apendice.html",
+    "href": "09-apendice.html",
+    "title": "9  Apéndice",
+    "section": "",
+    "text": "10 Ficha Técnica\n\n\n\n\n\n\n\nCaracterísticas\nProyecto Meritocracia en la Escuela\n\n\nPoblación objetivo\nProfesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.\n\n\nInstrumento\nCuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert.\n\n\nDiseño muestral\nEl estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.\n\n\nTamaño de la muestra\n\nMuestra ola 1: 902\nMuestra ola 2: 637\n\n\n\nPeríodo de recolección\nEl período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.\n\n\nCobertura geográfica\nLa cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.\n\n\nModo de aplicación\nAutoaplicado, cuestionario en formato online.\n\n\nDuración promedio\n20 minutos aproximadamente.\n\n\nBases de datos\nDos bases de datos, una de 902 casos y otra de 637 casos.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Apéndice</span>"
+    ]
+  },
+  {
+    "objectID": "10-notas-tecnicas.html",
+    "href": "10-notas-tecnicas.html",
+    "title": "10  Ficha Técnica",
+    "section": "",
+    "text": "Características\nProyecto Meritocracia en la Escuela\n\n\nPoblación objetivo\nProfesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.\n\n\nInstrumento\nCuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert.\n\n\nDiseño muestral\nEl estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.\n\n\nTamaño de la muestra\nMuestra ola 1: 902\nMuestra ola 2: 637\n\n\nPeríodo de recolección\nEl período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.\n\n\nCobertura geográfica\nLa cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.\n\n\nModo de aplicación\nAutoaplicado, cuestionario en formato online.\n\n\nDuración promedio\n20 minutos aproximadamente.\n\n\nBases de datos\nDos bases de datos, una de 902 casos y otra de 637 casos.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Ficha Técnica</span>"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Manual Metodológico de Encuesta EDUMER",
     "section": "",
-    "text": "Presentación",
+    "text": "Presentación\nLa Encuesta Panel Educación y Meritocracia (EDUMER) es un estudio diseñado para analizar la relación entre aspectos morales del mercado educativo y diversas actitudes y comportamientos ligados a la formación ciudadana en estudiantes de ciclo básico y medio en Chile a lo largo del tiempo. Este proyecto examina las percepciones y valores sobre elementos característicos del mercado educativo, como la competencia, la selección y el mérito, para analizar sus implicancias individuales y contextuales en la formación ciudadana durante la etapa escolar. Su objetivo principal es proporcionar datos empíricos para comprender la conformación temprana de creencias sobre la meritocracia en la sociedad y en la escuela, y cómo sus cambios en el tiempo se relacionan con comportamientos y valores políticos y sociales.\nLa encuesta fue diseñada por investigadores del proyecto Educación y Meritocracia (EDUMER), dirigido por Juan Carlos Castillo, profesor asistente del Departamento de Sociología de la Universidad de Chile (FACSO-UCH) e investigador asociado al Centro de Estudios del Conflicto y Cohesión Social (COES). Este proyecto ha sido financiado por la beca Fondecyt N.º 1210847 “Meritocracia en la escuela: fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile” de la Agencia Nacional de Investigación y Desarrollo (ANID), una agencia dependiente del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación de Chile. La recolección de datos de EDUMER ha sido licitada públicamente y adjudicada en todas sus mediciones a la Consultora Datavoz.",
     "crumbs": [
       "Presentación"
     ]
@@ -12,91 +112,91 @@
   {
     "objectID": "02-diseno-encuesta.html",
     "href": "02-diseno-encuesta.html",
-    "title": "2  Diseño de la encuesta",
+    "title": "2  Diseño de Encuesta.",
     "section": "",
-    "text": "2.1 Población objetivo y población de la encuesta",
+    "text": "2.1 Diseño de cuestionario\nEl instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) dirigido a los principales actores de las escuelas: docentes, apoderados y estudiantes.\nEste cuestionario fue diseñado para analizar la influencia de aspectos clave del mercado educativo en las percepciones y creencias sobre la meritocracia, así como su impacto en la formación ciudadana dentro de las escuelas, con un enfoque en su evolución a lo largo del tiempo. Los principales temas de interés analítico se organizan en los siguientes módulos:\nEl cuestionario aplicado a estudiantes incluye un módulo experimental, en el que se entrega una condición de tratamiento y una condición de control. Al cuestionario aplicado a profesores se le agregan los módulos “Estructura de objetivos de rendimiento y dominio” y “Prácticas pedagógicas”.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
-    "objectID": "02-diseno-encuesta.html#sec-units",
-    "href": "02-diseno-encuesta.html#sec-units",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.2 Unidades de análisis y dominios",
-    "text": "2.2 Unidades de análisis y dominios",
+    "objectID": "02-diseno-encuesta.html#diseño-de-cuestionario",
+    "href": "02-diseno-encuesta.html#diseño-de-cuestionario",
+    "title": "2  Diseño de Encuesta.",
+    "section": "",
+    "text": "Módulo I: Meritocracia\nMódulo II: Preferencias y Desigualdad\nMódulo III: Ciudadanía\nMódulo IV: Datos Sociodemográficos",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
-    ]
-  },
-  {
-    "objectID": "02-diseno-encuesta.html#sec-strategy",
-    "href": "02-diseno-encuesta.html#sec-strategy",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.3 Estrategia de muestreo y selección de la muestra",
-    "text": "2.3 Estrategia de muestreo y selección de la muestra",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#sec-quotas",
     "href": "02-diseno-encuesta.html#sec-quotas",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.4 Cuotas y tamaño de la muestra",
-    "text": "2.4 Cuotas y tamaño de la muestra",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.2 Cuotas y tamaño de la muestra",
+    "text": "2.2 Cuotas y tamaño de la muestra",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#alcance-del-control-de-cuotas",
     "href": "02-diseno-encuesta.html#alcance-del-control-de-cuotas",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.5 Alcance del control de cuotas",
-    "text": "2.5 Alcance del control de cuotas",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.3 Alcance del control de cuotas",
+    "text": "2.3 Alcance del control de cuotas",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#restricción-de-factibilidad-conocida-educación-básica",
     "href": "02-diseno-encuesta.html#restricción-de-factibilidad-conocida-educación-básica",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.6 Restricción de factibilidad conocida (educación básica)",
-    "text": "2.6 Restricción de factibilidad conocida (educación básica)",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.4 Restricción de factibilidad conocida (educación básica)",
+    "text": "2.4 Restricción de factibilidad conocida (educación básica)",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#sec-longitudinal",
     "href": "02-diseno-encuesta.html#sec-longitudinal",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.7 Diseño longitudinal",
-    "text": "2.7 Diseño longitudinal",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.5 Diseño longitudinal",
+    "text": "2.5 Diseño longitudinal",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#sec-weighting",
     "href": "02-diseno-encuesta.html#sec-weighting",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.8 Ponderación y calibración",
-    "text": "2.8 Ponderación y calibración",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.6 Ponderación y calibración",
+    "text": "2.6 Ponderación y calibración",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
     ]
   },
   {
     "objectID": "02-diseno-encuesta.html#sec-errors",
     "href": "02-diseno-encuesta.html#sec-errors",
-    "title": "2  Diseño de la encuesta",
-    "section": "2.9 Precisión, incertidumbre y errores ajenos al muestreo",
-    "text": "2.9 Precisión, incertidumbre y errores ajenos al muestreo",
+    "title": "2  Diseño de Encuesta.",
+    "section": "2.7 Precisión, incertidumbre y errores ajenos al muestreo",
+    "text": "2.7 Precisión, incertidumbre y errores ajenos al muestreo",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de la encuesta</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Diseño de Encuesta.</span>"
+    ]
+  },
+  {
+    "objectID": "03-diseno-experimento.html",
+    "href": "03-diseno-experimento.html",
+    "title": "3  Diseño del cuestionario (experimento):",
+    "section": "",
+    "text": "El experimento distribucional de encuesta (DSE) (Gilgen, 2020) busca que los/as estudiantes distribuyan notas en el contexto escolar. Se presentan cuatro casos ficticios que corresponden a distintas combinaciones de esfuerzo y oportunidades. Así, los/as estudiantes cuentan con 10 décimas que deben distribuir entre esos cuatro perfiles de estudiantes. En esta sección se presentará la distribución de décimas realizada para cada caso ficticio. Luego, se presentará el panorama general de la distribución de décimas. En las figuras se representará con color rojo las décimas asignadas al caso que no permiten hacerlo aprobar y en color azul las que sí lo hacen.\n\n3.0.1 Caso 1: Estudiante se esfuerza y tiene casa pequeña\nEn este primer caso, se presenta al Estudiante A (nota = 3.7), quien se esfuerza más que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.\n\n\n3.0.2 Caso 2: Estudiante no se esfuerza y tiene casa grande\nEn este segundo caso, se presenta al Estudiante B (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.\n\n\n3.0.3 Caso 3: Estudiante se esfuerza y tiene casa grande\nEn este tercer caso, se presenta al Estudiante C (nota = 3.7), quien se esfuerza más que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.\n\n\n3.0.4 Caso 4: Estudiante no se esfuerza y tiene casa pequeña\nEn este cuarto caso, se presenta al Estudiante D (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.\n\n\n3.0.5 Implementación del experimento en el análisis\nEl experimento consiste en un DSE (Experimento Distribucional de Encuesta) donde los y las estudiantes reparten décimas entre los cuatro perfiles ficticios descritos anteriormente. El procesamiento sigue los siguientes pasos:\n\nSelección de la muestra: se toman únicamente los estudiantes de la ola 2.\nDefinición de los cuatro casos ficticios (A, B, C, D): cada caso combina dos dimensiones: esfuerzo (más/menos que la mayoría) y oportunidades (casa grande/casa pequeña).\nMedición de las décimas asignadas a cada caso: Para cada una se calculan frecuencias y porcentajes, y se grafican barras apiladas con etiquetas.\nTransformación en criterio de aprobación: las décimas se recodifican en una variable binaria, donde 0, 1 y 2 corresponden a “No aprueba” y el resto a “Aprueba”.\nComparación de los cuatro casos: Se muestran las proporciones de “Aprueba/No aprueba” por caso en un gráfico único.\n\nEn síntesis, el experimento observa cómo los y las estudiantes distribuyen recompensas escolares según el mérito (esfuerzo) y el contexto de oportunidades, resumiendo posteriormente esa distribución en términos de si hacen aprobar o no a cada perfil.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Diseño del cuestionario (experimento):</span>"
     ]
   },
   {
@@ -124,7 +224,47 @@
     "href": "05-implementacion-encuesta.html",
     "title": "5  Implementación de la encuesta",
     "section": "",
-    "text": "## Programación de la encuesta e integración técnica\n## Trabajo de campo\n## Control de calidad\n## Indicadores de desempeño del trabajo de campo",
+    "text": "5.1 Técnica y métodos de recolección de datos\nLos cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software SurveyToGo de Dooblo. Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.\nEl proceso de implementación del instrumento de recolección de información para el estudio incluye las técnicas y métodos utilizados, el contacto inicial con los establecimientos educativos, el diseño y la aplicación de los cuestionarios y los procedimientos para garantizar la calidad del trabajo de campo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "05-implementacion-encuesta.html#técnica-y-métodos-de-recolección-de-datos",
+    "href": "05-implementacion-encuesta.html#técnica-y-métodos-de-recolección-de-datos",
+    "title": "5  Implementación de la encuesta",
+    "section": "",
+    "text": "5.1.1 Proceso de contacto inicial\nPara asegurar la participación de los establecimientos en el estudio, el equipo Datavoz priorizó minimizar los tiempos de contacto y garantizar la aplicación del cuestionario en los plazos establecidos.\nLos coordinadores contactaron a los establecimientos seleccionados en función de los siguientes objetivos:\n\nInvitar a los establecimientos a participar en el estudio, presentando la empresa y los objetivos del proyecto. Además, se enviaron cartas personalizadas a cada director como respaldo formal.\nSolicitar la designación de un colaborador por establecimiento, encargado de gestionar los aspectos operativos de la aplicación del cuestionario.\nEstablecer una fecha para la primera visita, recopilando información sobre disponibilidad y horarios.\n\nPara asegurar un contacto inicial exitoso con los establecimientos, se priorizó contactar directamente al director o directora de cada institución, con el propósito de garantizar una respuesta favorable para su participación en el estudio.\n\n\n5.1.2 Métodos de contacto inicial\nEl contacto se realizó en tres etapas correlativas: a) llamadas telefónicas de los coordinadores a los directores de los establecimientos seleccionados; b) envío de correos electrónicos informativos a los establecimientos educativos; c) envío de cartas formales, detallando el estudio, su importancia y solicitando colaboración.\nSi estos métodos no lograban establecer contacto, los coordinadores se dirigían presencialmente al establecimiento, agendaban la visita y, de ser posible, explicaban en persona los detalles del estudio, acordando la fecha de aplicación.\n\n\n5.1.3 Aplicación de los cuestionarios\nSe generaron enlaces específicos para la aplicación de los cuestionarios, compartidos con apoderados y profesores de cada establecimiento. En el caso de los estudiantes, los enlaces se instalaron en los computadores de las salas de computación para facilitar su respuesta. El software también permite exportar los datos recopilados a diversos formatos, como Excel, SPSS o ASCII.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "05-implementacion-encuesta.html#diseño-del-instrumento-de-captura-de-la-información",
+    "href": "05-implementacion-encuesta.html#diseño-del-instrumento-de-captura-de-la-información",
+    "title": "5  Implementación de la encuesta",
+    "section": "5.2 Diseño del instrumento de captura de la información",
+    "text": "5.2 Diseño del instrumento de captura de la información\nLa encuesta Meritocracia en la escuela se compone de tres cuestionarios estructurados y autoaplicados en formato CAWI a docentes, apoderados y estudiantes.\nLas variables recolectadas abarcan temáticas clave sobre el impacto del mercado educativo en las percepciones de la meritocracia y su influencia en la formación ciudadana en las escuelas. Los módulos temáticos, que incluyen meritocracia, preferencias y desigualdad, ciudadanía y datos sociodemográficos, permiten analizar la relación entre educación y meritocracia, así como su evolución a lo largo del tiempo. Además, se adaptan según el perfil del actor al que se dirige la encuesta.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "05-implementacion-encuesta.html#método-para-la-capacitación-para-la-recolección-de-datos",
+    "href": "05-implementacion-encuesta.html#método-para-la-capacitación-para-la-recolección-de-datos",
+    "title": "5  Implementación de la encuesta",
+    "section": "5.3 Método para la capacitación para la recolección de datos",
+    "text": "5.3 Método para la capacitación para la recolección de datos\nPara iniciar el trabajo de campo, el equipo de Datavoz consideró la programación de los cuestionarios, la preparación de manuales y protocolos, y la elaboración de un pretest. Una vez finalizada esta etapa, se procedió a la capacitación de los coordinadores de establecimientos.\n\n5.3.1 Pretest\nEl proceso de pretest se desarrolló en dos etapas. Primero, se aplicó el cuestionario a una muestra reducida, y posteriormente se llevó a cabo un grupo focal con los coordinadores de los establecimientos participantes, con el objetivo de evaluar en detalle el desempeño del instrumento.\nLa aplicación inicial tuvo lugar en un curso de un establecimiento de la Región Metropolitana y proporcionó información valiosa sobre diversos aspectos, como el formato de los instrumentos (cuestionarios y protocolos de contacto), el orden de las preguntas, las categorías de respuesta, la duración total del cuestionario y de cada módulo, y las tasas de no respuesta, tanto generales como en preguntas específicas.\nTras esta etapa, se realizó un grupo de discusión con los coordinadores para analizar las dificultades detectadas en las preguntas y la aplicación del instrumento, así como sugerencias para su mejora. Los resultados de ambas instancias permitieron estructurar los cuestionarios y los protocolos de contacto definitivos.\n\n\n5.3.2 Preparación del material para el trabajo de campo\nPara el desarrollo del trabajo de campo y su uso durante las capacitaciones, se elaboró un manual detallado para los coordinadores. Este manual incluye las características del estudio, sus objetivos, los responsables del proyecto y las instrucciones para el funcionamiento de los enlaces a los cuestionarios, entre otros aspectos relevantes.\n\n\n5.3.3 Reclutamiento del personal de campo\nEl reclutamiento de coordinadores fue una etapa crucial para garantizar tasas de respuesta acordes con los requerimientos del estudio. Para el trabajo en establecimientos educacionales, se seleccionaron profesionales de las ciencias sociales con experiencia en educación y/o encuestadores con antecedentes en levantamiento de datos en entornos escolares. Este enfoque asegura un adecuado desarrollo del proceso, desde el contacto inicial hasta el cierre, y favorece la obtención de buenos resultados.\n\n\n5.3.4 Capacitación del equipo de encuestadores\nLos coordinadores de establecimientos fueron capacitados de manera remota a través de Zoom. Durante estas sesiones se enfatizó en las particularidades del estudio. Los ejes principales de la capacitación incluyeron:\n\nExplicación del contenido de los instrumentos y el contexto del estudio.\nTransmisión de los objetivos de la investigación, conceptos clave y consideraciones metodológicas para que los coordinadores trabajen con claridad y confianza.\nIdentificación de posibles dificultades y provisión de herramientas para resolverlas.\nPresentación y entrenamiento en el uso de los protocolos de contacto.\nAseguramiento de una comprensión sólida del cuestionario.\nÉnfasis en la neutralidad del equipo en terreno, evitando emitir juicios u opiniones que pudieran influir en las respuestas.\nPromoción de un marco de respeto y cuidado hacia los encuestados, garantizando una experiencia cómoda y positiva.\nFomento de una actitud abierta y receptiva frente a las dudas de los encuestados, aclarando los objetivos de la encuesta y subrayando la confidencialidad de los datos.\n\nEste enfoque integral en la preparación y capacitación busca asegurar un trabajo de campo eficiente, respetuoso y alineado con los objetivos del estudio.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "05-implementacion-encuesta.html#métodos-de-supervisión",
+    "href": "05-implementacion-encuesta.html#métodos-de-supervisión",
+    "title": "5  Implementación de la encuesta",
+    "section": "5.4 Métodos de supervisión",
+    "text": "5.4 Métodos de supervisión\nEl proceso de supervisión se llevó a cabo de forma telefónica por un equipo independiente, el cual comenzó a operar una vez iniciado el trabajo en terreno. Este equipo estuvo coordinado de manera permanente por el Encargado de Supervisión y abarcó todos los establecimientos donde fue realizada la aplicación.\nDurante la supervisión, se consultó a los directores de los establecimientos sobre la actuación del coordinador en los siguientes aspectos:\n\nPresentación: confirmar si el coordinador se identificó adecuadamente y mostró su credencial de Datavoz.\nDesarrollo de la encuesta: verificar si la aplicación se realizó en el horario previamente agendado.\nFinalización: comprobar si el coordinador agradeció la colaboración del establecimiento al término de la aplicación.\n\nAdemás, se revisó la completitud de las encuestas y la coherencia en los rangos de respuestas para asegurar la calidad de los datos recolectados.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
     ]
@@ -132,21 +272,51 @@
   {
     "objectID": "06-base-datos.html",
     "href": "06-base-datos.html",
-    "title": "6  Base de datos",
+    "title": "6  Bases de datos",
     "section": "",
-    "text": "6.1 Archivos de datos y estructura de archivos",
+    "text": "6.1 Archivos de datos en el repositorio",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Base de datos</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bases de datos</span>"
     ]
   },
   {
-    "objectID": "06-base-datos.html#sec-bases",
-    "href": "06-base-datos.html#sec-bases",
-    "title": "6  Base de datos",
-    "section": "6.2 Acceso a los datos y condiciones de uso",
-    "text": "6.2 Acceso a los datos y condiciones de uso",
+    "objectID": "06-base-datos.html#archivos-de-datos-en-el-repositorio",
+    "href": "06-base-datos.html#archivos-de-datos-en-el-repositorio",
+    "title": "6  Bases de datos",
+    "section": "",
+    "text": "6.1.1 Insumos (datos crudos o previos al procesamiento)\nFuente cruda principal (Ola 1, multi-actor): /input/data/original/310524_BDD_edumer.sav Importado por:\n\nScript de estudiantes Ola 1 (processing/w1-01-proc-data-students.R:27)\nScript de docentes Ola 1 (processing/w1-02-proc-data-teachers.R:26)\nScript de apoderados Ola 1 (processing/w1-03-proc-data-parents.R:26)\n\nFuente cruda principal (Ola 2 estudiantes, versión final corregida): /input/data/original/221124 Edumer Ola2 ID_VF.sav Importado por processing/w2-01-proc-data-students.R:28.\nVersión previa/de depuración de ID (Ola 2): /input/data/original/251024 Edumer Ola2 ID.sav Utilizada únicamente en el script de diagnóstico y corrección de IDs duplicados processing/duplicados.R:28.\nArchivos de metadatos del cuestionario (codebook):\n\n/input/Cuestionario_edumer.xlsx - survey.csv\n/input/cohesion - survey.csv\nEl codebook utiliza las URLs crudas correspondientes de GitHub (08-codebook.qmd:48, 50).\n\nOtras versiones crudas presentes en /input/data/original/: 161223_BDD_estudiantes_VF.sav, 170124_BDD_estudiantes.sav, 211223_BDD_estudiantes_VF.sav, 300424_BDD_estudiantes.sav (presentes en el repositorio, sin referencias directas en los scripts de procesamiento actuales).\nArchivos intermedios presentes pero no referenciados por los scripts actuales: /input/data/proc/es_ola1.RData, /input/data/proc/ola1.RData.\n\n\n6.1.2 Bases de datos finales (Listas para utilizar)\nDesde /output/data/:\n\nOla 1, estudiantes (final): db_proc_students.{RData,dta,sav} — generado en processing/w1-01-proc-data-students.R:798-800.\nOla 1, docentes (final): db_proc_teachers.{RData,dta,sav} — generado en processing/w1-02-proc-data-teachers.R:462-464.\nOla 1, apoderados (final): db_proc_parents.{RData,dta,sav} — generado en processing/w1-03-proc-data-parents.R:485-487.\nOla 1, base combinada (final): db_proc_full.{RData,dta,sav} — generado en processing/w1-04-proc-data-full.R:48-50.\nOla 2, estudiantes (final): db_proc_students_w02.{RData,dta,sav} — generado en processing/w2-01-proc-data-students.R:482-484.\nBases panel derivadas (Ola 1 + Ola 2, estudiantes):\n\nedumer_students_wide.{RData,dta,sav}\nedumer_students_long.{RData,dta,sav}",
     "crumbs": [
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Base de datos</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "06-base-datos.html#clasificación-de-las-bases-de-datos",
+    "href": "06-base-datos.html#clasificación-de-las-bases-de-datos",
+    "title": "6  Bases de datos",
+    "section": "6.2 Clasificación de las bases de datos",
+    "text": "6.2 Clasificación de las bases de datos\nPor ola\n\nOla 1: db_proc_students, db_proc_teachers, db_proc_parents, db_proc_full\nOla 2: db_proc_students_w02\nAmbas olas (panel): edumer_students_wide, edumer_students_long\n\nPor tipo de actor\n\nEstudiantes: db_proc_students (Ola 1), db_proc_students_w02 (Ola 2), edumer_students_wide/long (panel)\nAdultos: db_proc_teachers (docentes), db_proc_parents (apoderados)\nCombinada: db_proc_full (estudiantes + docentes + apoderados, Ola 1)\n\nPor etapa de procesamiento\n\nInsumo/crudo: archivos .sav en /input/data/original/, CSV del cuestionario en /input/\nProducto final: db_proc_* y db_proc_students_w02 (más la base combinada db_proc_full)\nDerivado/panel: edumer_students_wide, edumer_students_long\nIntermedio/diagnóstico: objetos en memoria del script duplicados.R (p. ej., db2_f) para la limpieza de IDs (processing/duplicados.R:39-47, 160-163, 176-179), sin exportación a archivo.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "06-base-datos.html#flujo-de-transformación-de-datos-crudos-a-bases-finales",
+    "href": "06-base-datos.html#flujo-de-transformación-de-datos-crudos-a-bases-finales",
+    "title": "6  Bases de datos",
+    "section": "6.3 Flujo de transformación (de datos crudos a bases finales)",
+    "text": "6.3 Flujo de transformación (de datos crudos a bases finales)\n\nImportación de los datos crudos de la Ola 1 desde 310524_BDD_edumer.sav en cada script específico por actor (w1-01, w1-02, w1-03).\nSelección de columnas por actor:\n\nEstudiantes (Ola 1): columnas 1 a 105, eliminando columnas temporales de identificación (w1-01:47-49).\nDocentes (Ola 1): columnas 106 a 179 (w1-02:45).\nApoderados (Ola 1): columnas 180 a 246, eliminando variables que comienzan con “T” (w1-03:46-48).\n\nLimpieza y armonización en cada script (renombramiento de variables, limpieza de etiquetas, recodificación, tipos de variables).\nExportación de las bases finales por actor a formatos .RData, .dta y .sav (w1-01:798-800, w1-02:462-464, w1-03:485-487).\nCombinación de la Ola 1 completa mediante unión de columnas, previa verificación de consistencia en el número de filas (w1-04:34-42), y exportación (w1-04:48-50).\nImportación de los datos de estudiantes de la Ola 2 desde la versión corregida 221124 ... ID_VF.sav (w2-01:28), limpieza, recodificación y exportación (w2-01:482-484).\nConstrucción de la base panel (solo estudiantes):\n\nCarga de las bases procesadas de Ola 1 y Ola 2 (script del panel, líneas 28-33).\nArmonización y adición de sufijos a los nombres de variables (líneas 44-76).\nUnión del ID de la Ola 1 con el ID de referencia de la Ola 2 (líneas 91-100).\nGeneración de las bases panel en formato ancho y largo (líneas 171-177, 209-215).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "06-base-datos.html#convenciones-de-nombres",
+    "href": "06-base-datos.html#convenciones-de-nombres",
+    "title": "6  Bases de datos",
+    "section": "6.4 Convenciones de nombres",
+    "text": "6.4 Convenciones de nombres\n\nFuentes crudas: prefijo de fecha + descriptor (p. ej., 310524_BDD_edumer.sav, 221124 Edumer Ola2 ID_VF.sav).\nSufijo “VF”: indica versión corregida/final en la etapa cruda (p. ej., la Ola 2 usa ...ID_VF.sav en el script de producción, mientras que el archivo sin este sufijo se usa únicamente en el script de depuración de duplicados).\nBases procesadas: db_proc_&lt;población&gt; (estudiantes, docentes, apoderados, completa), con sufijo de ola cuando corresponde (_w02).\nBases panel: nombres semánticos edumer_students_wide / edumer_students_long.\nPublicación en múltiples formatos: cada base final se exporta a RData, dta y sav para su interoperabilidad (w1-01:798-800, w1-02:462-464, w1-03:485-487, w1-04:48-50, w2-01:482-484, panel: 209-215).",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Bases de datos</span>"
     ]
   },
   {
@@ -154,29 +324,289 @@
     "href": "07-etica.html",
     "title": "7  Ética",
     "section": "",
-    "text": "7.1 Aprobación del comité ético",
+    "text": "7.1 Aprobación Comité de Ética\nEl estudio “Meritocracia en la escuela: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile”, correspondiente al FONDECYT N.º 1210847, cuenta con la aprobación ética del Comité de Ética de la Investigación.\nEl proyecto fue revisado en conformidad con las normativas éticas y los lineamientos establecidos para investigaciones que involucran a seres humanos, y se considera que cumple con los principios éticos fundamentales para la protección, respeto y dignidad de los participantes. En este sentido, se ha garantizado que el proyecto cuente con mecanismos adecuados de consentimiento informado y protección de datos.\nEl comité aprobó el protocolo con fecha 28 de mayo de 2021 y autorizó su ejecución conforme a los términos establecidos en el proyecto original.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ética</span>"
     ]
   },
   {
-    "objectID": "07-etica.html#consentimiento-informado-y-re-consentimiento",
-    "href": "07-etica.html#consentimiento-informado-y-re-consentimiento",
+    "objectID": "07-etica.html#consentimientos-informados",
+    "href": "07-etica.html#consentimientos-informados",
     "title": "7  Ética",
-    "section": "7.2 Consentimiento informado y re-consentimiento",
-    "text": "7.2 Consentimiento informado y re-consentimiento\n## Retención y protección de datos",
+    "section": "7.2 Consentimientos informados",
+    "text": "7.2 Consentimientos informados\nLos participantes del proyecto firmaron un Consentimiento Informado por escrito, en el que se detallan los objetivos del estudio, en qué consiste su participación, qué se hará y cómo se resguardará la información y los datos entregados. Dicho Consentimiento Informado fue firmado el año 2021.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Ética</span>"
     ]
   },
   {
-    "objectID": "08-libro-codigos.html",
-    "href": "08-libro-codigos.html",
-    "title": "8  Libro de códigos",
+    "objectID": "05-diseno-items.html",
+    "href": "05-diseno-items.html",
+    "title": "5  Diseño del cuestionario B: Ítems",
     "section": "",
-    "text": "8.1 Instrucciones",
+    "text": "El cuestionario contempla tanto variables originales como adaptacionens de items provenientes del ICCS\n\n5.0.0.1 1. Ítems adaptados de ICCS 2022\nCorresponden principalmente al Módulo Ciudadanía, y fueron tomados; traducidos y adaptados al español y al contexto chileno, del cuestionario de estudiantes de ICCS y, en algunos casos, de su versión paralela para docentes. Algunos bloques daptados desde el ICCS son:\n\nUso de internet y redes sociales con fines cívicos (buscar información, publicar, compartir, comentar, dar “me gusta” sobre temas políticos/sociales).\nClima de discusión abierta en el aula (estudiantes que exponen hechos políticos en clase, expresan opiniones distintas, profesores que presentan varios enfoques); la escala de IEA “Open Classroom Climate for Discussion”.\nIntención de participar electoralmente cuando sean adultos (votar en elecciones municipales/presidenciales, informarse de candidatos).\nParticipación en marchas y tomas (manifestación pacífica, ocupación de espacios).\nValoración de conductas ciudadanas como votar, unirse a un partido, aprender historia del país, protestar pacíficamente.\nVariables sociodemográficas: país de nacimiento (propio y de los padres), nivel educacional esperado y de los padres, religión, frecuencia de prácticas religiosas, cantidad de libros en el hogar.\n\nLos casos descritos representan baterías previamente validadas, lo que permite comparar resultados con la tradición de estudios ICCS.\n\n\n5.0.0.2 Variables originales\nCorresponden al Módulo I: Meritocracia y Módulo II: Preferencias y Desigualdad, que no forman parte del instrumento ICCS y fueron diseñadas por el equipo de investigación para responder a la pregunta central del proyecto.\n\nLas prácticas pedagógicas y estructura de metas de logro del cuestionario docente (recompensar el esfuerzo, fomentar la competencia, comparar estudiantes, etc.).\nÍtems de contexto local como posición política izquierda-derecha, pertenencia a pueblos originarios y la importancia dada a la Formación Ciudadana en el establecimiento (relevante por la nueva ley chilena de formación ciudadana).\n\nLa batería de “importancia de conductas ciudadanas” (votar, unirse a un partido, aprender historia, protestar, más obedecer la ley, respetar opiniones, apoyar a los más desfavorecidos, pagar impuestos) contempla tanto variables originanles como adaptaciones del ICCS: parte de los ítems se encuenntran en la edicion 2022. El resto puede ser que hayan estado en ediciones anteriores (CONSULTAR).",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Libro de códigos</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Diseño del cuestionario B: Ítems</span>"
+    ]
+  },
+  {
+    "objectID": "03-cuestionario.html",
+    "href": "03-cuestionario.html",
+    "title": "3  Cuestionario",
+    "section": "",
+    "text": "3.1 Presentación\nEsta sección corresponde al cuestionario de la encuesta EDUMER y se utiliza como referencia para la estructura de las preguntas, las dimensiones y los módulos aplicados en la medición.\nEn esta página puedes incorporar la descripción general del instrumento, el flujo del cuestionario, los módulos, y cualquier detalle metodológico relevante para su uso en el análisis de datos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cuestionario</span>"
+    ]
+  },
+  {
+    "objectID": "03-cuestionario.html#módulos-del-cuestionario",
+    "href": "03-cuestionario.html#módulos-del-cuestionario",
+    "title": "3  Cuestionario",
+    "section": "3.2 Módulos del cuestionario",
+    "text": "3.2 Módulos del cuestionario\n\nMódulo de caracterización\nMódulo de meritocracia\nMódulo de desigualdad y actitudes sociales\nMódulo de cohesión y ciudadanía\nMódulo de contexto escolar y familiar",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cuestionario</span>"
+    ]
+  },
+  {
+    "objectID": "03-cuestionario.html#criterios-de-uso",
+    "href": "03-cuestionario.html#criterios-de-uso",
+    "title": "3  Cuestionario",
+    "section": "3.3 Criterios de uso",
+    "text": "3.3 Criterios de uso\n\nRevisar la estructura por cuestionario y persona encuestada.\nVerificar el código de cada variable antes de analizar respuestas.\nMantener la nomenclatura oficial del proyecto EDUMER.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cuestionario</span>"
+    ]
+  },
+  {
+    "objectID": "03-cuestionario.html#próximo-paso",
+    "href": "03-cuestionario.html#próximo-paso",
+    "title": "3  Cuestionario",
+    "section": "3.4 Próximo paso",
+    "text": "3.4 Próximo paso\nPuedes completar aquí la versión final del cuestionario, ya sea en formato de tabla, lista de preguntas, o con enlaces a las secciones correspondientes del libro de códigos.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cuestionario</span>"
+    ]
+  },
+  {
+    "objectID": "04-diseno-experimento.html",
+    "href": "04-diseno-experimento.html",
+    "title": "4  Diseño del cuestionario (experimento):",
+    "section": "",
+    "text": "El experimento distribucional de encuesta (DSE) (Gilgen, 2020) busca que los/as estudiantes distribuyan notas en el contexto escolar. Se presentan cuatro casos ficticios que corresponden a distintas combinaciones de esfuerzo y oportunidades. Así, los/as estudiantes cuentan con 10 décimas que deben distribuir entre esos cuatro perfiles de estudiantes. En esta sección se presentará la distribución de décimas realizada para cada caso ficticio. Luego, se presentará el panorama general de la distribución de décimas. En las figuras se representará con color rojo las décimas asignadas al caso que no permiten hacerlo aprobar y en color azul las que sí lo hacen.\n\n4.0.1 Caso 1: Estudiante se esfuerza y tiene casa pequeña\nEn este primer caso, se presenta al Estudiante A (nota = 3.7), quien se esfuerza más que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.\n\n\n4.0.2 Caso 2: Estudiante no se esfuerza y tiene casa grande\nEn este segundo caso, se presenta al Estudiante B (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.\n\n\n4.0.3 Caso 3: Estudiante se esfuerza y tiene casa grande\nEn este tercer caso, se presenta al Estudiante C (nota = 3.7), quien se esfuerza más que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.\n\n\n4.0.4 Caso 4: Estudiante no se esfuerza y tiene casa pequeña\nEn este cuarto caso, se presenta al Estudiante D (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.\n\n\n4.0.5 Implementación del experimento en el análisis\nEl experimento consiste en un DSE (Experimento Distribucional de Encuesta) donde los y las estudiantes reparten décimas entre los cuatro perfiles ficticios descritos anteriormente. El procesamiento sigue los siguientes pasos:\n\nSelección de la muestra: se toman únicamente los estudiantes de la ola 2.\nDefinición de los cuatro casos ficticios (A, B, C, D): cada caso combina dos dimensiones: esfuerzo (más/menos que la mayoría) y oportunidades (casa grande/casa pequeña).\nMedición de las décimas asignadas a cada caso: Para cada una se calculan frecuencias y porcentajes, y se grafican barras apiladas con etiquetas.\nTransformación en criterio de aprobación: las décimas se recodifican en una variable binaria, donde 0, 1 y 2 corresponden a “No aprueba” y el resto a “Aprueba”.\nComparación de los cuatro casos: Se muestran las proporciones de “Aprueba/No aprueba” por caso en un gráfico único.\n\nEn síntesis, el experimento observa cómo los y las estudiantes distribuyen recompensas escolares según el mérito (esfuerzo) y el contexto de oportunidades, resumiendo posteriormente esa distribución en términos de si hacen aprobar o no a cada perfil.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Diseño del cuestionario (experimento):</span>"
+    ]
+  },
+  {
+    "objectID": "06-implementacion-encuesta.html",
+    "href": "06-implementacion-encuesta.html",
+    "title": "6  Implementación de la encuesta",
+    "section": "",
+    "text": "6.1 Técnica y métodos de recolección de datos\nLos cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software SurveyToGo de Dooblo. Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.\nEl proceso de implementación del instrumento de recolección de información para el estudio incluye las técnicas y métodos utilizados, el contacto inicial con los establecimientos educativos, el diseño y la aplicación de los cuestionarios y los procedimientos para garantizar la calidad del trabajo de campo.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "06-implementacion-encuesta.html#técnica-y-métodos-de-recolección-de-datos",
+    "href": "06-implementacion-encuesta.html#técnica-y-métodos-de-recolección-de-datos",
+    "title": "6  Implementación de la encuesta",
+    "section": "",
+    "text": "6.1.1 Proceso de contacto inicial\nPara asegurar la participación de los establecimientos en el estudio, el equipo Datavoz priorizó minimizar los tiempos de contacto y garantizar la aplicación del cuestionario en los plazos establecidos.\nLos coordinadores contactaron a los establecimientos seleccionados en función de los siguientes objetivos:\n\nInvitar a los establecimientos a participar en el estudio, presentando la empresa y los objetivos del proyecto. Además, se enviaron cartas personalizadas a cada director como respaldo formal.\nSolicitar la designación de un colaborador por establecimiento, encargado de gestionar los aspectos operativos de la aplicación del cuestionario.\nEstablecer una fecha para la primera visita, recopilando información sobre disponibilidad y horarios.\n\nPara asegurar un contacto inicial exitoso con los establecimientos, se priorizó contactar directamente al director o directora de cada institución, con el propósito de garantizar una respuesta favorable para su participación en el estudio.\n\n\n6.1.2 Métodos de contacto inicial\nEl contacto se realizó en tres etapas correlativas: a) llamadas telefónicas de los coordinadores a los directores de los establecimientos seleccionados; b) envío de correos electrónicos informativos a los establecimientos educativos; c) envío de cartas formales, detallando el estudio, su importancia y solicitando colaboración.\nSi estos métodos no lograban establecer contacto, los coordinadores se dirigían presencialmente al establecimiento, agendaban la visita y, de ser posible, explicaban en persona los detalles del estudio, acordando la fecha de aplicación.\n\n\n6.1.3 Aplicación de los cuestionarios\nSe generaron enlaces específicos para la aplicación de los cuestionarios, compartidos con apoderados y profesores de cada establecimiento. En el caso de los estudiantes, los enlaces se instalaron en los computadores de las salas de computación para facilitar su respuesta. El software también permite exportar los datos recopilados a diversos formatos, como Excel, SPSS o ASCII.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "06-implementacion-encuesta.html#diseño-del-instrumento-de-captura-de-la-información",
+    "href": "06-implementacion-encuesta.html#diseño-del-instrumento-de-captura-de-la-información",
+    "title": "6  Implementación de la encuesta",
+    "section": "6.2 Diseño del instrumento de captura de la información",
+    "text": "6.2 Diseño del instrumento de captura de la información\nLa encuesta Meritocracia en la escuela se compone de tres cuestionarios estructurados y autoaplicados en formato CAWI a docentes, apoderados y estudiantes.\nLas variables recolectadas abarcan temáticas clave sobre el impacto del mercado educativo en las percepciones de la meritocracia y su influencia en la formación ciudadana en las escuelas. Los módulos temáticos, que incluyen meritocracia, preferencias y desigualdad, ciudadanía y datos sociodemográficos, permiten analizar la relación entre educación y meritocracia, así como su evolución a lo largo del tiempo. Además, se adaptan según el perfil del actor al que se dirige la encuesta.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "06-implementacion-encuesta.html#método-para-la-capacitación-para-la-recolección-de-datos",
+    "href": "06-implementacion-encuesta.html#método-para-la-capacitación-para-la-recolección-de-datos",
+    "title": "6  Implementación de la encuesta",
+    "section": "6.3 Método para la capacitación para la recolección de datos",
+    "text": "6.3 Método para la capacitación para la recolección de datos\nPara iniciar el trabajo de campo, el equipo de Datavoz consideró la programación de los cuestionarios, la preparación de manuales y protocolos, y la elaboración de un pretest. Una vez finalizada esta etapa, se procedió a la capacitación de los coordinadores de establecimientos.\n\n6.3.1 Pretest\nEl proceso de pretest se desarrolló en dos etapas. Primero, se aplicó el cuestionario a una muestra reducida, y posteriormente se llevó a cabo un grupo focal con los coordinadores de los establecimientos participantes, con el objetivo de evaluar en detalle el desempeño del instrumento.\nLa aplicación inicial tuvo lugar en un curso de un establecimiento de la Región Metropolitana y proporcionó información valiosa sobre diversos aspectos, como el formato de los instrumentos (cuestionarios y protocolos de contacto), el orden de las preguntas, las categorías de respuesta, la duración total del cuestionario y de cada módulo, y las tasas de no respuesta, tanto generales como en preguntas específicas.\nTras esta etapa, se realizó un grupo de discusión con los coordinadores para analizar las dificultades detectadas en las preguntas y la aplicación del instrumento, así como sugerencias para su mejora. Los resultados de ambas instancias permitieron estructurar los cuestionarios y los protocolos de contacto definitivos.\n\n\n6.3.2 Preparación del material para el trabajo de campo\nPara el desarrollo del trabajo de campo y su uso durante las capacitaciones, se elaboró un manual detallado para los coordinadores. Este manual incluye las características del estudio, sus objetivos, los responsables del proyecto y las instrucciones para el funcionamiento de los enlaces a los cuestionarios, entre otros aspectos relevantes.\n\n\n6.3.3 Reclutamiento del personal de campo\nEl reclutamiento de coordinadores fue una etapa crucial para garantizar tasas de respuesta acordes con los requerimientos del estudio. Para el trabajo en establecimientos educacionales, se seleccionaron profesionales de las ciencias sociales con experiencia en educación y/o encuestadores con antecedentes en levantamiento de datos en entornos escolares. Este enfoque asegura un adecuado desarrollo del proceso, desde el contacto inicial hasta el cierre, y favorece la obtención de buenos resultados.\n\n\n6.3.4 Capacitación del equipo de encuestadores\nLos coordinadores de establecimientos fueron capacitados de manera remota a través de Zoom. Durante estas sesiones se enfatizó en las particularidades del estudio. Los ejes principales de la capacitación incluyeron:\n\nExplicación del contenido de los instrumentos y el contexto del estudio.\nTransmisión de los objetivos de la investigación, conceptos clave y consideraciones metodológicas para que los coordinadores trabajen con claridad y confianza.\nIdentificación de posibles dificultades y provisión de herramientas para resolverlas.\nPresentación y entrenamiento en el uso de los protocolos de contacto.\nAseguramiento de una comprensión sólida del cuestionario.\nÉnfasis en la neutralidad del equipo en terreno, evitando emitir juicios u opiniones que pudieran influir en las respuestas.\nPromoción de un marco de respeto y cuidado hacia los encuestados, garantizando una experiencia cómoda y positiva.\nFomento de una actitud abierta y receptiva frente a las dudas de los encuestados, aclarando los objetivos de la encuesta y subrayando la confidencialidad de los datos.\n\nEste enfoque integral en la preparación y capacitación busca asegurar un trabajo de campo eficiente, respetuoso y alineado con los objetivos del estudio.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "06-implementacion-encuesta.html#métodos-de-supervisión",
+    "href": "06-implementacion-encuesta.html#métodos-de-supervisión",
+    "title": "6  Implementación de la encuesta",
+    "section": "6.4 Métodos de supervisión",
+    "text": "6.4 Métodos de supervisión\nEl proceso de supervisión se llevó a cabo de forma telefónica por un equipo independiente, el cual comenzó a operar una vez iniciado el trabajo en terreno. Este equipo estuvo coordinado de manera permanente por el Encargado de Supervisión y abarcó todos los establecimientos donde fue realizada la aplicación.\nDurante la supervisión, se consultó a los directores de los establecimientos sobre la actuación del coordinador en los siguientes aspectos:\n\nPresentación: confirmar si el coordinador se identificó adecuadamente y mostró su credencial de Datavoz.\nDesarrollo de la encuesta: verificar si la aplicación se realizó en el horario previamente agendado.\nFinalización: comprobar si el coordinador agradeció la colaboración del establecimiento al término de la aplicación.\n\nAdemás, se revisó la completitud de las encuestas y la coherencia en los rangos de respuestas para asegurar la calidad de los datos recolectados.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Implementación de la encuesta</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html",
+    "href": "07-base-datos.html",
+    "title": "7  Bases de datos",
+    "section": "",
+    "text": "7.1 Archivos de datos en el repositorio",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#archivos-de-datos-en-el-repositorio",
+    "href": "07-base-datos.html#archivos-de-datos-en-el-repositorio",
+    "title": "7  Bases de datos",
+    "section": "",
+    "text": "7.1.1 Insumos (datos crudos o previos al procesamiento)\nFuente cruda principal (Ola 1, multi-actor): /input/data/original/310524_BDD_edumer.sav Importado por:\n\nScript de estudiantes Ola 1 (processing/w1-01-proc-data-students.R:27)\nScript de docentes Ola 1 (processing/w1-02-proc-data-teachers.R:26)\nScript de apoderados Ola 1 (processing/w1-03-proc-data-parents.R:26)\n\nFuente cruda principal (Ola 2 estudiantes, versión final corregida): /input/data/original/221124 Edumer Ola2 ID_VF.sav Importado por processing/w2-01-proc-data-students.R:28.\nVersión previa/de depuración de ID (Ola 2): /input/data/original/251024 Edumer Ola2 ID.sav Utilizada únicamente en el script de diagnóstico y corrección de IDs duplicados processing/duplicados.R:28.\nArchivos de metadatos del cuestionario (codebook):\n\n/input/Cuestionario_edumer.xlsx - survey.csv\n/input/cohesion - survey.csv\nEl codebook utiliza las URLs crudas correspondientes de GitHub (08-codebook.qmd:48, 50).\n\nOtras versiones crudas presentes en /input/data/original/: 161223_BDD_estudiantes_VF.sav, 170124_BDD_estudiantes.sav, 211223_BDD_estudiantes_VF.sav, 300424_BDD_estudiantes.sav (presentes en el repositorio, sin referencias directas en los scripts de procesamiento actuales).\nArchivos intermedios presentes pero no referenciados por los scripts actuales: /input/data/proc/es_ola1.RData, /input/data/proc/ola1.RData.\n\n\n7.1.2 Bases de datos finales (Listas para utilizar)\nDesde /output/data/:\n\nOla 1, estudiantes (final): db_proc_students.{RData,dta,sav} — generado en processing/w1-01-proc-data-students.R:798-800.\nOla 1, docentes (final): db_proc_teachers.{RData,dta,sav} — generado en processing/w1-02-proc-data-teachers.R:462-464.\nOla 1, apoderados (final): db_proc_parents.{RData,dta,sav} — generado en processing/w1-03-proc-data-parents.R:485-487.\nOla 1, base combinada (final): db_proc_full.{RData,dta,sav} — generado en processing/w1-04-proc-data-full.R:48-50.\nOla 2, estudiantes (final): db_proc_students_w02.{RData,dta,sav} — generado en processing/w2-01-proc-data-students.R:482-484.\nBases panel derivadas (Ola 1 + Ola 2, estudiantes):\n\nedumer_students_wide.{RData,dta,sav}\nedumer_students_long.{RData,dta,sav}",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#clasificación-de-las-bases-de-datos",
+    "href": "07-base-datos.html#clasificación-de-las-bases-de-datos",
+    "title": "7  Bases de datos",
+    "section": "7.2 Clasificación de las bases de datos",
+    "text": "7.2 Clasificación de las bases de datos\nPor ola\n\nOla 1: db_proc_students, db_proc_teachers, db_proc_parents, db_proc_full\nOla 2: db_proc_students_w02\nAmbas olas (panel): edumer_students_wide, edumer_students_long\n\nPor tipo de actor\n\nEstudiantes: db_proc_students (Ola 1), db_proc_students_w02 (Ola 2), edumer_students_wide/long (panel)\nAdultos: db_proc_teachers (docentes), db_proc_parents (apoderados)\nCombinada: db_proc_full (estudiantes + docentes + apoderados, Ola 1)\n\nPor etapa de procesamiento\n\nInsumo/crudo: archivos .sav en /input/data/original/, CSV del cuestionario en /input/\nProducto final: db_proc_* y db_proc_students_w02 (más la base combinada db_proc_full)\nDerivado/panel: edumer_students_wide, edumer_students_long\nIntermedio/diagnóstico: objetos en memoria del script duplicados.R (p. ej., db2_f) para la limpieza de IDs (processing/duplicados.R:39-47, 160-163, 176-179), sin exportación a archivo.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#flujo-de-transformación-de-datos-crudos-a-bases-finales",
+    "href": "07-base-datos.html#flujo-de-transformación-de-datos-crudos-a-bases-finales",
+    "title": "7  Bases de datos",
+    "section": "7.3 Flujo de transformación (de datos crudos a bases finales)",
+    "text": "7.3 Flujo de transformación (de datos crudos a bases finales)\n\nImportación de los datos crudos de la Ola 1 desde 310524_BDD_edumer.sav en cada script específico por actor (w1-01, w1-02, w1-03).\nSelección de columnas por actor:\n\nEstudiantes (Ola 1): columnas 1 a 105, eliminando columnas temporales de identificación (w1-01:47-49).\nDocentes (Ola 1): columnas 106 a 179 (w1-02:45).\nApoderados (Ola 1): columnas 180 a 246, eliminando variables que comienzan con “T” (w1-03:46-48).\n\nLimpieza y armonización en cada script (renombramiento de variables, limpieza de etiquetas, recodificación, tipos de variables).\nExportación de las bases finales por actor a formatos .RData, .dta y .sav (w1-01:798-800, w1-02:462-464, w1-03:485-487).\nCombinación de la Ola 1 completa mediante unión de columnas, previa verificación de consistencia en el número de filas (w1-04:34-42), y exportación (w1-04:48-50).\nImportación de los datos de estudiantes de la Ola 2 desde la versión corregida 221124 ... ID_VF.sav (w2-01:28), limpieza, recodificación y exportación (w2-01:482-484).\nConstrucción de la base panel (solo estudiantes):\n\nCarga de las bases procesadas de Ola 1 y Ola 2 (script del panel, líneas 28-33).\nArmonización y adición de sufijos a los nombres de variables (líneas 44-76).\nUnión del ID de la Ola 1 con el ID de referencia de la Ola 2 (líneas 91-100).\nGeneración de las bases panel en formato ancho y largo (líneas 171-177, 209-215).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#convenciones-de-nombres",
+    "href": "07-base-datos.html#convenciones-de-nombres",
+    "title": "7  Bases de datos",
+    "section": "7.4 Convenciones de nombres",
+    "text": "7.4 Convenciones de nombres\n\nFuentes crudas: prefijo de fecha + descriptor (p. ej., 310524_BDD_edumer.sav, 221124 Edumer Ola2 ID_VF.sav).\nSufijo “VF”: indica versión corregida/final en la etapa cruda (p. ej., la Ola 2 usa ...ID_VF.sav en el script de producción, mientras que el archivo sin este sufijo se usa únicamente en el script de depuración de duplicados).\nBases procesadas: db_proc_&lt;población&gt; (estudiantes, docentes, apoderados, completa), con sufijo de ola cuando corresponde (_w02).\nBases panel: nombres semánticos edumer_students_wide / edumer_students_long.\nPublicación en múltiples formatos: cada base final se exporta a RData, dta y sav para su interoperabilidad (w1-01:798-800, w1-02:462-464, w1-03:485-487, w1-04:48-50, w2-01:482-484, panel: 209-215).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "08-etica.html",
+    "href": "08-etica.html",
+    "title": "8  Ética",
+    "section": "",
+    "text": "8.1 Aprobación Comité de Ética\nEl estudio “Meritocracia en la escuela: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile”, correspondiente al FONDECYT N.º 1210847, cuenta con la aprobación ética del Comité de Ética de la Investigación.\nEl proyecto fue revisado en conformidad con las normativas éticas y los lineamientos establecidos para investigaciones que involucran a seres humanos, y se considera que cumple con los principios éticos fundamentales para la protección, respeto y dignidad de los participantes. En este sentido, se ha garantizado que el proyecto cuente con mecanismos adecuados de consentimiento informado y protección de datos.\nEl comité aprobó el protocolo con fecha 28 de mayo de 2021 y autorizó su ejecución conforme a los términos establecidos en el proyecto original.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ética</span>"
+    ]
+  },
+  {
+    "objectID": "08-etica.html#consentimientos-informados",
+    "href": "08-etica.html#consentimientos-informados",
+    "title": "8  Ética",
+    "section": "8.2 Consentimientos informados",
+    "text": "8.2 Consentimientos informados\nLos participantes del proyecto firmaron un Consentimiento Informado por escrito, en el que se detallan los objetivos del estudio, en qué consiste su participación, qué se hará y cómo se resguardará la información y los datos entregados. Dicho Consentimiento Informado fue firmado el año 2021.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Ética</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html",
+    "href": "09-libro-codigos.html",
+    "title": "9  Libro de códigos",
+    "section": "",
+    "text": "9.1 Introducción\nPara el uso adecuado de la base de datos Encuesta Panel Justicia Educacional y Ciudadanía, recomendamos que los investigadores trabajen con el libro de códigos que se presenta a continuación. Esta sección busca facilitar el uso de la base de datos, entregando la información correspondiente a los nombres de las variables, sus etiquetas, así como también las etiquetas de las categorías de respuesta de cada variable. En primer lugar, se detallan las instrucciones de cómo utilizar el libro de códigos interactivo. En segundo lugar, se presenta el libro de códigos propiamente tal para cada cuestionario por separado (estudiantes, docentes y padres y apoderados).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#instrucciones",
+    "href": "09-libro-codigos.html#instrucciones",
+    "title": "9  Libro de códigos",
+    "section": "\n9.2 Instrucciones",
+    "text": "9.2 Instrucciones\nLos Libros de Códigos que se presentan en la siguiente sección corresponden a una herramienta interactiva que busca presentar de manera eficiente información respecto a las variables que componen la base de datos. Presentamos los ítems por cuestionario para facilitar su comprensión.\nCada libro muestra el código de cada variable, la etiqueta asociada a la variable con la redacción del ítem, y las categorías de respuesta y códigos asociados. Estas corresponden a tres columnas del libro de códigos denominadas name, label y value_label, respectivamente.\nSe puede hacer uso del buscador que se encuentra al principio del libro para encontrar información de manera más rápida. También se pueden usar los buscadores por cada columna, los cuales irán filtrando los datos que contengan el término de búsqueda.\nIncluimos etiquetas de variables en el Libro de Códigos y en las bases de datos. El equipo de EDUMER las diseñó con la intención de describir brevemente el fenómeno o dimensión a medir. La redacción de la pregunta sigue a las etiquetas, incluyendo códigos y categorías de respuesta. En la construcción de la base de datos, ingresamos los códigos de respuesta como valores numéricos y las categorías de respuesta como etiquetas.\nEn la columna value_labels se muestran las categorías de respuesta de cada variable. No obstante, si la variable es numérica o de respuesta abierta (texto), la casilla se mostrará en blanco, ya que no hay ninguna categoría que mostrar. También puede ocurrir el caso que la variable sea numérica, pero tenga disponibles las categorías “88. No Sabe” y “99. No Responde”. En estos casos sólo se visualizarán ambas categorías en el libro de código.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#módulo-a-caracterización-inicial",
+    "href": "09-libro-codigos.html#módulo-a-caracterización-inicial",
+    "title": "9  Libro de códigos",
+    "section": "\n9.3 Módulo A: Caracterización inicial",
+    "text": "9.3 Módulo A: Caracterización inicial\nEn el primer módulo, las preguntas van en la línea de caracterizar a los participantes de la encuesta. Este primer módulo da paso ordenar a los participantes según cuotas.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#módulo-b-meritocracia",
+    "href": "09-libro-codigos.html#módulo-b-meritocracia",
+    "title": "9  Libro de códigos",
+    "section": "\n9.4 Módulo B: Meritocracia",
+    "text": "9.4 Módulo B: Meritocracia\nEn el módulo de meritocracia se realizan preguntas sobre la importancia del mérito en Chile y las oportunidades que da para acceder a mayores recompensas. La instrucción inicial es: “A continuación, le presentamos una serie de afirmaciones con respecto a las oportunidades y recompensas que tienen las personas en Chile. Por favor, señale su grado de acuerdo o desacuerdo con cada una de ellas.”",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#módulo-c-actitudes-hacia-la-desigualdad",
+    "href": "09-libro-codigos.html#módulo-c-actitudes-hacia-la-desigualdad",
+    "title": "9  Libro de códigos",
+    "section": "\n9.5 Módulo C: Actitudes hacia la desigualdad",
+    "text": "9.5 Módulo C: Actitudes hacia la desigualdad\nEn el siguiente módulo, las preguntas están orientadas en torno a las actitudes hacia la desigualdad. La instruccion inicial es: “Ahora le presentamos una serie de afirmaciones con respecto a los ingresos económicos de las personas ¿Cuán de acuerdo o en desacuerdo está con las siguientes afirmaciones?”",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#módulo-e-valores-sociales",
+    "href": "09-libro-codigos.html#módulo-e-valores-sociales",
+    "title": "9  Libro de códigos",
+    "section": "\n9.6 Módulo E: Valores sociales",
+    "text": "9.6 Módulo E: Valores sociales\nEn el módulo e, se presentan tipos de personas, y su grado de similitud con el participante de la encuesta. La instrucción es: A continuación se presenta una breve descripción de algunos tipos de personas. Por favor, lea cada una de las descripciones y responda en qué medida ese tipo de persona se parece o no se parece a Ud. ¿En qué medida piensa usted que se parece a una persona que…?",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "09-libro-codigos.html#módulo-f-cohesión-social",
+    "href": "09-libro-codigos.html#módulo-f-cohesión-social",
+    "title": "9  Libro de códigos",
+    "section": "\n9.7 Módulo F: Cohesión social",
+    "text": "9.7 Módulo F: Cohesión social\nEl siguiente módulo realiza una serie de preguntas sobre convivencia con el resto de personas dentro de la sociedad. La instrucción inicial es: Se pueden tener diferentes puntos de vista sobre cómo deben convivir las personas en una sociedad. ¿Qué tanto está de acuerdo usted con las siguientes afirmaciones? Para mí convivir bien en una sociedad significa que…",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Libro de códigos</span>"
+    ]
+  },
+  {
+    "objectID": "10-apendice.html",
+    "href": "10-apendice.html",
+    "title": "10  Apéndice",
+    "section": "",
+    "text": "11 Ficha Técnica\n\n\n\n\n\n\n\nCaracterísticas\nProyecto Meritocracia en la Escuela\n\n\nPoblación objetivo\nProfesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.\n\n\nInstrumento\nCuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert.\n\n\nDiseño muestral\nEl estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.\n\n\nTamaño de la muestra\n\nMuestra ola 1: 902\nMuestra ola 2: 637\n\n\n\nPeríodo de recolección\nEl período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.\n\n\nCobertura geográfica\nLa cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.\n\n\nModo de aplicación\nAutoaplicado, cuestionario en formato online.\n\n\nDuración promedio\n20 minutos aproximadamente.\n\n\nBases de datos\nDos bases de datos, una de 902 casos y otra de 637 casos.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Apéndice</span>"
+    ]
+  },
+  {
+    "objectID": "11-notas-tecnicas.html",
+    "href": "11-notas-tecnicas.html",
+    "title": "11  Ficha Técnica",
+    "section": "",
+    "text": "Características\nProyecto Meritocracia en la Escuela\n\n\nPoblación objetivo\nProfesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.\n\n\nInstrumento\nCuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert.\n\n\nDiseño muestral\nEl estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.\n\n\nTamaño de la muestra\nMuestra ola 1: 902\nMuestra ola 2: 637\n\n\nPeríodo de recolección\nEl período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.\n\n\nCobertura geográfica\nLa cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.\n\n\nModo de aplicación\nAutoaplicado, cuestionario en formato online.\n\n\nDuración promedio\n20 minutos aproximadamente.\n\n\nBases de datos\nDos bases de datos, una de 902 casos y otra de 637 casos.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Ficha Técnica</span>"
     ]
   }
 ]

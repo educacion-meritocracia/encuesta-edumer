@@ -1,0 +1,20 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Ética {#etica}
+
+## Aprobación Comité de Ética
+
+El estudio "Meritocracia en la escuela: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile", correspondiente al FONDECYT N.º 1210847, cuenta con la aprobación ética del Comité de Ética de la Investigación.
+
+El proyecto fue revisado en conformidad con las normativas éticas y los lineamientos establecidos para investigaciones que involucran a seres humanos, y se considera que cumple con los principios éticos fundamentales para la protección, respeto y dignidad de los participantes. En este sentido, se ha garantizado que el proyecto cuente con mecanismos adecuados de consentimiento informado y protección de datos.
+
+El comité aprobó el protocolo con fecha 28 de mayo de 2021 y autorizó su ejecución conforme a los términos establecidos en el proyecto original.
+
+## Consentimientos informados
+
+Los participantes del proyecto firmaron un Consentimiento Informado por escrito, en el que se detallan los objetivos del estudio, en qué consiste su participación, qué se hará y cómo se resguardará la información y los datos entregados. Dicho Consentimiento Informado fue firmado el año 2021.

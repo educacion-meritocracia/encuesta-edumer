@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Base de datos – EDUMERCO Survey Methodological Manual</title>
+<title>6&nbsp; Bases de datos – Manual Metodológico de Encuesta EDUMER</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="./05-implementacion-encuesta.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4184f017e24898c52ba8423bde4bbb91.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d9b7bfa21341ecc38490f88f4166787.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -56,17 +58,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 
@@ -80,13 +82,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-base-datos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Base de datos</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./06-base-datos.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -96,14 +98,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">EDUMERCO Survey Methodological Manual</a> 
+      <a href="./">Manual Metodológico de Encuesta EDUMER</a> 
         <div class="sidebar-tools-main">
-    <a href="https://jus-mer.com/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-git"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+    <a href="https://jus-mer.com/" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-git"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Buscar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -133,13 +133,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-diseno-encuesta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño de la encuesta</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño de Encuesta.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-diseno-experimento.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario A (experimento):</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario (experimento):</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-base-datos.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Base de datos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,6 +178,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Apéndice</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-notas-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ficha Técnica</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -185,11 +191,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
+    <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#archivos-de-datos-y-estructura-de-archivos" id="toc-archivos-de-datos-y-estructura-de-archivos" class="nav-link active" data-scroll-target="#archivos-de-datos-y-estructura-de-archivos"><span class="header-section-number">6.1</span> Archivos de datos y estructura de archivos</a></li>
-  <li><a href="#sec-bases" id="toc-sec-bases" class="nav-link" data-scroll-target="#sec-bases"><span class="header-section-number">6.2</span> Acceso a los datos y condiciones de uso</a></li>
+  <li><a href="#archivos-de-datos-en-el-repositorio" id="toc-archivos-de-datos-en-el-repositorio" class="nav-link active" data-scroll-target="#archivos-de-datos-en-el-repositorio"><span class="header-section-number">6.1</span> Archivos de datos en el repositorio</a>
+  <ul class="collapse">
+  <li><a href="#insumos-datos-crudos-o-previos-al-procesamiento" id="toc-insumos-datos-crudos-o-previos-al-procesamiento" class="nav-link" data-scroll-target="#insumos-datos-crudos-o-previos-al-procesamiento"><span class="header-section-number">6.1.1</span> Insumos (datos crudos o previos al procesamiento)</a></li>
+  <li><a href="#bases-de-datos-finales-listas-para-utilizar" id="toc-bases-de-datos-finales-listas-para-utilizar" class="nav-link" data-scroll-target="#bases-de-datos-finales-listas-para-utilizar"><span class="header-section-number">6.1.2</span> Bases de datos finales (Listas para utilizar)</a></li>
+  </ul></li>
+  <li><a href="#clasificación-de-las-bases-de-datos" id="toc-clasificación-de-las-bases-de-datos" class="nav-link" data-scroll-target="#clasificación-de-las-bases-de-datos"><span class="header-section-number">6.2</span> Clasificación de las bases de datos</a></li>
+  <li><a href="#flujo-de-transformación-de-datos-crudos-a-bases-finales" id="toc-flujo-de-transformación-de-datos-crudos-a-bases-finales" class="nav-link" data-scroll-target="#flujo-de-transformación-de-datos-crudos-a-bases-finales"><span class="header-section-number">6.3</span> Flujo de transformación (de datos crudos a bases finales)</a></li>
+  <li><a href="#convenciones-de-nombres" id="toc-convenciones-de-nombres" class="nav-link" data-scroll-target="#convenciones-de-nombres"><span class="header-section-number">6.4</span> Convenciones de nombres</a></li>
   </ul>
 </nav>
     </div>
@@ -198,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="databases" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Base de datos</span></span></h1>
+<h1 class="title"><span id="databases" class="quarto-section-identifier"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span></h1>
 </div>
 
 
@@ -215,11 +227,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="archivos-de-datos-y-estructura-de-archivos" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="archivos-de-datos-y-estructura-de-archivos"><span class="header-section-number">6.1</span> Archivos de datos y estructura de archivos</h2>
+<section id="archivos-de-datos-en-el-repositorio" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="archivos-de-datos-en-el-repositorio"><span class="header-section-number">6.1</span> Archivos de datos en el repositorio</h2>
+<section id="insumos-datos-crudos-o-previos-al-procesamiento" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="insumos-datos-crudos-o-previos-al-procesamiento"><span class="header-section-number">6.1.1</span> Insumos (datos crudos o previos al procesamiento)</h3>
+<p><strong>Fuente cruda principal (Ola 1, multi-actor):</strong> <code>/input/data/original/310524_BDD_edumer.sav</code> Importado por:</p>
+<ul>
+<li>Script de estudiantes Ola 1 (<code>processing/w1-01-proc-data-students.R:27</code>)</li>
+<li>Script de docentes Ola 1 (<code>processing/w1-02-proc-data-teachers.R:26</code>)</li>
+<li>Script de apoderados Ola 1 (<code>processing/w1-03-proc-data-parents.R:26</code>)</li>
+</ul>
+<p><strong>Fuente cruda principal (Ola 2 estudiantes, versión final corregida):</strong> <code>/input/data/original/221124 Edumer Ola2 ID_VF.sav</code> Importado por <code>processing/w2-01-proc-data-students.R:28</code>.</p>
+<p><strong>Versión previa/de depuración de ID (Ola 2):</strong> <code>/input/data/original/251024 Edumer Ola2 ID.sav</code> Utilizada únicamente en el script de diagnóstico y corrección de IDs duplicados <code>processing/duplicados.R:28</code>.</p>
+<p><strong>Archivos de metadatos del cuestionario (codebook):</strong></p>
+<ul>
+<li><code>/input/Cuestionario_edumer.xlsx - survey.csv</code></li>
+<li><code>/input/cohesion - survey.csv</code></li>
+<li>El codebook utiliza las URLs crudas correspondientes de GitHub (<code>08-codebook.qmd:48, 50</code>).</li>
+</ul>
+<p><strong>Otras versiones crudas presentes en <code>/input/data/original/</code>:</strong> <code>161223_BDD_estudiantes_VF.sav</code>, <code>170124_BDD_estudiantes.sav</code>, <code>211223_BDD_estudiantes_VF.sav</code>, <code>300424_BDD_estudiantes.sav</code> (presentes en el repositorio, sin referencias directas en los scripts de procesamiento actuales).</p>
+<p><strong>Archivos intermedios presentes pero no referenciados por los scripts actuales:</strong> <code>/input/data/proc/es_ola1.RData</code>, <code>/input/data/proc/ola1.RData</code>.</p>
 </section>
-<section id="sec-bases" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="sec-bases"><span class="header-section-number">6.2</span> Acceso a los datos y condiciones de uso</h2>
+<section id="bases-de-datos-finales-listas-para-utilizar" class="level3" data-number="6.1.2">
+<h3 data-number="6.1.2" class="anchored" data-anchor-id="bases-de-datos-finales-listas-para-utilizar"><span class="header-section-number">6.1.2</span> Bases de datos finales (Listas para utilizar)</h3>
+<p>Desde <code>/output/data/</code>:</p>
+<ul>
+<li><strong>Ola 1, estudiantes (final):</strong> <code>db_proc_students.{RData,dta,sav}</code> — generado en <code>processing/w1-01-proc-data-students.R:798-800</code>.</li>
+<li><strong>Ola 1, docentes (final):</strong> <code>db_proc_teachers.{RData,dta,sav}</code> — generado en <code>processing/w1-02-proc-data-teachers.R:462-464</code>.</li>
+<li><strong>Ola 1, apoderados (final):</strong> <code>db_proc_parents.{RData,dta,sav}</code> — generado en <code>processing/w1-03-proc-data-parents.R:485-487</code>.</li>
+<li><strong>Ola 1, base combinada (final):</strong> <code>db_proc_full.{RData,dta,sav}</code> — generado en <code>processing/w1-04-proc-data-full.R:48-50</code>.</li>
+<li><strong>Ola 2, estudiantes (final):</strong> <code>db_proc_students_w02.{RData,dta,sav}</code> — generado en <code>processing/w2-01-proc-data-students.R:482-484</code>.</li>
+<li><strong>Bases panel derivadas (Ola 1 + Ola 2, estudiantes):</strong>
+<ul>
+<li><code>edumer_students_wide.{RData,dta,sav}</code></li>
+<li><code>edumer_students_long.{RData,dta,sav}</code></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="clasificación-de-las-bases-de-datos" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="clasificación-de-las-bases-de-datos"><span class="header-section-number">6.2</span> Clasificación de las bases de datos</h2>
+<p><strong>Por ola</strong></p>
+<ul>
+<li>Ola 1: <code>db_proc_students</code>, <code>db_proc_teachers</code>, <code>db_proc_parents</code>, <code>db_proc_full</code></li>
+<li>Ola 2: <code>db_proc_students_w02</code></li>
+<li>Ambas olas (panel): <code>edumer_students_wide</code>, <code>edumer_students_long</code></li>
+</ul>
+<p><strong>Por tipo de actor</strong></p>
+<ul>
+<li>Estudiantes: <code>db_proc_students</code> (Ola 1), <code>db_proc_students_w02</code> (Ola 2), <code>edumer_students_wide</code>/<code>long</code> (panel)</li>
+<li>Adultos: <code>db_proc_teachers</code> (docentes), <code>db_proc_parents</code> (apoderados)</li>
+<li>Combinada: <code>db_proc_full</code> (estudiantes + docentes + apoderados, Ola 1)</li>
+</ul>
+<p><strong>Por etapa de procesamiento</strong></p>
+<ul>
+<li>Insumo/crudo: archivos <code>.sav</code> en <code>/input/data/original/</code>, CSV del cuestionario en <code>/input/</code></li>
+<li>Producto final: <code>db_proc_*</code> y <code>db_proc_students_w02</code> (más la base combinada <code>db_proc_full</code>)</li>
+<li>Derivado/panel: <code>edumer_students_wide</code>, <code>edumer_students_long</code></li>
+<li>Intermedio/diagnóstico: objetos en memoria del script <code>duplicados.R</code> (p.&nbsp;ej., <code>db2_f</code>) para la limpieza de IDs (<code>processing/duplicados.R:39-47, 160-163, 176-179</code>), sin exportación a archivo.</li>
+</ul>
+</section>
+<section id="flujo-de-transformación-de-datos-crudos-a-bases-finales" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="flujo-de-transformación-de-datos-crudos-a-bases-finales"><span class="header-section-number">6.3</span> Flujo de transformación (de datos crudos a bases finales)</h2>
+<ol type="1">
+<li>Importación de los datos crudos de la Ola 1 desde <code>310524_BDD_edumer.sav</code> en cada script específico por actor (<code>w1-01</code>, <code>w1-02</code>, <code>w1-03</code>).</li>
+<li>Selección de columnas por actor:
+<ul>
+<li>Estudiantes (Ola 1): columnas 1 a 105, eliminando columnas temporales de identificación (<code>w1-01:47-49</code>).</li>
+<li>Docentes (Ola 1): columnas 106 a 179 (<code>w1-02:45</code>).</li>
+<li>Apoderados (Ola 1): columnas 180 a 246, eliminando variables que comienzan con “T” (<code>w1-03:46-48</code>).</li>
+</ul></li>
+<li>Limpieza y armonización en cada script (renombramiento de variables, limpieza de etiquetas, recodificación, tipos de variables).</li>
+<li>Exportación de las bases finales por actor a formatos <code>.RData</code>, <code>.dta</code> y <code>.sav</code> (<code>w1-01:798-800</code>, <code>w1-02:462-464</code>, <code>w1-03:485-487</code>).</li>
+<li>Combinación de la Ola 1 completa mediante unión de columnas, previa verificación de consistencia en el número de filas (<code>w1-04:34-42</code>), y exportación (<code>w1-04:48-50</code>).</li>
+<li>Importación de los datos de estudiantes de la Ola 2 desde la versión corregida <code>221124 ... ID_VF.sav</code> (<code>w2-01:28</code>), limpieza, recodificación y exportación (<code>w2-01:482-484</code>).</li>
+<li>Construcción de la base panel (solo estudiantes):
+<ul>
+<li>Carga de las bases procesadas de Ola 1 y Ola 2 (script del panel, líneas 28-33).</li>
+<li>Armonización y adición de sufijos a los nombres de variables (líneas 44-76).</li>
+<li>Unión del ID de la Ola 1 con el ID de referencia de la Ola 2 (líneas 91-100).</li>
+<li>Generación de las bases panel en formato ancho y largo (líneas 171-177, 209-215).</li>
+</ul></li>
+</ol>
+</section>
+<section id="convenciones-de-nombres" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="convenciones-de-nombres"><span class="header-section-number">6.4</span> Convenciones de nombres</h2>
+<ul>
+<li><strong>Fuentes crudas:</strong> prefijo de fecha + descriptor (p.&nbsp;ej., <code>310524_BDD_edumer.sav</code>, <code>221124 Edumer Ola2 ID_VF.sav</code>).</li>
+<li><strong>Sufijo “VF”:</strong> indica versión corregida/final en la etapa cruda (p.&nbsp;ej., la Ola 2 usa <code>...ID_VF.sav</code> en el script de producción, mientras que el archivo sin este sufijo se usa únicamente en el script de depuración de duplicados).</li>
+<li><strong>Bases procesadas:</strong> <code>db_proc_&lt;población&gt;</code> (estudiantes, docentes, apoderados, completa), con sufijo de ola cuando corresponde (<code>_w02</code>).</li>
+<li><strong>Bases panel:</strong> nombres semánticos <code>edumer_students_wide</code> / <code>edumer_students_long</code>.</li>
+<li><strong>Publicación en múltiples formatos:</strong> cada base final se exporta a <code>RData</code>, <code>dta</code> y <code>sav</code> para su interoperabilidad (<code>w1-01:798-800</code>, <code>w1-02:462-464</code>, <code>w1-03:485-487</code>, <code>w1-04:48-50</code>, <code>w2-01:482-484</code>, panel: <code>209-215</code>).</li>
+</ul>
 
 
 </section>
@@ -250,12 +349,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -641,7 +740,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Project “Meritocracy in Schools (EDUMER): Moral Foundations of the Education Market and Their Implications for Civic Education in Chile”</p>
+<p>Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

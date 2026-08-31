@@ -1,0 +1,48 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+```{r setup-appendix, include=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE,
+                      cache = TRUE,
+                      out.width = '85%',
+                      fig.pos = "H")
+options(scipen = 999)
+options(kableExtra.auto_format = FALSE)
+options(knitr.kable.NA = '')
+```
+
+# Apéndice {#app}
+
+# Ficha Técnica {#ficha}
+
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+|                        |                                                                                                                                              |
++========================+==============================================================================================================================================+
+| **Características**    | **Proyecto Meritocracia en la Escuela**                                                                                                      |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Población objetivo     | Profesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.       |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Instrumento            | Cuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert. |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Diseño muestral        | El estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.                                                      |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Tamaño de la muestra   | Muestra ola 1: 902                                                                                                                           |
+|                        |                                                                                                                                              |
+|                        | Muestra ola 2: 637                                                                                                                           |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Período de recolección | El período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.                                                          |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Cobertura geográfica   | La cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.                             |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Modo de aplicación     | Autoaplicado, cuestionario en formato online.                                                                                                |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Duración promedio      | 20 minutos aproximadamente.                                                                                                                  |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+| Bases de datos         | Dos bases de datos, una de 902 casos y otra de 637 casos.                                                                                    |
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+

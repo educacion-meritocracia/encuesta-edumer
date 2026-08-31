@@ -6,25 +6,27 @@ editor: visual
 # Ficha Técnica {#ficha}
 
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+|                        |                                                                                                                                              |
++========================+==============================================================================================================================================+
 | **Características**    | **Proyecto Meritocracia en la Escuela**                                                                                                      |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Población objetivo     | Profesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.       |
+| Población objetivo     | Profesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.       |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Instrumento            | Cuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert. |
+| Instrumento            | Cuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert. |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Diseño muestral        | El estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.                                                      |
+| Diseño muestral        | El estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.                                                      |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
 | Tamaño de la muestra   | Muestra ola 1: 902                                                                                                                           |
 |                        |                                                                                                                                              |
 |                        | Muestra ola 2: 637                                                                                                                           |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Período de recolección | El período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.                                                          |
+| Período de recolección | El período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.                                                          |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Cobertura geográfica   | La cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.                             |
+| Cobertura geográfica   | La cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.                             |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Modo de aplicación     | Autoaplicado, cuestionario en formato online.                                                                                                |
+| Modo de aplicación     | Autoaplicado, cuestionario en formato online.                                                                                                |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Duración promedio      | 20 minutos aproximadamente.                                                                                                                  |
+| Duración promedio      | 20 minutos aproximadamente.                                                                                                                  |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-| Bases de datos         | Dos bases de datos, una de 902 casos y otra de 637 casos.                                                                                    |
+| Bases de datos         | Dos bases de datos, una de 902 casos y otra de 637 casos.                                                                                    |
 +------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+

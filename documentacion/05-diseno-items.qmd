@@ -1,0 +1,38 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Diseño del cuestionario B: Ítems {#sec-items}
+
+El cuestionario contempla tanto variables originales como adaptacionens de items provenientes del ICCS
+
+#### 1. Ítems adaptados de ICCS 2022
+
+Corresponden principalmente al **Módulo Ciudadanía**, y fueron tomados; traducidos y adaptados al español y al contexto chileno, del cuestionario de estudiantes de ICCS y, en algunos casos, de su versión paralela para docentes. Algunos bloques daptados desde el ICCS son:
+
+- Uso de internet y redes sociales con fines cívicos (buscar información, publicar, compartir, comentar, dar "me gusta" sobre temas políticos/sociales).
+
+- Clima de discusión abierta en el aula (estudiantes que exponen hechos políticos en clase, expresan opiniones distintas, profesores que presentan varios enfoques); la escala de IEA "Open Classroom Climate for Discussion".
+
+- Intención de participar electoralmente cuando sean adultos (votar en elecciones municipales/presidenciales, informarse de candidatos).
+
+- Participación en marchas y tomas (manifestación pacífica, ocupación de espacios).
+
+- Valoración de conductas ciudadanas como votar, unirse a un partido, aprender historia del país, protestar pacíficamente.
+
+- Variables sociodemográficas: país de nacimiento (propio y de los padres), nivel educacional esperado y de los padres, religión, frecuencia de prácticas religiosas, cantidad de libros en el hogar.
+
+Los casos descritos representan baterías previamente validadas, lo que permite comparar resultados con la tradición de estudios ICCS.
+
+#### Variables originales
+
+Corresponden al Módulo I: Meritocracia y Módulo II: Preferencias y Desigualdad, que no forman parte del instrumento ICCS y fueron diseñadas por el equipo de investigación para responder a la pregunta central del proyecto.
+
+- Las prácticas pedagógicas y estructura de metas de logro del cuestionario docente (recompensar el esfuerzo, fomentar la competencia, comparar estudiantes, etc.).
+
+- Ítems de contexto local como posición política izquierda-derecha, pertenencia a pueblos originarios y la importancia dada a la Formación Ciudadana en el establecimiento (relevante por la nueva ley chilena de formación ciudadana).
+
+La batería de "importancia de conductas ciudadanas" (votar, unirse a un partido, aprender historia, protestar, más obedecer la ley, respetar opiniones, apoyar a los más desfavorecidos, pagar impuestos) contempla tanto variables originanles como adaptaciones del ICCS: parte de los ítems se encuenntran en la edicion 2022. El resto puede ser que hayan estado en ediciones anteriores (CONSULTAR).

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.35">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Implementación de la encuesta – EDUMERCO Survey Methodological Manual</title>
+<title>5&nbsp; Implementación de la encuesta – Manual Metodológico de Encuesta EDUMER</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -34,15 +37,14 @@ ul.task-list li input[type="checkbox"] {
 <link href="./04-diseno-items.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4184f017e24898c52ba8423bde4bbb91.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d9b7bfa21341ecc38490f88f4166787.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -56,17 +58,17 @@ ul.task-list li input[type="checkbox"] {
     "s"
   ],
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
   }
 }</script>
 
@@ -80,13 +82,13 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./05-implementacion-encuesta.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Implementación de la encuesta</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -96,14 +98,12 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">EDUMERCO Survey Methodological Manual</a> 
+      <a href="./">Manual Metodológico de Encuesta EDUMER</a> 
         <div class="sidebar-tools-main">
-    <a href="https://jus-mer.com/" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-git"></i></a>
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+    <a href="https://jus-mer.com/" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-git"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
   </div>
@@ -113,7 +113,7 @@ ul.task-list li input[type="checkbox"] {
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
+        <div id="quarto-search" class="" title="Buscar"></div>
         </div>
         </div>
     <div class="sidebar-menu-container"> 
@@ -133,13 +133,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./02-diseno-encuesta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño de la encuesta</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño de Encuesta.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./03-diseno-experimento.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario A (experimento):</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario (experimento):</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./06-base-datos.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Base de datos</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -178,13 +178,39 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Apéndice</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-notas-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ficha Técnica</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#técnica-y-métodos-de-recolección-de-datos" id="toc-técnica-y-métodos-de-recolección-de-datos" class="nav-link active" data-scroll-target="#técnica-y-métodos-de-recolección-de-datos"><span class="header-section-number">5.1</span> Técnica y métodos de recolección de datos</a>
+  <ul class="collapse">
+  <li><a href="#proceso-de-contacto-inicial" id="toc-proceso-de-contacto-inicial" class="nav-link" data-scroll-target="#proceso-de-contacto-inicial"><span class="header-section-number">5.1.1</span> Proceso de contacto inicial</a></li>
+  <li><a href="#métodos-de-contacto-inicial" id="toc-métodos-de-contacto-inicial" class="nav-link" data-scroll-target="#métodos-de-contacto-inicial"><span class="header-section-number">5.1.2</span> Métodos de contacto inicial</a></li>
+  <li><a href="#aplicación-de-los-cuestionarios" id="toc-aplicación-de-los-cuestionarios" class="nav-link" data-scroll-target="#aplicación-de-los-cuestionarios"><span class="header-section-number">5.1.3</span> Aplicación de los cuestionarios</a></li>
+  </ul></li>
+  <li><a href="#diseño-del-instrumento-de-captura-de-la-información" id="toc-diseño-del-instrumento-de-captura-de-la-información" class="nav-link" data-scroll-target="#diseño-del-instrumento-de-captura-de-la-información"><span class="header-section-number">5.2</span> Diseño del instrumento de captura de la información</a></li>
+  <li><a href="#método-para-la-capacitación-para-la-recolección-de-datos" id="toc-método-para-la-capacitación-para-la-recolección-de-datos" class="nav-link" data-scroll-target="#método-para-la-capacitación-para-la-recolección-de-datos"><span class="header-section-number">5.3</span> Método para la capacitación para la recolección de datos</a>
+  <ul class="collapse">
+  <li><a href="#pretest" id="toc-pretest" class="nav-link" data-scroll-target="#pretest"><span class="header-section-number">5.3.1</span> Pretest</a></li>
+  <li><a href="#preparación-del-material-para-el-trabajo-de-campo" id="toc-preparación-del-material-para-el-trabajo-de-campo" class="nav-link" data-scroll-target="#preparación-del-material-para-el-trabajo-de-campo"><span class="header-section-number">5.3.2</span> Preparación del material para el trabajo de campo</a></li>
+  <li><a href="#reclutamiento-del-personal-de-campo" id="toc-reclutamiento-del-personal-de-campo" class="nav-link" data-scroll-target="#reclutamiento-del-personal-de-campo"><span class="header-section-number">5.3.3</span> Reclutamiento del personal de campo</a></li>
+  <li><a href="#capacitación-del-equipo-de-encuestadores" id="toc-capacitación-del-equipo-de-encuestadores" class="nav-link" data-scroll-target="#capacitación-del-equipo-de-encuestadores"><span class="header-section-number">5.3.4</span> Capacitación del equipo de encuestadores</a></li>
+  </ul></li>
+  <li><a href="#métodos-de-supervisión" id="toc-métodos-de-supervisión" class="nav-link" data-scroll-target="#métodos-de-supervisión"><span class="header-section-number">5.4</span> Métodos de supervisión</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -208,12 +234,82 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>##&nbsp;Programación de la encuesta e integración técnica</p>
-<p>##&nbsp;Trabajo de campo</p>
-<p>##&nbsp;Control de calidad</p>
-<p>##&nbsp;Indicadores de desempeño del trabajo de campo</p>
+<p>Los cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software SurveyToGo de Dooblo. Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.</p>
+<p>El proceso de implementación del instrumento de recolección de información para el estudio incluye las técnicas y métodos utilizados, el contacto inicial con los establecimientos educativos, el diseño y la aplicación de los cuestionarios y los procedimientos para garantizar la calidad del trabajo de campo.</p>
+<section id="técnica-y-métodos-de-recolección-de-datos" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="técnica-y-métodos-de-recolección-de-datos"><span class="header-section-number">5.1</span> Técnica y métodos de recolección de datos</h2>
+<section id="proceso-de-contacto-inicial" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="proceso-de-contacto-inicial"><span class="header-section-number">5.1.1</span> Proceso de contacto inicial</h3>
+<p>Para asegurar la participación de los establecimientos en el estudio, el equipo Datavoz priorizó minimizar los tiempos de contacto y garantizar la aplicación del cuestionario en los plazos establecidos.</p>
+<p>Los coordinadores contactaron a los establecimientos seleccionados en función de los siguientes objetivos:</p>
+<ol type="1">
+<li>Invitar a los establecimientos a participar en el estudio, presentando la empresa y los objetivos del proyecto. Además, se enviaron cartas personalizadas a cada director como respaldo formal.</li>
+<li>Solicitar la designación de un colaborador por establecimiento, encargado de gestionar los aspectos operativos de la aplicación del cuestionario.</li>
+<li>Establecer una fecha para la primera visita, recopilando información sobre disponibilidad y horarios.</li>
+</ol>
+<p>Para asegurar un contacto inicial exitoso con los establecimientos, se priorizó contactar directamente al director o directora de cada institución, con el propósito de garantizar una respuesta favorable para su participación en el estudio.</p>
+</section>
+<section id="métodos-de-contacto-inicial" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="métodos-de-contacto-inicial"><span class="header-section-number">5.1.2</span> Métodos de contacto inicial</h3>
+<p>El contacto se realizó en tres etapas correlativas: a) llamadas telefónicas de los coordinadores a los directores de los establecimientos seleccionados; b) envío de correos electrónicos informativos a los establecimientos educativos; c) envío de cartas formales, detallando el estudio, su importancia y solicitando colaboración.</p>
+<p>Si estos métodos no lograban establecer contacto, los coordinadores se dirigían presencialmente al establecimiento, agendaban la visita y, de ser posible, explicaban en persona los detalles del estudio, acordando la fecha de aplicación.</p>
+</section>
+<section id="aplicación-de-los-cuestionarios" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="aplicación-de-los-cuestionarios"><span class="header-section-number">5.1.3</span> Aplicación de los cuestionarios</h3>
+<p>Se generaron enlaces específicos para la aplicación de los cuestionarios, compartidos con apoderados y profesores de cada establecimiento. En el caso de los estudiantes, los enlaces se instalaron en los computadores de las salas de computación para facilitar su respuesta. El software también permite exportar los datos recopilados a diversos formatos, como Excel, SPSS o ASCII.</p>
+</section>
+</section>
+<section id="diseño-del-instrumento-de-captura-de-la-información" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="diseño-del-instrumento-de-captura-de-la-información"><span class="header-section-number">5.2</span> Diseño del instrumento de captura de la información</h2>
+<p>La encuesta Meritocracia en la escuela se compone de tres cuestionarios estructurados y autoaplicados en formato CAWI a docentes, apoderados y estudiantes.</p>
+<p>Las variables recolectadas abarcan temáticas clave sobre el impacto del mercado educativo en las percepciones de la meritocracia y su influencia en la formación ciudadana en las escuelas. Los módulos temáticos, que incluyen meritocracia, preferencias y desigualdad, ciudadanía y datos sociodemográficos, permiten analizar la relación entre educación y meritocracia, así como su evolución a lo largo del tiempo. Además, se adaptan según el perfil del actor al que se dirige la encuesta.</p>
+</section>
+<section id="método-para-la-capacitación-para-la-recolección-de-datos" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="método-para-la-capacitación-para-la-recolección-de-datos"><span class="header-section-number">5.3</span> Método para la capacitación para la recolección de datos</h2>
+<p>Para iniciar el trabajo de campo, el equipo de Datavoz consideró la programación de los cuestionarios, la preparación de manuales y protocolos, y la elaboración de un pretest. Una vez finalizada esta etapa, se procedió a la capacitación de los coordinadores de establecimientos.</p>
+<section id="pretest" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="pretest"><span class="header-section-number">5.3.1</span> Pretest</h3>
+<p>El proceso de pretest se desarrolló en dos etapas. Primero, se aplicó el cuestionario a una muestra reducida, y posteriormente se llevó a cabo un grupo focal con los coordinadores de los establecimientos participantes, con el objetivo de evaluar en detalle el desempeño del instrumento.</p>
+<p>La aplicación inicial tuvo lugar en un curso de un establecimiento de la Región Metropolitana y proporcionó información valiosa sobre diversos aspectos, como el formato de los instrumentos (cuestionarios y protocolos de contacto), el orden de las preguntas, las categorías de respuesta, la duración total del cuestionario y de cada módulo, y las tasas de no respuesta, tanto generales como en preguntas específicas.</p>
+<p>Tras esta etapa, se realizó un grupo de discusión con los coordinadores para analizar las dificultades detectadas en las preguntas y la aplicación del instrumento, así como sugerencias para su mejora. Los resultados de ambas instancias permitieron estructurar los cuestionarios y los protocolos de contacto definitivos.</p>
+</section>
+<section id="preparación-del-material-para-el-trabajo-de-campo" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="preparación-del-material-para-el-trabajo-de-campo"><span class="header-section-number">5.3.2</span> Preparación del material para el trabajo de campo</h3>
+<p>Para el desarrollo del trabajo de campo y su uso durante las capacitaciones, se elaboró un manual detallado para los coordinadores. Este manual incluye las características del estudio, sus objetivos, los responsables del proyecto y las instrucciones para el funcionamiento de los enlaces a los cuestionarios, entre otros aspectos relevantes.</p>
+</section>
+<section id="reclutamiento-del-personal-de-campo" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="reclutamiento-del-personal-de-campo"><span class="header-section-number">5.3.3</span> Reclutamiento del personal de campo</h3>
+<p>El reclutamiento de coordinadores fue una etapa crucial para garantizar tasas de respuesta acordes con los requerimientos del estudio. Para el trabajo en establecimientos educacionales, se seleccionaron profesionales de las ciencias sociales con experiencia en educación y/o encuestadores con antecedentes en levantamiento de datos en entornos escolares. Este enfoque asegura un adecuado desarrollo del proceso, desde el contacto inicial hasta el cierre, y favorece la obtención de buenos resultados.</p>
+</section>
+<section id="capacitación-del-equipo-de-encuestadores" class="level3" data-number="5.3.4">
+<h3 data-number="5.3.4" class="anchored" data-anchor-id="capacitación-del-equipo-de-encuestadores"><span class="header-section-number">5.3.4</span> Capacitación del equipo de encuestadores</h3>
+<p>Los coordinadores de establecimientos fueron capacitados de manera remota a través de Zoom. Durante estas sesiones se enfatizó en las particularidades del estudio. Los ejes principales de la capacitación incluyeron:</p>
+<ul>
+<li>Explicación del contenido de los instrumentos y el contexto del estudio.</li>
+<li>Transmisión de los objetivos de la investigación, conceptos clave y consideraciones metodológicas para que los coordinadores trabajen con claridad y confianza.</li>
+<li>Identificación de posibles dificultades y provisión de herramientas para resolverlas.</li>
+<li>Presentación y entrenamiento en el uso de los protocolos de contacto.</li>
+<li>Aseguramiento de una comprensión sólida del cuestionario.</li>
+<li>Énfasis en la neutralidad del equipo en terreno, evitando emitir juicios u opiniones que pudieran influir en las respuestas.</li>
+<li>Promoción de un marco de respeto y cuidado hacia los encuestados, garantizando una experiencia cómoda y positiva.</li>
+<li>Fomento de una actitud abierta y receptiva frente a las dudas de los encuestados, aclarando los objetivos de la encuesta y subrayando la confidencialidad de los datos.</li>
+</ul>
+<p>Este enfoque integral en la preparación y capacitación busca asegurar un trabajo de campo eficiente, respetuoso y alineado con los objetivos del estudio.</p>
+</section>
+</section>
+<section id="métodos-de-supervisión" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="métodos-de-supervisión"><span class="header-section-number">5.4</span> Métodos de supervisión</h2>
+<p>El proceso de supervisión se llevó a cabo de forma telefónica por un equipo independiente, el cual comenzó a operar una vez iniciado el trabajo en terreno. Este equipo estuvo coordinado de manera permanente por el Encargado de Supervisión y abarcó todos los establecimientos donde fue realizada la aplicación.</p>
+<p>Durante la supervisión, se consultó a los directores de los establecimientos sobre la actuación del coordinador en los siguientes aspectos:</p>
+<ul>
+<li><strong>Presentación</strong>: confirmar si el coordinador se identificó adecuadamente y mostró su credencial de Datavoz.</li>
+<li><strong>Desarrollo de la encuesta</strong>: verificar si la aplicación se realizó en el horario previamente agendado.</li>
+<li><strong>Finalización</strong>: comprobar si el coordinador agradeció la colaboración del establecimiento al término de la aplicación.</li>
+</ul>
+<p>Además, se revisó la completitud de las encuestas y la coherencia en los rangos de respuestas para asegurar la calidad de los datos recolectados.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -241,12 +337,12 @@ ul.task-list li input[type="checkbox"] {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copiado");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copiado");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",
@@ -623,8 +719,8 @@ ul.task-list li input[type="checkbox"] {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./06-base-datos.html" class="pagination-link" aria-label="Base de datos">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Base de datos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./06-base-datos.html" class="pagination-link" aria-label="Bases de datos">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -632,7 +728,7 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Project “Meritocracy in Schools (EDUMER): Moral Foundations of the Education Market and Their Implications for Civic Education in Chile”</p>
+<p>Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;

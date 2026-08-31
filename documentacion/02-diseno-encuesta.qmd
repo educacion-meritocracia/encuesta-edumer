@@ -5,13 +5,20 @@ format:
     css: justify.css
 ---
 
-# Diseño de la encuesta {#sec-estadis}
+# Diseño de Encuesta.
 
-## Población objetivo y población de la encuesta {#sec-target}
+## Diseño de cuestionario
 
-## Unidades de análisis y dominios {#sec-units}
+El instrumento de recolección de información consiste en un cuestionario estructurado (tipo encuesta) dirigido a los principales actores de las escuelas: docentes, apoderados y estudiantes.
 
-## Estrategia de muestreo y selección de la muestra {#sec-strategy}
+Este cuestionario fue diseñado para analizar la influencia de aspectos clave del mercado educativo en las percepciones y creencias sobre la meritocracia, así como su impacto en la formación ciudadana dentro de las escuelas, con un enfoque en su evolución a lo largo del tiempo. Los principales temas de interés analítico se organizan en los siguientes módulos:
+
+- Módulo I: Meritocracia
+- Módulo II: Preferencias y Desigualdad
+- Módulo III: Ciudadanía
+- Módulo IV: Datos Sociodemográficos
+
+El cuestionario aplicado a estudiantes incluye un módulo experimental, en el que se entrega una condición de tratamiento y una condición de control. Al cuestionario aplicado a profesores se le agregan los módulos "Estructura de objetivos de rendimiento y dominio" y "Prácticas pedagógicas".
 
 ## Cuotas y tamaño de la muestra {#sec-quotas}
 

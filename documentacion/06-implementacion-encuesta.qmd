@@ -1,0 +1,89 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Implementación de la encuesta {#imp-instrument}
+
+Los cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software SurveyToGo de Dooblo. Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.
+
+El proceso de implementación del instrumento de recolección de información para el estudio incluye las técnicas y métodos utilizados, el contacto inicial con los establecimientos educativos, el diseño y la aplicación de los cuestionarios y los procedimientos para garantizar la calidad del trabajo de campo.
+
+## Técnica y métodos de recolección de datos
+
+### Proceso de contacto inicial
+
+Para asegurar la participación de los establecimientos en el estudio, el equipo Datavoz priorizó minimizar los tiempos de contacto y garantizar la aplicación del cuestionario en los plazos establecidos.
+
+Los coordinadores contactaron a los establecimientos seleccionados en función de los siguientes objetivos:
+
+1.  Invitar a los establecimientos a participar en el estudio, presentando la empresa y los objetivos del proyecto. Además, se enviaron cartas personalizadas a cada director como respaldo formal.
+2.  Solicitar la designación de un colaborador por establecimiento, encargado de gestionar los aspectos operativos de la aplicación del cuestionario.
+3.  Establecer una fecha para la primera visita, recopilando información sobre disponibilidad y horarios.
+
+Para asegurar un contacto inicial exitoso con los establecimientos, se priorizó contactar directamente al director o directora de cada institución, con el propósito de garantizar una respuesta favorable para su participación en el estudio.
+
+### Métodos de contacto inicial
+
+El contacto se realizó en tres etapas correlativas: a) llamadas telefónicas de los coordinadores a los directores de los establecimientos seleccionados; b) envío de correos electrónicos informativos a los establecimientos educativos; c) envío de cartas formales, detallando el estudio, su importancia y solicitando colaboración.
+
+Si estos métodos no lograban establecer contacto, los coordinadores se dirigían presencialmente al establecimiento, agendaban la visita y, de ser posible, explicaban en persona los detalles del estudio, acordando la fecha de aplicación.
+
+### Aplicación de los cuestionarios
+
+Se generaron enlaces específicos para la aplicación de los cuestionarios, compartidos con apoderados y profesores de cada establecimiento. En el caso de los estudiantes, los enlaces se instalaron en los computadores de las salas de computación para facilitar su respuesta. El software también permite exportar los datos recopilados a diversos formatos, como Excel, SPSS o ASCII.
+
+## Diseño del instrumento de captura de la información
+
+La encuesta Meritocracia en la escuela se compone de tres cuestionarios estructurados y autoaplicados en formato CAWI a docentes, apoderados y estudiantes.
+
+Las variables recolectadas abarcan temáticas clave sobre el impacto del mercado educativo en las percepciones de la meritocracia y su influencia en la formación ciudadana en las escuelas. Los módulos temáticos, que incluyen meritocracia, preferencias y desigualdad, ciudadanía y datos sociodemográficos, permiten analizar la relación entre educación y meritocracia, así como su evolución a lo largo del tiempo. Además, se adaptan según el perfil del actor al que se dirige la encuesta.
+
+## Método para la capacitación para la recolección de datos
+
+Para iniciar el trabajo de campo, el equipo de Datavoz consideró la programación de los cuestionarios, la preparación de manuales y protocolos, y la elaboración de un pretest. Una vez finalizada esta etapa, se procedió a la capacitación de los coordinadores de establecimientos.
+
+### Pretest
+
+El proceso de pretest se desarrolló en dos etapas. Primero, se aplicó el cuestionario a una muestra reducida, y posteriormente se llevó a cabo un grupo focal con los coordinadores de los establecimientos participantes, con el objetivo de evaluar en detalle el desempeño del instrumento.
+
+La aplicación inicial tuvo lugar en un curso de un establecimiento de la Región Metropolitana y proporcionó información valiosa sobre diversos aspectos, como el formato de los instrumentos (cuestionarios y protocolos de contacto), el orden de las preguntas, las categorías de respuesta, la duración total del cuestionario y de cada módulo, y las tasas de no respuesta, tanto generales como en preguntas específicas.
+
+Tras esta etapa, se realizó un grupo de discusión con los coordinadores para analizar las dificultades detectadas en las preguntas y la aplicación del instrumento, así como sugerencias para su mejora. Los resultados de ambas instancias permitieron estructurar los cuestionarios y los protocolos de contacto definitivos.
+
+### Preparación del material para el trabajo de campo
+
+Para el desarrollo del trabajo de campo y su uso durante las capacitaciones, se elaboró un manual detallado para los coordinadores. Este manual incluye las características del estudio, sus objetivos, los responsables del proyecto y las instrucciones para el funcionamiento de los enlaces a los cuestionarios, entre otros aspectos relevantes.
+
+### Reclutamiento del personal de campo
+
+El reclutamiento de coordinadores fue una etapa crucial para garantizar tasas de respuesta acordes con los requerimientos del estudio. Para el trabajo en establecimientos educacionales, se seleccionaron profesionales de las ciencias sociales con experiencia en educación y/o encuestadores con antecedentes en levantamiento de datos en entornos escolares. Este enfoque asegura un adecuado desarrollo del proceso, desde el contacto inicial hasta el cierre, y favorece la obtención de buenos resultados.
+
+### Capacitación del equipo de encuestadores
+
+Los coordinadores de establecimientos fueron capacitados de manera remota a través de Zoom. Durante estas sesiones se enfatizó en las particularidades del estudio. Los ejes principales de la capacitación incluyeron:
+
+- Explicación del contenido de los instrumentos y el contexto del estudio.
+- Transmisión de los objetivos de la investigación, conceptos clave y consideraciones metodológicas para que los coordinadores trabajen con claridad y confianza.
+- Identificación de posibles dificultades y provisión de herramientas para resolverlas.
+- Presentación y entrenamiento en el uso de los protocolos de contacto.
+- Aseguramiento de una comprensión sólida del cuestionario.
+- Énfasis en la neutralidad del equipo en terreno, evitando emitir juicios u opiniones que pudieran influir en las respuestas.
+- Promoción de un marco de respeto y cuidado hacia los encuestados, garantizando una experiencia cómoda y positiva.
+- Fomento de una actitud abierta y receptiva frente a las dudas de los encuestados, aclarando los objetivos de la encuesta y subrayando la confidencialidad de los datos.
+
+Este enfoque integral en la preparación y capacitación busca asegurar un trabajo de campo eficiente, respetuoso y alineado con los objetivos del estudio.
+
+## Métodos de supervisión
+
+El proceso de supervisión se llevó a cabo de forma telefónica por un equipo independiente, el cual comenzó a operar una vez iniciado el trabajo en terreno. Este equipo estuvo coordinado de manera permanente por el Encargado de Supervisión y abarcó todos los establecimientos donde fue realizada la aplicación.
+
+Durante la supervisión, se consultó a los directores de los establecimientos sobre la actuación del coordinador en los siguientes aspectos:
+
+- **Presentación**: confirmar si el coordinador se identificó adecuadamente y mostró su credencial de Datavoz.
+- **Desarrollo de la encuesta**: verificar si la aplicación se realizó en el horario previamente agendado.
+- **Finalización**: comprobar si el coordinador agradeció la colaboración del establecimiento al término de la aplicación.
+
+Además, se revisó la completitud de las encuestas y la coherencia en los rangos de respuestas para asegurar la calidad de los datos recolectados.

@@ -11,22 +11,22 @@ book:
     right: |
       This book was built with <a href="https://quarto.org/">Quarto</a>.
   page-navigation: true
-  #cover-image: images/logo-sogedi.png
-  #favicon: images/logo-sogedi.png
   repo-url: https://jus-mer.com/
   repo-branch: main
   chapters:
     - index.qmd
     - 01-antecedentes.qmd
     - 02-diseno-encuesta.qmd
-    - 03-diseno-experimento.qmd
-    - 04-diseno-items.qmd
-    - 05-implementacion-encuesta.qmd
-    - 06-base-datos.qmd
-    - 07-etica.qmd
-    - 08-libro-codigos.qmd
-    - 09-apendice.qmd
-    
+    - 03-cuestionario.qmd
+    - 04-diseno-experimento.qmd
+    - 05-diseno-items.qmd
+    - 06-implementacion-encuesta.qmd
+    - 07-base-datos.qmd
+    - 08-etica.qmd
+    - 09-libro-codigos.qmd
+    - 10-apendice.qmd
+    - 11-notas-tecnicas.qmd
+
   search:
     location: sidebar
     type: textbox
@@ -35,17 +35,17 @@ book:
     style: docked
     pinned: false
 
-
 format:
   html:
     theme:
       - cosmo
       - jusmer.scss
+    css: justify.css
     code-link: true
 
 editor: visual
-lang: en
+lang: es
 
-# bibliography: "../input/bib/jusmer.bib"
-# csl: "../input/bib/apa6.csl"
+bibliography: "../input/bib/manual-metod.bib"
+csl: "../input/bib/apa6.csl"
 

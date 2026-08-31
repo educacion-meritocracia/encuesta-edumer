@@ -1,0 +1,38 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Diseño del cuestionario (experimento): {#sec-conjoint}
+
+El experimento distribucional de encuesta (DSE) (Gilgen, 2020) busca que los/as estudiantes distribuyan notas en el contexto escolar. Se presentan cuatro casos ficticios que corresponden a distintas combinaciones de esfuerzo y oportunidades. Así, los/as estudiantes cuentan con 10 décimas que deben distribuir entre esos cuatro perfiles de estudiantes. En esta sección se presentará la distribución de décimas realizada para cada caso ficticio. Luego, se presentará el panorama general de la distribución de décimas. En las figuras se representará con color rojo las décimas asignadas al caso que no permiten hacerlo aprobar y en color azul las que sí lo hacen.
+
+### Caso 1: Estudiante se esfuerza y tiene casa pequeña
+
+En este primer caso, se presenta al Estudiante A (nota = 3.7), quien se esfuerza más que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.
+
+### Caso 2: Estudiante no se esfuerza y tiene casa grande
+
+En este segundo caso, se presenta al Estudiante B (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.
+
+### Caso 3: Estudiante se esfuerza y tiene casa grande
+
+En este tercer caso, se presenta al Estudiante C (nota = 3.7), quien se esfuerza más que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.
+
+### Caso 4: Estudiante no se esfuerza y tiene casa pequeña
+
+En este cuarto caso, se presenta al Estudiante D (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.
+
+### Implementación del experimento en el análisis
+
+El experimento consiste en un DSE (Experimento Distribucional de Encuesta) donde los y las estudiantes reparten décimas entre los cuatro perfiles ficticios descritos anteriormente. El procesamiento sigue los siguientes pasos:
+
+1.  **Selección de la muestra**: se toman únicamente los estudiantes de la ola 2.
+2.  **Definición de los cuatro casos ficticios (A, B, C, D)**: cada caso combina dos dimensiones: esfuerzo (más/menos que la mayoría) y oportunidades (casa grande/casa pequeña).
+3.  **Medición de las décimas asignadas a cada caso**: Para cada una se calculan frecuencias y porcentajes, y se grafican barras apiladas con etiquetas.
+4.  **Transformación en criterio de aprobación**: las décimas se recodifican en una variable binaria, donde 0, 1 y 2 corresponden a "No aprueba" y el resto a "Aprueba".
+5.  **Comparación de los cuatro casos**: Se muestran las proporciones de "Aprueba/No aprueba" por caso en un gráfico único.
+
+En síntesis, el experimento observa cómo los y las estudiantes distribuyen recompensas escolares según el mérito (esfuerzo) y el contexto de oportunidades, resumiendo posteriormente esa distribución en términos de si hacen aprobar o no a cada perfil.
