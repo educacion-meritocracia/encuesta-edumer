@@ -354,7 +354,7 @@
     "href": "03-cuestionario.html",
     "title": "3  Cuestionario",
     "section": "",
-    "text": "3.1 Presentación\nEsta sección corresponde al cuestionario de la encuesta EDUMER y se utiliza como referencia para la estructura de las preguntas, las dimensiones y los módulos aplicados en la medición.\nEn esta página puedes incorporar la descripción general del instrumento, el flujo del cuestionario, los módulos, y cualquier detalle metodológico relevante para su uso en el análisis de datos.",
+    "text": "3.1 Presentación",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cuestionario</span>"
     ]
@@ -454,7 +454,7 @@
     "href": "07-base-datos.html",
     "title": "7  Bases de datos",
     "section": "",
-    "text": "7.1 Archivos de datos en el repositorio",
+    "text": "7.1 Fuentes de datos (insumos)\nEste capítulo documenta la procedencia, el procesamiento y la clasificación de las bases de datos utilizadas en el estudio Edumer. Su propósito es asegurar la trazabilidad entre los archivos crudos, los scripts de procesamiento y las bases de datos finales disponibles para el análisis, de modo que cualquier usuario del repositorio pueda reconstruir el flujo de trabajo desde el insumo hasta el producto.\nEl estudio se desarrolló en dos rondas de aplicación (“olas”) y consideró tres poblaciones objetivo: estudiantes, docentes y apoderados. Los insumos crudos correspondientes se almacenan en /input/data/original/.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
     ]
@@ -473,8 +473,8 @@
     "objectID": "07-base-datos.html#clasificación-de-las-bases-de-datos",
     "href": "07-base-datos.html#clasificación-de-las-bases-de-datos",
     "title": "7  Bases de datos",
-    "section": "7.2 Clasificación de las bases de datos",
-    "text": "7.2 Clasificación de las bases de datos\nPor ola\n\nOla 1: db_proc_students, db_proc_teachers, db_proc_parents, db_proc_full\nOla 2: db_proc_students_w02\nAmbas olas (panel): edumer_students_wide, edumer_students_long\n\nPor tipo de actor\n\nEstudiantes: db_proc_students (Ola 1), db_proc_students_w02 (Ola 2), edumer_students_wide/long (panel)\nAdultos: db_proc_teachers (docentes), db_proc_parents (apoderados)\nCombinada: db_proc_full (estudiantes + docentes + apoderados, Ola 1)\n\nPor etapa de procesamiento\n\nInsumo/crudo: archivos .sav en /input/data/original/, CSV del cuestionario en /input/\nProducto final: db_proc_* y db_proc_students_w02 (más la base combinada db_proc_full)\nDerivado/panel: edumer_students_wide, edumer_students_long\nIntermedio/diagnóstico: objetos en memoria del script duplicados.R (p. ej., db2_f) para la limpieza de IDs (processing/duplicados.R:39-47, 160-163, 176-179), sin exportación a archivo.",
+    "section": "7.4 Clasificación de las bases de datos",
+    "text": "7.4 Clasificación de las bases de datos\n\n7.4.1 Por ola\n\nOla 1: db_proc_students, db_proc_teachers, db_proc_parents, db_proc_full\nOla 2: db_proc_students_w02\nAmbas olas (panel): edumer_students_wide, edumer_students_long\n\n\n\n7.4.2 Por tipo de actor\n\nEstudiantes: db_proc_students (Ola 1), db_proc_students_w02 (Ola 2), edumer_students_wide / edumer_students_long (panel)\nAdultos: db_proc_teachers (docentes), db_proc_parents (apoderados)\nCombinada: db_proc_full (estudiantes, docentes y apoderados, Ola 1)\n\n\n\n7.4.3 Por etapa de procesamiento\n\nInsumo/crudo: archivos .sav en /input/data/original/; CSV del cuestionario en /input/\nProducto final: db_proc_* y db_proc_students_w02, además de la base combinada db_proc_full\nDerivado/panel: edumer_students_wide, edumer_students_long\nIntermedio/diagnóstico: objetos en memoria del script duplicados.R (p. ej., db2_f), utilizados para la limpieza de identificadores duplicados (líneas 39–47, 160–163, 176–179), sin exportación a archivo",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
     ]
@@ -607,6 +607,36 @@
     "text": "Características\nProyecto Meritocracia en la Escuela\n\n\nPoblación objetivo\nProfesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso.\n\n\nInstrumento\nCuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert.\n\n\nDiseño muestral\nEl estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil.\n\n\nTamaño de la muestra\nMuestra ola 1: 902\nMuestra ola 2: 637\n\n\nPeríodo de recolección\nEl período de recolección se realizó desde agosto de 2021 hasta septiembre de 2024.\n\n\nCobertura geográfica\nLa cobertura geográfica de esta encuesta está constituida por la Región Metropolitana y la Región de Valparaíso.\n\n\nModo de aplicación\nAutoaplicado, cuestionario en formato online.\n\n\nDuración promedio\n20 minutos aproximadamente.\n\n\nBases de datos\nDos bases de datos, una de 902 casos y otra de 637 casos.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Ficha Técnica</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#fuentes-de-datos-insumos",
+    "href": "07-base-datos.html#fuentes-de-datos-insumos",
+    "title": "7  Bases de datos",
+    "section": "",
+    "text": "7.1.1 Ola 1\nLa fuente cruda principal de la Ola 1 es un archivo único en formato SPSS, 310524_BDD_edumer.sav, que contiene las respuestas de los tres grupos poblacionales en una sola matriz de datos. Este archivo es importado de manera independiente por cada uno de los tres scripts de procesamiento por actor:\n\nEstudiantes: processing/w1-01-proc-data-students.R (línea 27)\nDocentes: processing/w1-02-proc-data-teachers.R (línea 26)\nApoderados: processing/w1-03-proc-data-parents.R (línea 26)\n\n\n\n7.1.2 Ola 2\nLa fuente cruda principal de la Ola 2 corresponde exclusivamente a estudiantes: 221124 Edumer Ola2 ID_VF.sav, importada en processing/w2-01-proc-data-students.R (línea 28). Existe además una versión previa de este archivo, 251024 Edumer Ola2 ID.sav, utilizada únicamente con fines de diagnóstico en el script processing/duplicados.R (línea 28) para la identificación y corrección de identificadores duplicados; esta versión no participa en la generación de bases finales.\n\n\n7.1.3 Instrumento (codebook)\nLos metadatos del cuestionario se documentan en dos archivos:\n\n/input/Cuestionario_edumer.xlsx – survey.csv\n/input/cohesion – survey.csv\n\nEstos archivos son referenciados mediante URLs crudas de GitHub en 08-codebook.qmd (líneas 48 y 50).\n\n\n7.1.4 Archivos no vigentes\nEn /input/data/original/ se conservan además otras versiones crudas —161223_BDD_estudiantes_VF.sav, 170124_BDD_estudiantes.sav, 211223_BDD_estudiantes_VF.sav y 300424_BDD_estudiantes.sav— que no son referenciadas por ningún script de procesamiento vigente. De manera análoga, en /input/data/proc/ existen los objetos es_ola1.RData y ola1.RData, correspondientes a etapas intermedias anteriores, sin uso en el flujo actual. Ambos conjuntos se mantienen en el repositorio con fines de respaldo histórico, pero no deben considerarse parte del pipeline activo.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#procedimiento-de-procesamiento",
+    "href": "07-base-datos.html#procedimiento-de-procesamiento",
+    "title": "7  Bases de datos",
+    "section": "7.2 Procedimiento de procesamiento",
+    "text": "7.2 Procedimiento de procesamiento\nEl procesamiento sigue una secuencia de siete etapas, descritas a continuación.\n1. Importación de los datos crudos de la Ola 1. Cada script por actor (w1-01, w1-02, w1-03) importa de manera independiente el archivo 310524_BDD_edumer.sav.\n2. Segmentación por actor. Dado que el archivo original dispone a los tres grupos en tramos contiguos de columnas, cada script selecciona el rango correspondiente:\n\n\n\n\n\n\n\n\nActor\nRango de columnas\nObservación\n\n\n\n\nEstudiantes\n1–105\nSe eliminan columnas temporales de identificación (w1-01, líneas 47–49)\n\n\nDocentes\n106–179\n(w1-02, línea 45)\n\n\nApoderados\n180–246\nSe eliminan variables con prefijo “T” (w1-03, líneas 46–48)\n\n\n\n3. Limpieza y armonización. En cada script se ejecutan tareas de renombramiento de variables, limpieza de etiquetas, recodificación y ajuste de tipos de variable, específicas para cada población.\n4. Exportación de las bases finales por actor. Cada base procesada se exporta en tres formatos —.RData, .dta y .sav— en las siguientes líneas de código: w1-01 (798–800), w1-02 (462–464), w1-03 (485–487).\n5. Construcción de la base combinada de la Ola 1. El script processing/w1-04-proc-data-full.R integra las tres bases procesadas mediante una unión por columnas, precedida de una verificación de consistencia en el número de filas (líneas 34–42), y exporta el resultado (líneas 48–50).\n6. Procesamiento de la Ola 2. El script processing/w2-01-proc-data-students.R importa la versión corregida del archivo de estudiantes (...ID_VF.sav, línea 28), aplica los procedimientos de limpieza y recodificación correspondientes, y exporta la base final (líneas 482–484).\n7. Construcción de la base panel. Con el objetivo de dar seguimiento longitudinal a los estudiantes, el script del panel ejecuta las siguientes operaciones:\n\nCarga de las bases procesadas de Ola 1 y Ola 2 (líneas 28–33).\nArmonización de nombres de variables mediante la adición de sufijos identificadores de ola (líneas 44–76).\nCruce del identificador de la Ola 1 con el identificador de referencia de la Ola 2 (líneas 91–100).\nGeneración de las bases panel en formato ancho y en formato largo (líneas 171–177 y 209–215, respectivamente).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
+    ]
+  },
+  {
+    "objectID": "07-base-datos.html#convenciones-de-nomenclatura",
+    "href": "07-base-datos.html#convenciones-de-nomenclatura",
+    "title": "7  Bases de datos",
+    "section": "7.3 Convenciones de nomenclatura",
+    "text": "7.3 Convenciones de nomenclatura\n\nFuentes crudas: se nombran con un prefijo de fecha seguido de un descriptor (p. ej., 310524_BDD_edumer.sav, 221124 Edumer Ola2 ID_VF.sav).\nSufijo “VF”: identifica la versión corregida o final de un archivo crudo. En el caso de la Ola 2, el archivo con este sufijo es el utilizado en el script de producción, mientras que la versión sin sufijo se reserva exclusivamente para el script de depuración de duplicados.\nBases procesadas: siguen el patrón db_proc_&lt;población&gt; (estudiantes, docentes, apoderados, completa), incorporando el sufijo de ola cuando corresponde (_w02).\nBases panel: reciben nombres semánticos, edumer_students_wide y edumer_students_long.\nFormatos de publicación: cada base final se exporta en RData, dta y sav para garantizar su interoperabilidad entre entornos de análisis (R, Stata, SPSS). Referencias: w1-01 (798–800), w1-02 (462–464), w1-03 (485–487), w1-04 (48–50), w2-01 (482–484), panel (209–215).",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Bases de datos</span>"
     ]
   }
 ]
