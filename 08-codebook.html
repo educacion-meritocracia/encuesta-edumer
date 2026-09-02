@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.35">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>8&nbsp; Libro de códigos – Manual Metodológico EPJEC</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./07-etichs.html" rel="prev">
+<link href="./edumer.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-f5bc234347b70877b417578a9df52ce4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script><link href="site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.34.0/datatables.js"></script><script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script><script src="site_libs/jszip-1.13.6/jszip.min.js"></script><script src="site_libs/pdfmake-1.13.6/pdfmake.js"></script><script src="site_libs/pdfmake-1.13.6/vfs_fonts.js"></script><link href="site_libs/dt-ext-buttons-1.13.6/css/buttons.dataTables.min.css" rel="stylesheet">
+<script src="site_libs/dt-ext-buttons-1.13.6/js/dataTables.buttons.min.js"></script><script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.html5.min.js"></script><script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.colVis.min.js"></script><script src="site_libs/dt-ext-buttons-1.13.6/js/buttons.print.min.js"></script><link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet">
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script><link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet">
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script><link href="site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+</head>
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./08-codebook.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Libro de códigos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Manual Metodológico EPJEC</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/educacion-meritocracia/edumer-data" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+<li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./01-antecedents.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Antecedentes</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./02-sample-desing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño estadístico</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./03-instrument-desing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del instrumento</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04-survey-implementation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Implementación del instrumento</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05-survey-processing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metodología de procesamiento de datos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06-database.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07-etichs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ética</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08-codebook.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Libro de códigos</span></span></a>
+  </div>
+</li>
+    </ul>
+</div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+<li><a href="#introducci%C3%B3n" id="toc-introducción" class="nav-link active" data-scroll-target="#introducci%C3%B3n"><span class="header-section-number">8.1</span> Introducción</a></li>
+  <li><a href="#instrucciones" id="toc-instrucciones" class="nav-link" data-scroll-target="#instrucciones"><span class="header-section-number">8.2</span> Instrucciones</a></li>
+  <li><a href="#m%C3%B3dulo-a-caracterizaci%C3%B3n-inicial" id="toc-módulo-a-caracterización-inicial" class="nav-link" data-scroll-target="#m%C3%B3dulo-a-caracterizaci%C3%B3n-inicial"><span class="header-section-number">8.3</span> Módulo A: Caracterización inicial</a></li>
+  <li><a href="#m%C3%B3dulo-b-meritocracia" id="toc-módulo-b-meritocracia" class="nav-link" data-scroll-target="#m%C3%B3dulo-b-meritocracia"><span class="header-section-number">8.4</span> Módulo B: Meritocracia</a></li>
+  <li><a href="#m%C3%B3dulo-c-actitudes-hacia-la-desigualdad" id="toc-módulo-c-actitudes-hacia-la-desigualdad" class="nav-link" data-scroll-target="#m%C3%B3dulo-c-actitudes-hacia-la-desigualdad"><span class="header-section-number">8.5</span> Módulo C: Actitudes hacia la desigualdad</a></li>
+  <li><a href="#m%C3%B3dulo-e-valores-sociales" id="toc-módulo-e-valores-sociales" class="nav-link" data-scroll-target="#m%C3%B3dulo-e-valores-sociales"><span class="header-section-number">8.6</span> Módulo E: Valores sociales</a></li>
+  <li><a href="#m%C3%B3dulo-f-cohesi%C3%B3n-social" id="toc-módulo-f-cohesión-social" class="nav-link" data-scroll-target="#m%C3%B3dulo-f-cohesi%C3%B3n-social"><span class="header-section-number">8.7</span> Módulo F: Cohesión social</a></li>
+  <li><a href="#vi%C3%B1etas" id="toc-viñetas" class="nav-link" data-scroll-target="#vi%C3%B1etas"><span class="header-section-number">8.8</span> Viñetas</a></li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title"><span id="codebook" class="quarto-section-identifier"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Libro de códigos</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><section id="introducción" class="level2" data-number="8.1"><h2 data-number="8.1" class="anchored" data-anchor-id="introducción">
+<span class="header-section-number">8.1</span> Introducción</h2>
+<p>Para el uso adecuado de la base de datos Encuesta Panel Justicia Educacional y Ciudadanía, recomendamos que los investigadores trabajen con el libro de códigos que se presenta a continuación. Esta sección busca facilitar el uso de la base de datos, entregando la información correspondiente a los nombres de las variables, sus etiquetas, así como también las etiquetas de las categorías de respuesta de cada variable. En primer lugar, se detallan las instrucciones de cómo utilizar el libro de códigos interactivo. En segundo lugar, se presenta el libro de códigos propiamente tal para cada cuestionario por separado (estudiantes, docentes y padres y apoderados).</p>
+</section><section id="instrucciones" class="level2" data-number="8.2"><h2 data-number="8.2" class="anchored" data-anchor-id="instrucciones">
+<span class="header-section-number">8.2</span> Instrucciones</h2>
+<p>Los Libros de Códigos que se presentan en la siguiente sección corresponden a una herramienta interactiva que busca presentar de manera eficiente información respecto a las variables que componen la base de datos. Presentamos los ítems por cuestionario para facilitar su comprensión.</p>
+<p>Cada libro muestra el código de cada variable, la etiqueta asociada a la variable con la redacción del ítem, y las categorías de respuesta y códigos asociados. Estas corresponden a tres columnas del libro de códigos denominadas <strong><em>name, label</em></strong> y <strong><em>value_label</em></strong>, respectivamente.</p>
+<p>Se puede hacer uso del buscador que se encuentra al principio del libro para encontrar información de manera más rápida. También se pueden usar los buscadores por cada columna, los cuales irán filtrando los datos que contengan el término de búsqueda.</p>
+<p>Incluimos etiquetas de variables en el Libro de Códigos y en las bases de datos. El equipo de EDUMER las diseñó con la intención de describir brevemente el fenómeno o dimensión a medir. La redacción de la pregunta sigue a las etiquetas, incluyendo códigos y categorías de respuesta. En la construcción de la base de datos, ingresamos los códigos de respuesta como valores numéricos y las categorías de respuesta como etiquetas.</p>
+<p>En la columna <strong><em>value_labels</em></strong> se muestran las categorías de respuesta de cada variable. No obstante, si la variable es numérica o de respuesta abierta (texto), la casilla se mostrará en blanco, ya que no hay ninguna categoría que mostrar. También puede ocurrir el caso que la variable sea numérica, pero tenga disponibles las categorías “88. No Sabe” y “99. No Responde”. En estos casos sólo se visualizarán ambas categorías en el libro de código.</p>
+</section><section id="módulo-a-caracterización-inicial" class="level2" data-number="8.3"><h2 data-number="8.3" class="anchored" data-anchor-id="módulo-a-caracterización-inicial">
+<span class="header-section-number">8.3</span> Módulo A: Caracterización inicial</h2>
+<p>En el primer módulo, las preguntas van en la línea de caracterizar a los participantes de la encuesta. Este primer módulo da paso ordenar a los participantes según cuotas.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-3609dffd30d6b87ce5b6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-3609dffd30d6b87ce5b6">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"caption":"<caption>var_caracterizacion  columns and labels<\/caption>","data":[["carac_a04","carac_a05","carac_a06","carac_a07","carac_a08","carac_a09","carac_a10","carac_a11","carac_a12","carac_a13","carac_a14"],["**A4. ¿Se considera perteneciente a alguno de los siguientes pueblos originarios?**","**A5. ¿Cómo se declara usted en términos religiosos? Indique una de las siguientes opciones.**","**A6. Aproximadamente ¿cuántos libros hay en su hogar?**","**A7. Durante su educación escolar, ¿a qué tipo de colegio asistió durante más tiempo?**","**A8. Tradicionalmente, en general la gente define las posiciones políticas como más cercanas a la izquierda, al centro o a la derecha. Por favor, indique, ¿con cuál de las siguientes posiciones usted se identifica o simpatiza más?**","**A9. Independientemente de su posición política, ¿Ud. aprueba o desaprueba la forma como Gabriel Boric está conduciendo su gobierno?**","**A10. ¿En cuál de los siguientes tramos de ingresos se encuentra su hogar?**\n\n**Para responder, considere los ingresos líquidos por sueldos y salarios de todas las personas de su hogar que trabajan remuneradamente (incluyendo jubilaciones, pensiones, aportes de parientes o amigos, arriendos y otros).**","**A11. ¿Cuál el número de personas que viven en su hogar?**","**A12. ¿En qué país vivía su madre cuando usted nació?**","**A13. ¿Tiene en el hogar alguno de los siguientes artefactos y/o servicios? : Conexión a internet a través de red de fibra óptica**","**A14. ¿Tiene en el hogar alguno de los siguientes artefactos y/o servicios? : Lavavajillas**"],["1. Mapuche,<br>2. Aimara,<br>3. Rapa Nui,<br>4. Quechua,<br>5. No, a ninguno de los anteriores,<br>6. No sé,<br>7. Preferiría no responder","1. Católico,<br>2. Evangélico,<br>3. Protestante,<br>4. Judío,<br>5. Creyente no adherente,<br>6. Agnóstico,<br>7. Ninguna,<br>8. No sé,<br>9. Preferiría no responder","1. Entre 0 y 10 libros,<br>2. Entre 11 y 25 libros,<br>3. Entre 26 y 100 libros,<br>4. Entre 101 y 200,<br>5. Entre 201 y 500,<br>6. Más de 500 libros,<br>7. No sé,<br>8. Preferiría no responder","1. Colegio municipal,<br>2. Colegio particular subvencionado,<br>3. Colegio particular,<br>4. No sé,<br>5. Preferiría no responder","1. Derecha,<br>2. Centro derecha,<br>3. Centro,<br>4. Centro izquierda,<br>5. Izquierda,<br>6. Independiente,<br>7. Ninguna,<br>8. No sé,<br>9. Preferiría no responder","1. Aprueba,<br>2. Desaprueba,<br>8. No sé,<br>9. Preferiría no responder","1. Católico,<br>2. Evangélico,<br>3. Protestante,<br>4. Judío,<br>5. Creyente no adherente,<br>6. Agnóstico,<br>7. Ninguna,<br>8. No sé,<br>9. Preferiría no responder",null,"1. Chile,<br>2. Venezuela,<br>3. Bolivia,<br>4. Perú,<br>5. Colombia,<br>6. Haití,<br>7. Ecuador,<br>8. Argentina,<br>9. República Dominicana,<br>10. España,<br>11. Brasil,<br>12. Cuba,<br>13. Paraguay,<br>14. Otro","1. Sí,<br>2. No,<br>3. No sé,<br>4. Preferiría no responder","1. Sí,<br>2. No,<br>3. No sé,<br>4. Preferiría no responder"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>value_labels<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","info":false,"buttons":["copy","csv","excel","pdf","print"],"paging":false,"columnDefs":[{"name":"name","targets":0},{"name":"label","targets":1},{"name":"value_labels","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="módulo-b-meritocracia" class="level2" data-number="8.4"><h2 data-number="8.4" class="anchored" data-anchor-id="módulo-b-meritocracia">
+<span class="header-section-number">8.4</span> Módulo B: Meritocracia</h2>
+<p>En el módulo de meritocracia se realizan preguntas sobre la importancia del mérito en Chile y las oportunidades que da para acceder a mayores recompensas. La instrucción inicial es: “<em>A continuación, le presentamos una serie de afirmaciones con respecto a las oportunidades y recompensas que tienen las personas en Chile. Por favor, señale su grado de acuerdo o desacuerdo con cada una de ellas</em>.”</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-9dbcb670f39d0eb54b45" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9dbcb670f39d0eb54b45">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"caption":"<caption>var_meritocracia  columns and labels<\/caption>","data":[["merit_01","merit_02","merit_03","merit_04","merit_05","merit_06","merit_07","merit_08","merit_09","merit_10"],["**B1. En Chile, las personas son recompensadas por sus esfuerzos.**","**B2. En Chile, las personas son recompensadas por su inteligencia y habilidad.**","**B3. En Chile, a quienes tienen padres ricos les va mucho mejor en la vida.**","**B4. En Chile, a quienes tienen buenos contactos les va mucho mejor en la vida.**","**B5. Quienes más se esfuerzan deberían obtener mayores recompensas que quienes se esfuerzan menos.**","**B6. Quienes poseen más talento deberían obtener mayores recompensas que quienes poseen menos talento.**","**B7. Está bien que quienes tienen padres ricos les vaya bien en la vida.**","**B8.  Está bien que quienes tienen buenos contactos les vaya bien en la vida.**","**B9. En Chile, todas las personas tienen las mismas oportunidades para salir adelante.**","**B10. En Chile, todas las personas obtienen lo que merecen.**"],["1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>value_labels<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","info":false,"buttons":["copy","csv","excel","pdf","print"],"paging":false,"columnDefs":[{"name":"name","targets":0},{"name":"label","targets":1},{"name":"value_labels","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="módulo-c-actitudes-hacia-la-desigualdad" class="level2" data-number="8.5"><h2 data-number="8.5" class="anchored" data-anchor-id="módulo-c-actitudes-hacia-la-desigualdad">
+<span class="header-section-number">8.5</span> Módulo C: Actitudes hacia la desigualdad</h2>
+<p>En el siguiente módulo, las preguntas están orientadas en torno a las actitudes hacia la desigualdad. La instruccion inicial es: “<em>Ahora le presentamos una serie de afirmaciones con respecto a los ingresos económicos de las personas ¿Cuán de acuerdo o en desacuerdo está con las siguientes afirmaciones</em>?”</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-121df2c388591e4c4b2f" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-121df2c388591e4c4b2f">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"caption":"<caption>var_actitudesdesigualdad  columns and labels<\/caption>","data":[["des_01","des_02","des_03","des_04","des_05","des_06","des_07","des_08","des_09","des_10","des_11","des_12"],["**C1. Las diferencias económicas entre ricos y pobres en Chile son demasiado grandes**","**C2. Es responsabilidad del gobierno reducir las diferencias económicas entre las personas con altos ingresos y aquellas con bajos ingresos**","**C3. Es responsabilidad de las empresas privadas reducir las diferencias económicas entre las personas con altos ingresos y aquellas con bajos ingresos**","**C4. Y si tuviera que elegir, en una escala donde 0 es preferencia por el Gobierno y 10 preferencia por las empresas privadas, ¿preferirías que el gobierno o que las empresas privadas estén a cargo de reducir las diferencias económicas entre las personas con altos ingresos y aquellas con bajos ingresos?**","**C5. Mirando la lista a continuación, ¿quién cree que debería tener la mayor responsabilidad en reducir las diferencias de ingreso entre las personas con altos ingresos y las personas con bajos ingresos? **","**C6. En Chile un 10% de los sueldos se descuenta para ahorro previsional (pensiones). Actualmente se está discutiendo una reforma que propone sumar un 6% adicional con cargo al empleador. El principal tema de esta discusión es cómo repartir este 6%: si debería destinarse a un fondo solidario (para disminuir las brechas entre las pensiones), o a las cuentas individuales (para incrementar los ahorros personales de cada trabajador a futuro).** \n**¿Cómo distribuiría Ud. este 6%? Marque abajo su preferencia, donde 0 significa que nada se asigna a la cuenta individual y todo al fondo solidario, mientras 6 es todo a la cuenta individual y nada al fondo solidario**","**C7. La mayoría de los políticos en Chile no se preocupan acerca de reducir las diferencias en los ingresos entre personas con altos ingresos y las personas con bajos ingresos **","**C8. El gobierno debería proveer un estandar de vida decente para las personas desempleadas **","**C9. Está bien que en Chile las personas con mayores ingresos puedan tener mejor educación que las personas de ingresos más bajos.**","**C10. Está bien que en Chile las personas con mayores ingresos puedan tener mejor acceso a salud que las personas de ingresos más bajos.**","**C11. Está bien que en Chile las personas con mayores ingresos puedan tener mejores pensiones que las personas de ingresos más bajos.**","**C12. Está bien que las personas más inteligentes y/o talentosas ganen más dinero, aun cuando requieran esforzarse menos para ello**"],["1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Gobierno,<br>2. Empresas","1. Empresas privadas,<br>2. Gobierno,<br>3. Sindicatos,<br>4. Las personas con altos ingresos por<br>                                             sí mismas,<br>5. Las personas con bajos ingresos por<br>                                             sí mismas,<br>6. Las diferencias de ingresos no<br>                                             necesitan ser reducidas,<br>7. No sé,<br>8. Preferiría no responder","1. Nada a la cuenta individual,todo al fondo solidario,<br>2. Todo a la cuenta individual, <br>nada al fondo solidario","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder","1. Muy en desacuerdo,<br>2. En desacuerdo,<br>3. De acuerdo,<br>4. Muy de acuerdo,<br>5. No sé,<br>6. Preferiría no responder"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>value_labels<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","info":false,"buttons":["copy","csv","excel","pdf","print"],"paging":false,"columnDefs":[{"name":"name","targets":0},{"name":"label","targets":1},{"name":"value_labels","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="módulo-e-valores-sociales" class="level2" data-number="8.6"><h2 data-number="8.6" class="anchored" data-anchor-id="módulo-e-valores-sociales">
+<span class="header-section-number">8.6</span> Módulo E: Valores sociales</h2>
+<p>En el módulo e, se presentan tipos de personas, y su grado de similitud con el participante de la encuesta. La instrucción es: <em>A continuación se presenta una breve descripción de algunos tipos de personas. Por favor, lea cada una de las descripciones y responda en qué medida ese tipo de persona se parece o no se parece a Ud. ¿En qué medida piensa usted que se parece a una persona que…?</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-bcf8025488852b159652" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-bcf8025488852b159652">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"caption":"<caption>var_valoressociales  columns and labels<\/caption>","data":[["values_01","values_02","values_03","values_04","values_05","values_06","values_07","values_08","values_09","values_10","values_11","values_12","values_13","values_14","values_15","values_17","values_18","values_19","values_20","values_21"],["**E1. Considera que tener ideas originales y creativas es importante. Le gusta hacer las cosas a su manera**","**E2. Le es importante ser pudiente. Quiere tener mucho dinero y cosas caras.**","**E3. Le parece importante que todo el mundo sea tratado de la misma manera. Cree que todo el mundo debería tener las mismas oportunidades en la vida.**","**E4. Le es importante mostrar sus habilidades. Quiere que todo el mundo le admire por lo que hace.**","**E5. Le es importante vivir en un entorno seguro. Evita cualquier cosa que pueda poner en peligro su seguridad.**","**E6. Le gustan las sorpresas y siempre está buscando hacer cosas nuevas. Le parece importante hacer muchas cosas distintas en la vida.**","**E7. Cree que las personas deberían hacer lo que se les manda. Cree que deberían obedecer las normas siempre, aunque nadie les vea.**","**E8. Le es importante escuchar a personas que son distintas a sí mismo. Aunque no esté de acuerdo con ellas quiere comprenderlas.**","**E9. Le es importante actuar de manera humilde y modesta. Trata de no llamar la atención.**","**E10. Le es importante divertirse. Le gusta darse caprichos.**","**E11. Le es importante tomar sus propias decisiones sobre qué va a hacer. Le gusta ser libre y no depender de los demás.**","**E12. Le es muy importante ayudar a las personas que tiene a su alrededor. Se preocupa por su bienestar.**","**E13. Le es importante tener éxito. Le gustaría que todo el mundo reconociese sus éxitos.**","**E14. Le es importante que el gobierno le garantice su seguridad frente a todo tipo de amenazas. Quiere un Estado fuerte capaz de defender a sus ciudadanos.**","**E15. Busca aventura y le gusta tomar riesgos. Quiere una vida emocionante.**","**E17. Le es importante hacerse respetar por los demás. Quiere que la gente haga lo que dice.**","**E18. Le es importante ser fiel a sus amigos. Quiere dedicarse a las personas que le son cercanas.**","**E19. Cree firmemente que la gente debería preocuparse por la naturaleza. Considera que cuidar el medio ambiente es importante.**","**E20. Las tradiciones le son importantes. Trata de seguir las costumbres de su religión o de su familia.**","**E21. Busca cualquier ocasión para divertirse. Le es importante hacer cosas que le proporcionen placer.**"],["1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder","1. No se parece nada a mi,<br>2. No se parece a mí,<br>3. Se parece un poco a mí,<br>4. Se parece algo a mí,<br>5. Se parece a mí,<br>6. Se parece mucho a mí,<br>7. No sé,<br>8. Preferiría no responder"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>value_labels<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","info":false,"buttons":["copy","csv","excel","pdf","print"],"paging":false,"columnDefs":[{"name":"name","targets":0},{"name":"label","targets":1},{"name":"value_labels","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="módulo-f-cohesión-social" class="level2" data-number="8.7"><h2 data-number="8.7" class="anchored" data-anchor-id="módulo-f-cohesión-social">
+<span class="header-section-number">8.7</span> Módulo F: Cohesión social</h2>
+<p>El siguiente módulo realiza una serie de preguntas sobre convivencia con el resto de personas dentro de la sociedad. La instrucción inicial es: <em>Se pueden tener diferentes puntos de vista sobre cómo deben convivir las personas en una sociedad. ¿Qué tanto está de acuerdo usted con las siguientes afirmaciones? Para mí convivir bien en una sociedad significa que…</em></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="datatables html-widget html-fill-item" id="htmlwidget-793ff04628e46f68bc6c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-793ff04628e46f68bc6c">{"x":{"filter":"top","vertical":false,"filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\" disabled=\"\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"caption":"<caption>var_cohesion  columns and labels<\/caption>","data":[["cohesion_01","cohesion_02","cohesion_03","cohesion_04","cohesion_05","cohesion_06","cohesion_07","cohesion_08","cohesion_09","cohesion_10","cohesion_11","cohesion_12"],["**F1. Todo el mundo tiene un lugar en la sociedad**","**F2. Cada cual puede desarrollarse libremente según sus capacidades e inclinaciones**","**F3. Todos comparten los mismos valores, costumbres y tradiciones**","**F4. Conviven personas de distintos orígenes culturales**","**F5. Todo el mundo obedece la ley y el orden**","**F6. Cada uno puede vivir como quiera**","**F7. Se debaten las diferencias de opinión y se alcanzan compromisos**","**F8. Alguien está disponible para guiarte**","**F9. Las familias y el vecindario están muy unidos**","**F10. Puedes vivir la vida con libertad e independencia de los demás**","**F11. Todos tienen las mismas posibilidades de influir en las decisiones políticas**","**F12. Todo el mundo está dispuesto a autorrestringirse por el bien de la sociedad**"],["1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder","1. Para nada,<br>2. Más bien no,<br>3. En parte,<br>4. Más bien sí,<br>5. Totalmente,<br>6. No sé,<br>7. Preferiría no responder"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>label<\/th>\n      <th>value_labels<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","info":false,"buttons":["copy","csv","excel","pdf","print"],"paging":false,"columnDefs":[{"name":"name","targets":0},{"name":"label","targets":1},{"name":"value_labels","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="viñetas" class="level2" data-number="8.8"><h2 data-number="8.8" class="anchored" data-anchor-id="viñetas">
+<span class="header-section-number">8.8</span> Viñetas</h2>
+
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
+      <a href="./07-etichs.html" class="pagination-link" aria-label="Ética">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ética</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Proyecto Fondecyt No.&nbsp;1210847 “Educación y Meritocracia”.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Este libro se construyó con <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+</body></html>
