@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>7&nbsp; Ética – Manual Metodológico EPJEC</title>
+<title>4&nbsp; Diseño del cuestionario B: Ítems – Manual Metodológico de Encuesta EDUMER</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,9 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./08-codebook.html" rel="next">
-<link href="./06-database.html" rel="prev">
-<link href="./edumer.png" rel="icon" type="image/png">
+<link href="./05-implementacion-encuesta.html" rel="next">
+<link href="./03-diseno-experimento.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -45,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f5bc234347b70877b417578a9df52ce4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d9b7bfa21341ecc38490f88f4166787.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -74,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="justify.css">
 </head>
 
 <body class="nav-sidebar docked quarto-light">
@@ -85,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./07-etichs.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ética</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./04-diseno-items.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diseño del cuestionario B: Ítems</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -100,9 +100,9 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Manual Metodológico EPJEC</a> 
+      <a href="./">Manual Metodológico de Encuesta EDUMER</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/educacion-meritocracia/edumer-data" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+    <a href="https://jus-mer.com/" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-git"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -126,50 +126,62 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./01-antecedents.html" class="sidebar-item-text sidebar-link">
+  <a href="./01-antecedentes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Antecedentes</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-sample-desing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño estadístico</span></span></a>
+  <a href="./02-diseno-encuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diseño de Encuesta.</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03-instrument-desing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del instrumento</span></span></a>
+  <a href="./03-diseno-experimento.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario (experimento):</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./04-survey-implementation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Implementación del instrumento</span></span></a>
+  <a href="./04-diseno-items.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diseño del cuestionario B: Ítems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05-survey-processing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Metodología de procesamiento de datos</span></span></a>
+  <a href="./05-implementacion-encuesta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Implementación de la encuesta</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06-database.html" class="sidebar-item-text sidebar-link">
+  <a href="./06-base-datos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07-etichs.html" class="sidebar-item-text sidebar-link active">
+  <a href="./07-etica.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ética</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08-codebook.html" class="sidebar-item-text sidebar-link">
+  <a href="./08-libro-codigos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Libro de códigos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09-apendice.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Apéndice</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./10-notas-tecnicas.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Ficha Técnica</span></span></a>
   </div>
 </li>
     </ul>
@@ -182,8 +194,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Tabla de contenidos</h2>
    
   <ul>
-  <li><a href="#aprobación-comité-ético" id="toc-aprobación-comité-ético" class="nav-link active" data-scroll-target="#aprobación-comité-ético"><span class="header-section-number">7.1</span> Aprobación comité ético</a></li>
-  <li><a href="#consentimientos-informados" id="toc-consentimientos-informados" class="nav-link" data-scroll-target="#consentimientos-informados"><span class="header-section-number">7.2</span> Consentimientos informados</a></li>
+  <li><a href="#estructura-y-contenido-del-cuestionario" id="toc-estructura-y-contenido-del-cuestionario" class="nav-link active" data-scroll-target="#estructura-y-contenido-del-cuestionario"><span class="header-section-number">4.1</span> Estructura y contenido del cuestionario</a></li>
+  <li><a href="#escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta" id="toc-escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta" class="nav-link" data-scroll-target="#escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta"><span class="header-section-number">4.2</span> Escalas de medición y fuentes de los ítems de la encuesta</a></li>
   </ul>
 </nav>
     </div>
@@ -192,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span id="etica" class="quarto-section-identifier"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Ética</span></span></h1>
+<h1 class="title"><span id="sec-items" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Diseño del cuestionario B: Ítems</span></span></h1>
 </div>
 
 
@@ -209,15 +221,11 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="aprobación-comité-ético" class="level2" data-number="7.1">
-<h2 data-number="7.1" class="anchored" data-anchor-id="aprobación-comité-ético"><span class="header-section-number">7.1</span> Aprobación comité ético</h2>
-<p>El estudio “Meritocracia en la escuela: Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile”, correspondiente al FONDECYT N° 1210847, cuenta con aprobación ética del Comité de Ética de la Investigación.</p>
-<p>El proyecto fue revisado en conformidad con las normativas éticas y los lineamientos establecidos para investigaciones que involucran a seres humanos, y se considera que cumple con los principios éticos fundamentales para la protección, respeto y dignidad de los participantes. En este sentido, se ha garantizado que el proyecto cuente con mecanismos adecuados de consentimiento informado y protección de datos.&nbsp;</p>
-<p>El comité ha aprobado el protocolo con fecha 28 de mayo de 2021 y se autoriza su ejecución conforme a los términos establecidos en el proyecto original.&nbsp;</p>
+<section id="estructura-y-contenido-del-cuestionario" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="estructura-y-contenido-del-cuestionario"><span class="header-section-number">4.1</span> Estructura y contenido del cuestionario</h2>
 </section>
-<section id="consentimientos-informados" class="level2" data-number="7.2">
-<h2 data-number="7.2" class="anchored" data-anchor-id="consentimientos-informados"><span class="header-section-number">7.2</span> Consentimientos informados</h2>
-<p>Los participantes del proyecto firmaron un Consentimiento Informado por escrito, en el que se detallan los objetivos del estudio, en qué consiste su participación, qué se hará y cómo se resguardará la información y los datos entregados. Dicho Consentimiento Informado fue firmado el 2021.</p>
+<section id="escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="escalas-de-medición-y-fuentes-de-los-ítems-de-la-encuesta"><span class="header-section-number">4.2</span> Escalas de medición y fuentes de los ítems de la encuesta</h2>
 
 
 </section>
@@ -625,13 +633,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./06-database.html" class="pagination-link" aria-label="Bases de datos">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Bases de datos</span></span>
+      <a href="./03-diseno-experimento.html" class="pagination-link" aria-label="Diseño del cuestionario (experimento):">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Diseño del cuestionario (experimento):</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./08-codebook.html" class="pagination-link" aria-label="Libro de códigos">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Libro de códigos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./05-implementacion-encuesta.html" class="pagination-link" aria-label="Implementación de la encuesta">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Implementación de la encuesta</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -639,13 +647,13 @@ ul.task-list li input[type="checkbox"] {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>Proyecto Fondecyt No.&nbsp;1210847 “Educación y Meritocracia”.</p>
+<p>Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile</p>
 </div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
     <div class="nav-footer-right">
-<p>Este libro se construyó con <a href="https://quarto.org/">Quarto</a>.</p>
+<p>This book was built with <a href="https://quarto.org/">Quarto</a>.</p>
 </div>
   </div>
 </footer>
