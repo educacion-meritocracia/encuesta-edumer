@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: docs
+book:
+  title: "Manual Metodológico de Encuesta EDUMER"
+  reader-mode: true
+  page-footer:
+    left: |
+      Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  page-navigation: true
+  repo-url: https://jus-mer.com/
+  repo-branch: main
+  chapters:
+    - index.qmd
+    - 01-diseno.qmd
+    - 02-instrumento.qmd
+    - 03-implementacion.qmd
+    - 04-bases-datos.qmd
+    - 05-libro-codigos.qmd
+
+  search:
+    location: sidebar
+    type: textbox
+  sidebar:
+    search: true
+    style: docked
+    pinned: false
+
+format:
+  html:
+    theme:
+      - cosmo
+      - jusmer.scss
+    css: justify.css
+    code-link: true
+
+editor: visual
+lang: es
+
+bibliography: "bib/manual-metod.bib"
+csl: "bib/apa6.csl"
+

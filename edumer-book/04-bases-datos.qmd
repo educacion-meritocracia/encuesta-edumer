@@ -1,0 +1,40 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Bases de datos {#sec-bases}
+
+Este capítulo documenta las bases de datos finales de EDUMER: cuáles son, qué contiene cada una, dónde se descargan y cómo se produjeron a partir de los datos de terreno.
+
+## Acceso. {#sec-zenodo}
+
+Las bases de datos finales se publican en **Zenodo** (DOI [10.5281/zenodo.22865211](https://doi.org/10.5281/zenodo.22865211), licencia CC BY 4.0). No se alojan en este libro ni en un repositorio aparte. Cada base se distribuye en tres formatos (`.dta`, `.RData` y `.sav`) para facilitar su uso en Stata, R y SPSS.
+
+El depósito contiene únicamente productos finales ya depurados (incluida la limpieza de identificadores duplicados) y bases derivadas que integran ambas olas de estudiantes. Los archivos crudos de terreno, el cuestionario y los objetos intermedios de trabajo no forman parte del depósito: el cuestionario se documenta en el capítulo [Instrumento](02-instrumento.qmd) y las variables en el [Libro de códigos](05-libro-codigos.qmd).
+
+## Registro de bases de datos EDUMER {#sec-registro}
+
+EDUMER dispone de siete bases de datos:
+
+| N.º | Base (archivo) | Ola | Actor | Filas | Variables |
+|:----------:|:-----------|:----------:|:-----------|-----------:|-----------:|
+| 1 | `db_proc_students` | 1 | Estudiantes | 902 | 100 |
+| 2 | `db_proc_teachers` | 1 | Docentes | 902[^1] | 74 |
+| 3 | `db_proc_parents` | 1 | Apoderados | 902[^2] | 60 |
+| 4 | `db_proc_full` | 1 | Estudiantes, docentes y apoderados | 902 | 234 |
+| 5 | `db_proc_students_w02` | 2 | Estudiantes | 674 | 68 |
+| 6 | `edumer_students_long` | 1 y 2 | Estudiantes (panel, formato largo) | 1.576[^3] | 117 |
+| 7 | `edumer_students_wide` | 1 y 2 | Estudiantes (panel, formato ancho) | 937[^4] | 161 |
+
+: Bases de datos de EDUMER
+
+[^1]: Una fila por estudiante de la Ola 1. Las respuestas de docentes (781 filas con respuesta) corresponden a solo 26 docentes distintos (`id_docente`), por lo que sus datos se repiten entre los estudiantes de un mismo docente.
+
+[^2]: Una fila por estudiante de la Ola 1. Hay 180 apoderados distintos con respuesta (`id_apoderado`).
+
+[^3]: 902 filas de la Ola 1 más 674 de la Ola 2; la variable `ola` distingue ambas.
+
+[^4]: Una fila por estudiante: 639 participaron en ambas olas, 263 solo en la Ola 1 y 35 aparecen en la Ola 2 sin vínculo con la Ola 1.

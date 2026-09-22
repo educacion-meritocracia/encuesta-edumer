@@ -1,0 +1,147 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Instrumento {#sec-instrumento}
+
+### Consentimiento informado {#sec-consentimiento .unnumbered}
+
+Los cuestionarios incluyen una hoja de firma. En el caso de los estudiantes, que son menores de edad, se trata de una autorización del apoderado para la participación del menor (etiquetada en el cuestionario como "II. Hoja de firma – autorización para participación de menor de edad en encuesta"), que se acepta marcando una casilla. Esa aceptación queda registrada en la variable `consentimiento` de las bases de estudiantes (Ola 1 y Ola 2, esta última como `consentimiento_o2`) y, para apoderados, en `consentimiento_apoderado`. Las 902 y 674 respuestas de estudiantes de cada ola tienen la autorización registrada.
+
+Los participantes recibieron información sobre los objetivos del estudio, en qué consiste su participación, qué se hará con la información y cómo se resguardarán los datos. La aprobación del protocolo por el Comité de Ética se describe en [Diseño de encuesta](01-diseno.qmd#sec-etica).
+
+### Módulos de preguntas {#sec-modulos}
+
+El instrumento de recolección consiste en un cuestionario estructurado (tipo encuesta) dirigido a los principales actores de las escuelas: docentes, apoderados y estudiantes.
+
+Este cuestionario fue diseñado para analizar la influencia de aspectos clave del mercado educativo en las percepciones y creencias sobre la meritocracia, así como su impacto en la formación ciudadana dentro de las escuelas, con un enfoque en su evolución a lo largo del tiempo. Los principales temas de interés analítico se organizan en los siguientes módulos:
+
+- Módulo I: Meritocracia
+- Módulo II: Preferencias y Desigualdad
+- Módulo III: Ciudadanía
+- Módulo IV: Datos Sociodemográficos
+
+El cuestionario aplicado a estudiantes incluye un módulo experimental, en el que se entrega una condición de tratamiento y una condición de control (ver [Experimento](#sec-experimento)). Al cuestionario aplicado a profesores se le agregan los módulos "Estructura de objetivos de rendimiento y dominio" y "Prácticas pedagógicas".
+
+El cuestionario combina baterías validadas en otros estudios (adaptadas al español, al contexto chileno y a la edad de los estudiantes) con ítems de elaboración propia. La @tbl-origen resume la procedencia de cada batería en el cuestionario de estudiantes de la Ola 1.
+
+| Módulo | Batería | Fuente declarada | Ítems aplicados |
+|:-----------------|:-----------------|:-----------------|:----------------:|
+| I. Meritocracia | Percepción y preferencia de mérito social | Castillo et al. (2021)[^1] | 8 |
+| I. Meritocracia | Oportunidades y merecimiento sociales | Agencia de Calidad de la Educación[^2] | 2 |
+| I. Meritocracia | Mérito escolar (esfuerzo, inteligencia, merecimiento de notas) | Agencia (modificada) y elaboración propia | 3 |
+| I. Meritocracia | Definición de mérito (esfuerzo vs. inteligencia) | Elaboración propia | 1 |
+| I. Meritocracia | Justicia de las notas | PACES[^3], con ítem filtro propio | 4 |
+| I. Meritocracia | Mindset | ISSP, adaptada | 2 |
+| II\. Preferencias y desigualdad | Percepción de desigualdad, preferencias redistributivas y justificación de la desigualdad | ISSP; Agencia (pensiones) | 6 |
+| II\. Preferencias y desigualdad | Control de atención | Elaboración propia | 1 |
+| III\. Ciudadanía | Concepciones de buen ciudadano | ICCS / ISSP / CIVED | 8 |
+| III\. Ciudadanía | Intención de participación formal | ICCS | 3 |
+| III\. Ciudadanía | Participación efectiva | ICCS / SPSP | 3 |
+| III\. Ciudadanía | Ciudadanía digital (uso político de internet) | ICCS | 6 |
+| III\. Ciudadanía | Adulto de referencia (con quién y de qué se conversa) | Adaptada de SPSP y PACES | 3 |
+| III\. Ciudadanía | Eficacia política | ICCS | 2 |
+| III\. Ciudadanía | Apertura a la discusión en clases | ICCS | 6 |
+| III\. Ciudadanía | Importancia de la formación ciudadana en el establecimiento | PACES[^4] | 1 |
+| IV\. Sociodemográfico | Género; mes y año de nacimiento | PACES | 2 |
+| IV\. Sociodemográfico | País de nacimiento (propio y de los padres); expectativa educativa; educación de madre y padre | ICCS | 6 |
+| IV\. Sociodemográfico | Pertenencia a pueblos originarios; religión y práctica religiosa | ELSOC | 3 |
+| IV\. Sociodemográfico | Libros en el hogar | Sin fuente declarada | 1 |
+| IV\. Sociodemográfico | Personas que viven en el hogar | Elaboración propia (simplifica la batería ICCS de composición del hogar) | 1 |
+| Cuestionario de docentes | Estructura de objetivos de rendimiento y dominio; prácticas pedagógicas | Darnon et al. (2023) | 24 (solo docentes) |
+
+
+#### Adaptaciones respecto de las fuentes {#sec-adaptaciones}
+
+Las baterías se adaptaron con cuatro criterios: comprensibilidad para estudiantes desde 6.º básico, extensión (el cuestionario dura cerca de 20 minutos e incluye un módulo experimental), prioridad del núcleo de mérito y distribución, y calidad de medición. Las adaptaciones más relevantes son:
+
+- Escalas de cuatro puntos, sin punto medio, con las opciones adicionales "No sabe" y "Preferiría no responder" en las baterías de actitud.
+- Reformulación de expresiones poco comprensibles para la edad (p. ej., "salir adelante" pasó a "les va mejor en la vida"), y de ítems abstractos a construcciones sobre personas que actúan (p. ej., "En esta escuela, quienes se esfuerzan obtienen buenas notas").
+- Ítems de mindset redactados en positivo, para evitar la doble negación de la formulación ISSP.
+- Pregunta condicional (filtro) en la secuencia de justicia de las notas.
+- Reemplazo de la batería de composición del hogar por una sola pregunta sobre el tamaño del hogar.
+
+### Cierre y debriefing {#sec-debriefing}
+
+El cuestionario de estudiantes cierra con una declaración de debriefing que informa que las diferencias presentadas en el módulo experimental, si bien apuntan en una dirección cercana a la realidad, fueron exageradas.
+
+## Experimento {#sec-experimento}
+
+El cuestionario de estudiantes incluye un módulo experimental. La Ola 1 y la Ola 2 usan experimentos distintos.
+
+### Ola 1: información sobre acceso a la universidad {#sec-exp-ola1}
+
+El módulo experimental abre el cuestionario, antes de todos los demás módulos. Cada estudiante fue asignado aleatoriamente (50 % dentro de cada curso) a una de dos condiciones:
+
+- **Tratamiento:** se presenta información sobre el acceso a la universidad según el tipo de establecimiento (dos de cada diez estudiantes de colegios municipales frente a ocho de cada diez de colegios particulares pagados), acompañada de una figura.
+- **Control:** se mantiene la misma estructura del estímulo (marco sobre tipos de colegio, razón numérica y figura), pero el contenido sustantivo se reemplaza por la práctica deportiva.
+
+Este diseño aísla el efecto del contenido sobre desigualdad educativa del efecto de recibir información cuantificada con una figura. Ambas condiciones incluyen una pregunta de verificación inmediatamente posterior al estímulo.
+
+**Variables.** La condición asignada queda registrada en `asignacion` (1 = tratamiento, 2 = control; 444 y 458 estudiantes, respectivamente). Las preguntas de verificación son `tratamiento` (¿de qué tipo de colegio entran más estudiantes a la universidad?) y `control` (¿en qué tipo de colegio se practican más deportes?), y solo tienen valores en la condición correspondiente.
+
+::: callout-warning
+## Por completar
+
+Insertar el texto y la figura exactos de ambas condiciones. Las actas de 2024 indican que "haber recibido" y "haber comprendido" el tratamiento se analizan como variables separadas; documentar cómo se construye la variable de comprensión.
+:::
+
+### Ola 2: experimento distribucional de encuesta (DSE) {#sec-conjoint}
+
+El experimento distribucional de encuesta (DSE) (Gilgen, 2020) busca que los/as estudiantes distribuyan notas en el contexto escolar. Se presentan cuatro casos ficticios que corresponden a distintas combinaciones de esfuerzo y oportunidades. Así, los/as estudiantes cuentan con 10 décimas que deben distribuir entre esos cuatro perfiles de estudiantes. En esta sección se presentará la distribución de décimas realizada para cada caso ficticio. Luego, se presentará el panorama general de la distribución de décimas. En las figuras se representará con color rojo las décimas asignadas al caso que no permiten hacerlo aprobar y en color azul las que sí lo hacen.
+
+#### Caso 1: Estudiante se esfuerza y tiene casa pequeña
+
+En este primer caso, se presenta al Estudiante A (nota = 3.7), quien se esfuerza más que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.
+
+#### Caso 2: Estudiante no se esfuerza y tiene casa grande
+
+En este segundo caso, se presenta al Estudiante B (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.
+
+#### Caso 3: Estudiante se esfuerza y tiene casa grande
+
+En este tercer caso, se presenta al Estudiante C (nota = 3.7), quien se esfuerza más que la mayoría y su casa es grande, por lo que tiene un espacio cómodo para estudiar.
+
+#### Caso 4: Estudiante no se esfuerza y tiene casa pequeña
+
+En este cuarto caso, se presenta al Estudiante D (nota = 3.7), quien se esfuerza menos que la mayoría y su casa es pequeña, por ende no tiene un espacio cómodo para estudiar.
+
+#### Implementación del experimento en el análisis
+
+El experimento consiste en un DSE (Experimento Distribucional de Encuesta) donde los y las estudiantes reparten décimas entre los cuatro perfiles ficticios descritos anteriormente. El procesamiento sigue los siguientes pasos:
+
+1.  **Selección de la muestra**: se toman únicamente los estudiantes de la ola 2.
+2.  **Definición de los cuatro casos ficticios (A, B, C, D)**: cada caso combina dos dimensiones: esfuerzo (más/menos que la mayoría) y oportunidades (casa grande/casa pequeña).
+3.  **Medición de las décimas asignadas a cada caso**: Para cada una se calculan frecuencias y porcentajes, y se grafican barras apiladas con etiquetas.
+4.  **Transformación en criterio de aprobación**: las décimas se recodifican en una variable binaria, donde 0, 1 y 2 corresponden a "No aprueba" y el resto a "Aprueba".
+5.  **Comparación de los cuatro casos**: Se muestran las proporciones de "Aprueba/No aprueba" por caso en un gráfico único.
+
+En síntesis, el experimento observa cómo los y las estudiantes distribuyen recompensas escolares según el mérito (esfuerzo) y el contexto de oportunidades, resumiendo posteriormente esa distribución en términos de si hacen aprobar o no a cada perfil.
+
+#### Estructura completa del módulo y variables
+
+El módulo se compone de cuatro tareas sucesivas de distribución de décimas, con información creciente sobre los estudiantes (todos con nota 3,7). Los cuatro casos descritos arriba corresponden a la última tarea.
+
+| Tarea | Información entregada | Variables | Décimas a distribuir |
+|:-----------------|:-----------------|:-----------------|:----------------:|
+| Texto 1 | Estudiantes A y B, solo con la nota | `exp_t1_a`, `exp_t1_b` | 5[^5] |
+| Texto 2 | Se agrega el esfuerzo (más / menos que la mayoría) | `exp_t2_a`, `exp_t2_b` | 5[^6] |
+| Texto 3 | Se agregan el esfuerzo y las condiciones de la casa | `exp_t3_a`, `exp_t3_b` | 5[^7] |
+| Texto 4 | Cuatro estudiantes (A a D): esfuerzo × casa | `exp_t4_a` a `exp_t4_d` | 10 |
+
+: Tareas del experimento distribucional (Ola 2)
+
+[^5]: Valor inferido del rango observado en la base (máximo de 5 en los textos 1 a 3 y de 10 en el texto 4). Confirmar con el cuestionario programado.
+
+[^6]: Valor inferido del rango observado en la base (máximo de 5 en los textos 1 a 3 y de 10 en el texto 4). Confirmar con el cuestionario programado.
+
+[^7]: Valor inferido del rango observado en la base (máximo de 5 en los textos 1 a 3 y de 10 en el texto 4). Confirmar con el cuestionario programado.
+
+::: callout-warning
+## Por verificar
+
+El capítulo anterior describía solo el texto 4; falta redactar los textos 1 a 3 (enunciados exactos) y explicar su papel en el diseño. Agregar también la referencia completa a Gilgen (2020) en la bibliografía.
+:::

@@ -34,10 +34,6 @@ Los metadatos del cuestionario se documentan en dos archivos:
 
 Estos archivos son referenciados mediante URLs crudas de GitHub en `08-codebook.qmd` (líneas 48 y 50).
 
-### Archivos no vigentes
-
-En `/input/data/original/` se conservan además otras versiones crudas —`161223_BDD_estudiantes_VF.sav`, `170124_BDD_estudiantes.sav`, `211223_BDD_estudiantes_VF.sav` y `300424_BDD_estudiantes.sav`— que no son referenciadas por ningún script de procesamiento vigente. De manera análoga, en `/input/data/proc/` existen los objetos `es_ola1.RData` y `ola1.RData`, correspondientes a etapas intermedias anteriores, sin uso en el flujo actual. Ambos conjuntos se mantienen en el repositorio con fines de respaldo histórico, pero no deben considerarse parte del pipeline activo.
-
 ## Procedimiento de procesamiento
 
 El procesamiento sigue una secuencia de siete etapas, descritas a continuación.

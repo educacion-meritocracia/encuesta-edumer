@@ -1,0 +1,97 @@
+---
+format:
+  html:
+    toc: true
+    css: justify.css
+---
+
+# Libro de códigos {#sec-codebook}
+
+## Introducción
+
+Este libro de códigos documenta las **bases de datos finales** de EDUMER publicadas en Zenodo (ver [Bases de datos](04-bases-datos.qmd)). Para cada variable de cada base entrega su nombre (`name`), su etiqueta (`label`, que incluye la redacción de la pregunta) y las categorías de respuesta con sus códigos (`value_label`).
+
+El libro se genera automáticamente a partir de las etiquetas que llevan los propios archivos de datos, de modo que siempre describe lo que el usuario efectivamente descarga. No se construye a partir del cuestionario ni de otras planillas de diseño.
+
+## Instrucciones
+
+La tabla de la sección siguiente es interactiva: se puede usar el buscador general, los filtros por columna (incluida la columna `base`, para ver solo una de las seis bases) y ordenar por cualquier columna.
+
+- **`base`:** archivo al que pertenece la variable.
+- **`name`:** nombre de la variable en la base.
+- **`label`:** etiqueta de la variable, con la redacción del ítem.
+- **`value_label`:** categorías de respuesta con su código (p. ej., `1. Muy en desacuerdo`). Queda en blanco si la variable es numérica continua, de texto o si no tiene categorías etiquetadas en el archivo.
+- **`tipo` y `n_validos`:** tipo de variable en R y número de casos con respuesta válida (no perdidos).
+
+**Códigos de no respuesta.** En las baterías de actitud, la opción "No sabe" se codifica como `88` y "Preferiría no responder" como `99`. Estos valores no son categorías sustantivas y deben tratarse como datos perdidos en el análisis.
+
+**Sufijos.** En las bases del panel en formato ancho, `_w01` y `_w02` indican la ola. Las variables de docentes y apoderados llevan los sufijos `_docente` y `_apoderado`.
+
+## Diccionario de variables
+
+```{r}
+#| label: setup
+#| include: false
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+options(scipen = 999)
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(haven, dplyr, purrr, tibble, DT)
+```
+
+```{r}
+#| label: leer-bases
+# Las bases se leen desde la carpeta local del proyecto (output/data) si existe;
+# si no, se descargan desde el depósito de Zenodo (DOI 10.5281/zenodo.22865211).
+zenodo <- "https://zenodo.org/records/22865211/files/"
+
+bases <- c("db_proc_students", "db_proc_teachers", "db_proc_parents",
+           "db_proc_students_w02", "edumer_students_long", "edumer_students_wide")
+
+leer_base <- function(nombre) {
+  # Ruta local opcional, relativa a la raíz del proyecto (útil si se procesa
+  # el flujo completo en el mismo repositorio). Si no existe, se descarga
+  # directamente desde Zenodo.
+  local <- file.path("output", "data", paste0(nombre, ".sav"))
+  if (file.exists(local)) return(haven::read_sav(local))
+  tmp <- tempfile(fileext = ".sav")
+  download.file(paste0(zenodo, nombre, ".sav?download=1"), tmp,
+                mode = "wb", quiet = TRUE)
+  haven::read_sav(tmp)
+}
+
+etiqueta_var <- function(x) {
+  et <- attr(x, "label", exact = TRUE)
+  if (is.null(et)) NA_character_ else as.character(et)
+}
+
+etiqueta_valores <- function(x) {
+  et <- attr(x, "labels", exact = TRUE)
+  if (is.null(et)) return(NA_character_)
+  paste(paste0(unname(et), ". ", names(et)), collapse = " | ")
+}
+
+diccionario <- function(nombre) {
+  df <- leer_base(nombre)
+  tibble(
+    base      = nombre,
+    name      = names(df),
+    label     = map_chr(df, etiqueta_var),
+    value_label = map_chr(df, etiqueta_valores),
+    tipo      = map_chr(df, ~ class(.x)[1]),
+    n_validos = map_int(df, ~ sum(!is.na(.x)))
+  )
+}
+
+codebook <- map_dfr(bases, diccionario) |>
+  mutate(base = factor(base, levels = bases))
+```
+
+```{r}
+#| label: tabla-codebook
+DT::datatable(
+  codebook,
+  rownames = FALSE,
+  filter = "top",
+  options = list(pageLength = 25, scrollX = TRUE, autoWidth = TRUE)
+)
+```
