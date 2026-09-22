@@ -43,7 +43,7 @@ El procesamiento sigue una secuencia de siete etapas, descritas a continuación.
 **2. Segmentación por actor.** Dado que el archivo original dispone a los tres grupos en tramos contiguos de columnas, cada script selecciona el rango correspondiente:
 
 | Actor | Rango de columnas | Observación |
-|---|---|---|
+|------------------------|------------------------|------------------------|
 | Estudiantes | 1–105 | Se eliminan columnas temporales de identificación (`w1-01`, líneas 47–49) |
 | Docentes | 106–179 | (`w1-02`, línea 45) |
 | Apoderados | 180–246 | Se eliminan variables con prefijo "T" (`w1-03`, líneas 46–48) |
@@ -73,21 +73,4 @@ El procesamiento sigue una secuencia de siete etapas, descritas a continuación.
 
 ## Clasificación de las bases de datos
 
-### Por ola
-
-- **Ola 1:** `db_proc_students`, `db_proc_teachers`, `db_proc_parents`, `db_proc_full`
-- **Ola 2:** `db_proc_students_w02`
-- **Ambas olas (panel):** `edumer_students_wide`, `edumer_students_long`
-
-### Por tipo de actor
-
-- **Estudiantes:** `db_proc_students` (Ola 1), `db_proc_students_w02` (Ola 2), `edumer_students_wide` / `edumer_students_long` (panel)
-- **Adultos:** `db_proc_teachers` (docentes), `db_proc_parents` (apoderados)
-- **Combinada:** `db_proc_full` (estudiantes, docentes y apoderados, Ola 1)
-
-### Por etapa de procesamiento
-
-- **Insumo/crudo:** archivos `.sav` en `/input/data/original/`; CSV del cuestionario en `/input/`
-- **Producto final:** `db_proc_*` y `db_proc_students_w02`, además de la base combinada `db_proc_full`
-- **Derivado/panel:** `edumer_students_wide`, `edumer_students_long`
-- **Intermedio/diagnóstico:** objetos en memoria del script `duplicados.R` (p. ej., `db2_f`), utilizados para la limpieza de identificadores duplicados (líneas 39–47, 160–163, 176–179), sin exportación a archivo
+###
