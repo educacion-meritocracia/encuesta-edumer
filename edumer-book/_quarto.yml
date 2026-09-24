@@ -19,6 +19,7 @@ book:
     - 03-implementacion.qmd
     - 04-bases-datos.qmd
     - 05-libro-codigos.qmd
+    - 06-anexo-items.qmd
 
   search:
     location: sidebar
@@ -35,6 +36,7 @@ format:
       - jusmer.scss
     css: justify.css
     code-link: true
+    number-sections: false
 
 editor: visual
 lang: es

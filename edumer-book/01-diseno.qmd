@@ -11,7 +11,9 @@ Este capítulo describe cómo se diseñó el estudio: a quiénes se encuestó, c
 
 ## Diseño longitudinal {#sec-longitudinal}
 
-Ver también la construcción de la base panel en el capítulo de [Bases de datos](04-bases-datos.qmd). En la base panel, 639 estudiantes están presentes en ambas olas, 263 solo en la Ola 1 y 35 aparecen en la Ola 2 sin vínculo con la Ola 1.
+El estudio contempla un diseño longitudinal de panel estructurado en dos olas de medición (aplicadas entre octubre de 2023 y noviembre de 2024), aquello permite a los investigadores realizar un seguimiento individual a lo largo del tiempo y analizar trayectorias de cambio en las variables de interés. La base de datos resultante presenta cuenta con 639 estudiantes presentes en ambas olas, que constituyen la muestra principal para estimar modelos de cambio individual; un grupo de 263 estudiantes observados exclusivamente en la Ola 1, lo que representa una tasa de atrición del 29,2% respecto de la muestra inicial ($N = 902$), y 35 estudiantes que ingresan únicamente en la Ola 2.
+
+Respecto a la composición de la muestra, la Ola 1 incluy a 26 docentes y 180 apoderados pertenecientes a los establecimientos considerados.
 
 ## Ficha técnica {#sec-ficha}
 
@@ -20,12 +22,12 @@ Ver también la construcción de la base panel en el capítulo de [Bases de dato
 | Población objetivo | Profesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso. |
 | Instrumento | Cuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert. |
 | Diseño muestral | El estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil. |
-| Tamaño de la muestra | Ola 1: 902 estudiantes. Ola 2: 674 estudiantes. |
-| Período de recolección | Ola 1: octubre de 2023 a mayo de 2024. Ola 2: **\[COMPLETAR\]**. |
+| Tamaño de la muestra | Ola 1: 902 estudiantes, 26 docentes, 180 apoderados. Ola 2: 674 estudiantes. |
+| Período de recolección | Ola 1: octubre de 2023 a mayo de 2024. Ola 2: agosto de 2024 a noviembre 2024. |
 | Cobertura geográfica | Región Metropolitana y Región de Valparaíso. |
 | Modo de aplicación | Autoaplicado, cuestionario en formato online (CAWI). |
 | Duración promedio | 20 minutos aproximadamente. |
-| Bases de datos | 6 bases de datos, disponibles en Zenodo (ver [Bases de datos](04-bases-datos.qmd)). |
+| Bases de datos | 7 bases de datos, disponibles en Zenodo (ver [Bases de datos](04-bases-datos.qmd)). |
 
 : Ficha técnica
 

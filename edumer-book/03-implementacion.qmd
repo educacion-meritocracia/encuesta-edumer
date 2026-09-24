@@ -7,7 +7,7 @@ format:
 
 # Implementación de la encuesta {#sec-implementacion}
 
-Los cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software SurveyToGo de Dooblo. Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.
+Los cuestionarios diseñados fueron programados en un software especializado para la aplicación de encuestas web. Para el trabajo de campo en modalidad CAWI (Computer-Assisted Web Interviewing), se utilizó el software [SurveyToGo de Dooblo](https://surveytogo.net/). Este programa permite programar cuestionarios con diversos tipos de preguntas, incorporar saltos automáticos en preguntas filtro y aplicar controles de consistencia.
 
 El proceso de implementación del instrumento de recolección de información para el estudio incluye las técnicas y métodos utilizados, el contacto inicial con los establecimientos educativos, el diseño y la aplicación de los cuestionarios y los procedimientos para garantizar la calidad del trabajo de campo.
 
