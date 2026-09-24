@@ -3,31 +3,25 @@ project:
   output-dir: .
 
 book:
-  title: "Manual Metodológico EPJEC"
-  author: "Equipo EDUMER"
-  date: "22/07/2023"
+  title: "Manual Metodológico de Encuesta EDUMER"
   reader-mode: true
   page-footer:
     left: |
-      Proyecto Fondecyt No. 1210847 "Educación y Meritocracia".
+      Meritocracia en la escuela (EDUMER): Fundamentos morales del mercado educativo y sus implicancias para la formación ciudadana en Chile
 
     right: |
-      Este libro se construyó con <a href="https://quarto.org/">Quarto</a>.
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
   page-navigation: true
-  cover-image: edumer.png
-  favicon: edumer.png
-  repo-url: https://github.com/educacion-meritocracia/edumer-data
+  repo-url: https://jus-mer.com/
   repo-branch: main
   chapters:
-    - index.qmd
-    - 01-antecedents.qmd
-    - 02-sample-desing.qmd
-    - 03-instrument-desing.qmd
-    - 04-survey-implementation.qmd
-    - 05-survey-processing.qmd
-    - 06-database.qmd
-    - 07-etichs.qmd
-    - 08-codebook.qmd
+    - edumer-book/index.qmd
+    - edumer-book/01-diseno.qmd
+    - edumer-book/02-instrumento.qmd
+    - edumer-book/03-implementacion.qmd
+    - edumer-book/04-bases-datos.qmd
+    - edumer-book/05-libro-codigos.qmd
+    - edumer-book/06-anexo-items.qmd
   search:
     location: sidebar
     type: textbox
@@ -41,13 +35,15 @@ format:
   html:
     theme:
       - cosmo
-      - edumer.scss
+      - edumer-book/jusmer.scss
+    css: edumer-book/justify.css
     code-link: true
+    number-sections: false
 
 editor: visual
 lang: es
 
-bibliography: "input/bib/manual-metod.bib"
-csl: "input/bib/apa6.csl"
+bibliography: "edumer-book/bib/manual-metod.bib"
+csl: "edumer-book/bib/apa6.csl"
 
 
