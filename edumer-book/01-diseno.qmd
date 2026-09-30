@@ -18,7 +18,7 @@ Respecto a la composición de la muestra, la Ola 1 incluy a 26 docentes y 180 ap
 ## Ficha técnica {#sec-ficha}
 
 | **Características** | **Proyecto Meritocracia en la Escuela** |
-|:-------------------------|:---------------------------------------------|
+|:-------------------------|:--------------------------------------------|
 | Población objetivo | Profesores, apoderados y estudiantes de colegios municipales y particulares subvencionados de las regiones Metropolitana y Valparaíso. |
 | Instrumento | Cuestionario compuesto por preguntas cerradas (de selección simple y múltiple), preguntas abiertas y preguntas basadas en una escala Likert. |
 | Diseño muestral | El estudio no es representativo ni por zona geográfica, ni por dependencia estudiantil. |
@@ -40,3 +40,5 @@ El proyecto fue revisado en conformidad con las normativas éticas y los lineami
 El comité aprobó el protocolo con fecha 28 de mayo de 2021 y autorizó su ejecución conforme a los términos establecidos en el proyecto original.
 
 El texto y el procedimiento del consentimiento informado se documentan en el [preámbulo del Instrumento](02-instrumento.qmd#sec-preambulo).
+
+Acta y consentimiento informado se encuentran disponibles en el siguiente enlace: [Descargar acta y consentimiento informado](1_Acta-aprobacion_UC.pdf)

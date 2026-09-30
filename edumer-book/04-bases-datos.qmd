@@ -22,19 +22,17 @@ EDUMER dispone de siete bases de datos:
 | N.º | Base (archivo) | Ola | Actor | Filas | Variables |
 |:----------:|:-----------|:----------:|:-----------|-----------:|-----------:|
 | 1 | `db_proc_students` | 1 | Estudiantes | 902 | 100 |
-| 2 | `db_proc_teachers` | 1 | Docentes | 902[^04-bases-datos-1] | 74 |
-| 3 | `db_proc_parents` | 1 | Apoderados | 902[^04-bases-datos-2] | 60 |
-| 4 | `db_proc_full` | 1 | Estudiantes, docentes y apoderados | 902 | 234 |
+| 2 | `db_teachers_coll` | 1 | Docentes | 27 | 74 |
+| 3 | `db_parents_coll` | 1 | Apoderados | 181 | 60 |
+| 4 | `db_proc_full` | 1 | Estudiantes, docentes y apoderados | 902[^04-bases-datos-1] | 234 |
 | 5 | `db_proc_students_w02` | 2 | Estudiantes | 674 | 68 |
-| 6 | `edumer_students_long` | 1 y 2 | Estudiantes (panel, formato largo) | 1.576[^04-bases-datos-3] | 117 |
-| 7 | `edumer_students_wide` | 1 y 2 | Estudiantes (panel, formato ancho) | 937[^04-bases-datos-4] | 161 |
+| 6 | `edumer_students_long` | 1 y 2 | Estudiantes (panel, formato largo) | 1.576[^04-bases-datos-2] | 117 |
+| 7 | `edumer_students_wide` | 1 y 2 | Estudiantes (panel, formato ancho) | 937[^04-bases-datos-3] | 161 |
 
 : Bases de datos de EDUMER
 
-[^04-bases-datos-1]: Una fila por estudiante de la Ola 1. Las respuestas de docentes (781 filas con respuesta) corresponden a solo 26 docentes distintos (`id_docente`), por lo que sus datos se repiten entre los estudiantes de un mismo docente.
+[^04-bases-datos-1]: Una fila por estudiante de la Ola 1. Docentes y apoderados inlcuidos en las filas de los estudiantes.
 
-[^04-bases-datos-2]: Una fila por estudiante de la Ola 1. Hay 180 apoderados distintos con respuesta (`id_apoderado`).
+[^04-bases-datos-2]: 902 filas de la Ola 1 más 674 de la Ola 2; la variable `ola` distingue ambas.
 
-[^04-bases-datos-3]: 902 filas de la Ola 1 más 674 de la Ola 2; la variable `ola` distingue ambas.
-
-[^04-bases-datos-4]: Una fila por estudiante: 639 participaron en ambas olas, 263 solo en la Ola 1 y 35 aparecen en la Ola 2 sin vínculo con la Ola 1.
+[^04-bases-datos-3]: Una fila por estudiante: 639 participaron en ambas olas, 263 solo en la Ola 1 y 35 aparecen en la Ola 2 sin vínculo con la Ola 1.

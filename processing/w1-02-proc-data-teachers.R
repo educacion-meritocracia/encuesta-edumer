@@ -455,8 +455,11 @@ db2$p16 <- clean_labels(db2$p16)
 #4. Save and remove ----------------------------------------------------
 
 db_teachers <- db2 %>% 
-  rename_with(~ paste0(.,"_docente")) %>% 
+  rename_with(~ paste0(., "_docente"), -id) %>% 
   janitor::clean_names() %>% 
+  group_by(id) %>% 
+  slice_head(n = 1) %>% 
+  ungroup() %>% 
   as.data.frame()
 
 base::save(db_teachers, file = here("output/data/db_proc_teachers.RData"))

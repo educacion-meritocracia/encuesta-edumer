@@ -24,7 +24,7 @@ Las tablas de la sección siguiente son interactivas: cada una corresponde a uno
 
 **Sufijos.** En las bases del panel en formato ancho, `_w01` y `_w02` indican la ola. Las variables de docentes y apoderados llevan los sufijos `_docente` y `_apoderado`.
 
-## Diccionario de variables
+## Preparación de datos {.unnumbered}
 
 ```{r}
 #| label: setup
@@ -90,10 +90,15 @@ mostrar_codebook <- function(x) {
     x,
     rownames = FALSE,
     filter = "top",
-    options = list(pageLength = 25, scrollX = TRUE, autoWidth = TRUE)
+    options = list(pageLength = 10, scrollX = TRUE, scrollY = "500px",
+                   scrollCollapse = TRUE, autoWidth = TRUE)
   )
 }
 ```
+
+## Diccionario de variables
+
+::: {.panel-tabset}
 
 ### `db_proc_students`
 
@@ -130,3 +135,5 @@ mostrar_codebook(codebooks[[5]])
 ```{r}
 mostrar_codebook(codebooks[[6]])
 ```
+
+:::
